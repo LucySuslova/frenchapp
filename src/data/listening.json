@@ -1,0 +1,144 @@
+{
+  "exercises": [
+    {
+      "id": "list_001",
+      "title": "Le français au quotidien",
+      "source": "TV5Monde",
+      "difficulty": "B1",
+      "duration": "3 min",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/b1-intermediaire",
+      "questions": [
+        { "question": "De quoi parle principalement cette vidéo?", "options": ["La cuisine française", "La vie quotidienne en France", "Le sport en France", "Les vacances"], "answer": 1 },
+        { "question": "Quel conseil est donné aux apprenants?", "options": ["Regarder la télévision française", "Écouter la radio tous les jours", "Pratiquer régulièrement", "Voyager en France"], "answer": 2 },
+        { "question": "Quelle est la difficulté mentionnée?", "options": ["La grammaire", "Le vocabulaire", "La prononciation", "Toutes ces réponses"], "answer": 3 },
+        { "question": "Combien de temps recommande-t-on de pratiquer?", "options": ["10 minutes par jour", "30 minutes par jour", "1 heure par jour", "Le temps n'est pas mentionné"], "answer": 3 }
+      ]
+    },
+    {
+      "id": "list_002",
+      "title": "L'environnement et le recyclage",
+      "source": "RFI",
+      "difficulty": "B1",
+      "duration": "4 min",
+      "url": "https://savoirs.rfi.fr/fr/apprendre-enseigner/environnement",
+      "questions": [
+        { "question": "Quel est le thème principal de ce document?", "options": ["Le changement climatique", "Le recyclage des déchets", "La protection des animaux", "Les transports écologiques"], "answer": 1 },
+        { "question": "Quel pourcentage de déchets est recyclé en France?", "options": ["Moins de 30%", "Environ 40-50%", "Plus de 70%", "Le pourcentage n'est pas mentionné"], "answer": 3 },
+        { "question": "Quelle solution est proposée?", "options": ["Interdire le plastique", "Améliorer le tri sélectif", "Fermer les usines", "Réduire la population"], "answer": 1 },
+        { "question": "Qui est responsable du recyclage selon le document?", "options": ["Uniquement les entreprises", "Uniquement le gouvernement", "Les citoyens et les institutions", "Personne"], "answer": 2 }
+      ]
+    },
+    {
+      "id": "list_003",
+      "title": "Le monde du travail",
+      "source": "France Culture",
+      "difficulty": "B2",
+      "duration": "5 min",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts",
+      "questions": [
+        { "question": "Quel changement dans le monde du travail est discuté?", "options": ["L'augmentation des salaires", "La flexibilité du travail", "La réduction du temps de travail", "Les nouvelles technologies"], "answer": 1 },
+        { "question": "Quelle est l'attitude des employeurs selon l'intervenant?", "options": ["Totalement favorables", "Totalement opposés", "Divisés sur la question", "Indifférents"], "answer": 2 },
+        { "question": "Quel avantage du changement est mentionné?", "options": ["Plus de productivité", "Meilleur équilibre vie pro/perso", "Économies d'argent", "Moins de stress"], "answer": 1 },
+        { "question": "Quelle est la conclusion de l'émission?", "options": ["Il faut résister au changement", "L'adaptation est nécessaire", "Rien ne va changer", "Le système actuel est parfait"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "list_004",
+      "title": "Les habitudes alimentaires",
+      "source": "TV5Monde",
+      "difficulty": "B1",
+      "duration": "3 min",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/b1-intermediaire",
+      "questions": [
+        { "question": "De quoi parle ce reportage?", "options": ["Les restaurants français", "Les habitudes alimentaires des Français", "La cuisine internationale", "Les régimes alimentaires"], "answer": 1 },
+        { "question": "Combien de repas par jour prennent généralement les Français?", "options": ["Un", "Deux", "Trois", "Quatre"], "answer": 2 },
+        { "question": "Quelle tendance est mentionnée?", "options": ["Plus de fast-food", "Retour aux produits locaux", "Moins de viande", "Toutes ces réponses"], "answer": 3 },
+        { "question": "Quel repas est le plus important pour les Français?", "options": ["Le petit-déjeuner", "Le déjeuner", "Le dîner", "Le goûter"], "answer": 2 }
+      ]
+    },
+    {
+      "id": "list_005",
+      "title": "L'immigration au Canada",
+      "source": "Radio-Canada",
+      "difficulty": "B2",
+      "duration": "6 min",
+      "url": "https://ici.radio-canada.ca/ohdio",
+      "questions": [
+        { "question": "Quel aspect de l'immigration est discuté?", "options": ["Les procédures administratives", "L'intégration des immigrants", "Les statistiques d'immigration", "Les politiques gouvernementales"], "answer": 1 },
+        { "question": "Quelle difficulté est mentionnée par les immigrants?", "options": ["Le climat", "La reconnaissance des diplômes", "La langue", "Le coût de la vie"], "answer": 1 },
+        { "question": "Quelle solution est proposée?", "options": ["Des cours de langue obligatoires", "Des programmes d'accompagnement", "Des restrictions à l'immigration", "Aucune solution n'est mentionnée"], "answer": 1 },
+        { "question": "Quel est le ton général du reportage?", "options": ["Très négatif", "Équilibré et informatif", "Très positif", "Satirique"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "list_006",
+      "title": "Les nouvelles technologies",
+      "source": "France Inter",
+      "difficulty": "B2",
+      "duration": "5 min",
+      "url": "https://www.radiofrance.fr/franceinter/podcasts",
+      "questions": [
+        { "question": "Quel sujet technologique est abordé?", "options": ["Les smartphones", "L'intelligence artificielle", "Les réseaux sociaux", "Les jeux vidéo"], "answer": 1 },
+        { "question": "Quelle préoccupation est exprimée?", "options": ["Le coût des technologies", "L'impact sur l'emploi", "La dépendance aux écrans", "La vie privée"], "answer": 1 },
+        { "question": "Quelle est la position de l'expert invité?", "options": ["Totalement optimiste", "Prudemment optimiste", "Très pessimiste", "Neutre"], "answer": 1 },
+        { "question": "Quelle recommandation est faite?", "options": ["Interdire les nouvelles technologies", "Éduquer les utilisateurs", "Laisser faire le marché", "Taxer les entreprises tech"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "list_007",
+      "title": "Le système de santé",
+      "source": "RFI",
+      "difficulty": "B2",
+      "duration": "5 min",
+      "url": "https://savoirs.rfi.fr/fr/apprendre-enseigner/societe",
+      "questions": [
+        { "question": "De quel pays parle-t-on principalement?", "options": ["Le Canada", "La France", "La Belgique", "La Suisse"], "answer": 1 },
+        { "question": "Quel problème du système de santé est mentionné?", "options": ["Le manque de médecins", "Le coût trop élevé", "Les temps d'attente", "La qualité des soins"], "answer": 0 },
+        { "question": "Quelle solution est envisagée?", "options": ["Privatiser le système", "Former plus de médecins", "Réduire les services", "Augmenter les impôts"], "answer": 1 },
+        { "question": "Quelle est la conclusion du reportage?", "options": ["Le système fonctionne bien", "Des réformes sont nécessaires", "Il faut tout changer", "Aucune solution n'existe"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "list_008",
+      "title": "La culture française",
+      "source": "TV5Monde",
+      "difficulty": "B1",
+      "duration": "4 min",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/b1-intermediaire",
+      "questions": [
+        { "question": "Quel aspect de la culture est présenté?", "options": ["La musique", "Le cinéma", "La littérature", "Les traditions régionales"], "answer": 3 },
+        { "question": "Quelle région est mentionnée?", "options": ["La Bretagne", "La Provence", "L'Alsace", "Plusieurs régions"], "answer": 3 },
+        { "question": "Quelle tradition est décrite?", "options": ["Une fête locale", "Une recette traditionnelle", "Un costume régional", "Tout cela"], "answer": 3 },
+        { "question": "Quel message le reportage transmet-il?", "options": ["Les traditions disparaissent", "Les traditions sont importantes", "Les traditions sont dépassées", "Les traditions coûtent cher"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "list_009",
+      "title": "Le changement climatique",
+      "source": "France Culture",
+      "difficulty": "C1",
+      "duration": "7 min",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts",
+      "questions": [
+        { "question": "Quel aspect du changement climatique est analysé?", "options": ["Les causes", "Les conséquences", "Les solutions", "Tous ces aspects"], "answer": 3 },
+        { "question": "Quelle donnée scientifique est mentionnée?", "options": ["La hausse des températures", "La montée des eaux", "La fonte des glaciers", "Plusieurs de ces données"], "answer": 3 },
+        { "question": "Quelle critique est formulée?", "options": ["L'inaction des gouvernements", "Le déni du problème", "Le manque de financement", "Tout cela"], "answer": 0 },
+        { "question": "Quel espoir est exprimé?", "options": ["Les nouvelles technologies", "La prise de conscience", "Les accords internationaux", "Aucun espoir n'est exprimé"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "list_010",
+      "title": "L'éducation en France",
+      "source": "RFI",
+      "difficulty": "B2",
+      "duration": "5 min",
+      "url": "https://savoirs.rfi.fr/fr/apprendre-enseigner/societe",
+      "questions": [
+        { "question": "Quel niveau d'éducation est discuté?", "options": ["Le primaire", "Le secondaire", "L'université", "Tous les niveaux"], "answer": 3 },
+        { "question": "Quel problème est soulevé?", "options": ["Les inégalités scolaires", "Le manque d'enseignants", "Les programmes dépassés", "Le coût des études"], "answer": 0 },
+        { "question": "Quelle réforme est mentionnée?", "options": ["La formation des enseignants", "Les horaires scolaires", "L'évaluation des élèves", "Aucune réforme spécifique"], "answer": 3 },
+        { "question": "Quelle est la conclusion?", "options": ["Le système est parfait", "Des améliorations sont possibles", "Il faut tout recommencer", "L'éducation n'est pas prioritaire"], "answer": 1 }
+      ]
+    }
+  ]
+}

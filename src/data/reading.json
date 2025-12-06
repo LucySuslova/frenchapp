@@ -1,0 +1,149 @@
+{
+  "passages": [
+    {
+      "id": "read_001",
+      "title": "L'expatriation: une aventure enrichissante?",
+      "topic": "Life abroad / Expatriation",
+      "wordCount": 280,
+      "content": "De plus en plus de personnes choisissent de s'expatrier pour des raisons professionnelles ou personnelles. Cette décision, bien que souvent perçue comme une aventure excitante, comporte des défis considérables.\n\nD'un côté, vivre à l'étranger offre des opportunités uniques. On découvre une nouvelle culture, on apprend une langue, et on développe une ouverture d'esprit précieuse. Les expatriés parlent souvent d'une croissance personnelle significative et d'une meilleure compréhension du monde.\n\nCependant, l'expatriation n'est pas sans difficultés. Le choc culturel peut être déstabilisant. Les repères habituels disparaissent: la famille est loin, les amis sont absents, et même les gestes quotidiens deviennent compliqués. Beaucoup d'expatriés souffrent de solitude, particulièrement durant les premiers mois.\n\nDe plus, les questions administratives peuvent être un véritable casse-tête. Obtenir un visa, trouver un logement, ouvrir un compte bancaire: toutes ces démarches demandent du temps et de la patience.\n\nNéanmoins, ceux qui persistent affirment que l'expérience en vaut la peine. Ils reviennent transformés, avec une vision plus large du monde et des compétences interculturelles très recherchées sur le marché du travail.\n\nEn conclusion, l'expatriation est une expérience complexe qui demande préparation et adaptation. Elle n'est pas faite pour tout le monde, mais pour ceux qui osent, elle peut être profondément enrichissante.",
+      "questions": [
+        {
+          "question": "Selon le texte, pourquoi les gens s'expatrient-ils?",
+          "options": ["Uniquement pour le travail", "Pour des raisons professionnelles ou personnelles", "Seulement pour apprendre une langue", "Pour fuir leur pays"],
+          "answer": 1
+        },
+        {
+          "question": "Quel est l'un des avantages de l'expatriation mentionné?",
+          "options": ["Un salaire plus élevé", "Une ouverture d'esprit", "Plus de temps libre", "Un meilleur climat"],
+          "answer": 1
+        },
+        {
+          "question": "Qu'est-ce qui cause de la solitude chez les expatriés?",
+          "options": ["Le travail difficile", "L'éloignement de la famille et des amis", "Le coût de la vie", "La météo"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle est la position de l'auteur sur l'expatriation?",
+          "options": ["Totalement positive", "Totalement négative", "Nuancée - elle présente des avantages et des défis", "Indifférente"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "read_002",
+      "title": "Les réseaux sociaux: amis ou ennemis?",
+      "topic": "Technology / Social Media",
+      "wordCount": 300,
+      "content": "Les réseaux sociaux ont transformé notre façon de communiquer. Facebook, Instagram, Twitter, TikTok font désormais partie de notre quotidien. Mais cette omniprésence est-elle bénéfique?\n\nLes partisans des réseaux sociaux soulignent leurs nombreux avantages. Ils permettent de rester en contact avec des proches éloignés, de partager des moments importants, et de s'informer rapidement. Pour les entreprises, c'est un outil marketing incontournable.\n\nPourtant, les critiques sont nombreuses. Les réseaux sociaux favorisent la désinformation. Les fausses nouvelles se propagent à une vitesse alarmante, et beaucoup de gens n'ont pas le réflexe de vérifier leurs sources. De plus, l'utilisation excessive des réseaux peut nuire à la santé mentale. Les comparaisons constantes avec les vies apparemment parfaites des autres génèrent anxiété et dépression, particulièrement chez les jeunes.\n\nUn autre problème est la dépendance. Vérifier son téléphone des centaines de fois par jour est devenu normal pour beaucoup. Cette habitude affecte la concentration et la productivité.\n\nPar ailleurs, la vie privée est menacée. Nos données personnelles sont collectées et vendues à des annonceurs. Nous sommes constamment surveillés, souvent sans en être conscients.\n\nEn fin de compte, les réseaux sociaux ne sont ni bons ni mauvais en soi. C'est notre usage qui détermine leur impact. Une utilisation modérée et consciente peut apporter des bénéfices. Mais il est essentiel d'éduquer les utilisateurs, surtout les plus jeunes, aux risques et aux bonnes pratiques.",
+      "questions": [
+        {
+          "question": "Quel avantage des réseaux sociaux est mentionné?",
+          "options": ["Ils rendent les gens plus intelligents", "Ils permettent de rester en contact avec des proches", "Ils remplacent les médecins", "Ils sont gratuits"],
+          "answer": 1
+        },
+        {
+          "question": "Quel problème de santé est associé aux réseaux sociaux?",
+          "options": ["Des problèmes de vue", "L'anxiété et la dépression", "Des maux de tête", "La fatigue physique"],
+          "answer": 1
+        },
+        {
+          "question": "Que dit l'auteur sur la vie privée?",
+          "options": ["Elle est bien protégée", "Les données sont collectées et vendues", "Les utilisateurs contrôlent tout", "Ce n'est pas un problème"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle est la conclusion de l'auteur?",
+          "options": ["Il faut interdire les réseaux sociaux", "Les réseaux sont parfaits comme ils sont", "C'est notre usage qui détermine leur impact", "Les jeunes ne devraient pas les utiliser"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "read_003",
+      "title": "Le télétravail: révolution ou illusion?",
+      "topic": "Work / Remote Work",
+      "wordCount": 290,
+      "content": "La pandémie a accéléré l'adoption du télétravail. Ce qui était exceptionnel est devenu la norme pour des millions de travailleurs. Mais cette nouvelle façon de travailler est-elle vraiment avantageuse?\n\nLes arguments en faveur du télétravail sont nombreux. Plus besoin de perdre du temps dans les transports, une meilleure conciliation entre vie professionnelle et personnelle, et souvent une productivité accrue. Les employés apprécient la flexibilité et le confort de travailler de chez eux.\n\nPour les entreprises aussi, il y a des avantages: réduction des coûts immobiliers, accès à un bassin de talents plus large, et employés souvent plus satisfaits.\n\nCependant, le télétravail présente des inconvénients non négligeables. L'isolement social est le plus souvent cité. Les interactions spontanées avec les collègues manquent, et le sentiment d'appartenance à une équipe diminue. Pour les nouveaux employés, l'intégration est particulièrement difficile.\n\nLa frontière entre travail et vie privée devient floue. Beaucoup se retrouvent à travailler plus d'heures qu'au bureau, avec des difficultés à déconnecter. Le burn-out menace ceux qui ne savent pas établir des limites.\n\nEnfin, tout le monde n'a pas les conditions idéales pour télétravailler. Un logement trop petit, des enfants à la maison, ou une mauvaise connexion internet peuvent rendre l'expérience pénible.\n\nL'avenir semble être un modèle hybride, combinant jours au bureau et jours à distance. Cette formule permettrait de profiter des avantages des deux mondes tout en minimisant les inconvénients.",
+      "questions": [
+        {
+          "question": "Qu'est-ce qui a accéléré l'adoption du télétravail?",
+          "options": ["Une nouvelle loi", "La pandémie", "Les nouvelles technologies", "Les demandes des employés"],
+          "answer": 1
+        },
+        {
+          "question": "Quel avantage du télétravail pour les entreprises est mentionné?",
+          "options": ["Des employés plus obéissants", "La réduction des coûts immobiliers", "Plus de contrôle sur les employés", "Des réunions plus courtes"],
+          "answer": 1
+        },
+        {
+          "question": "Quel est le principal inconvénient cité?",
+          "options": ["Le coût de l'internet", "L'isolement social", "Le manque de vacances", "Les problèmes techniques"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle solution l'auteur suggère-t-il pour l'avenir?",
+          "options": ["Retour total au bureau", "Télétravail complet", "Un modèle hybride", "Réduction du temps de travail"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "read_004",
+      "title": "L'éducation gratuite: un droit ou un privilège?",
+      "topic": "Education / Society",
+      "wordCount": 310,
+      "content": "L'accès à l'éducation supérieure fait débat dans de nombreux pays. Certains défendent la gratuité totale, tandis que d'autres estiment que les étudiants doivent contribuer financièrement à leurs études.\n\nLes partisans de la gratuité avancent des arguments solides. L'éducation est un droit fondamental qui ne devrait pas dépendre des moyens financiers de la famille. Dans une société démocratique, tout le monde devrait avoir les mêmes chances de réussir. De plus, une population éduquée bénéficie à toute la société: innovation, productivité économique, et citoyenneté active.\n\nL'exemple de pays comme la Finlande ou l'Allemagne montre que la gratuité est possible. Ces pays offrent une éducation de qualité sans frais de scolarité et figurent parmi les plus performants dans les classements internationaux.\n\nCependant, les opposants soulèvent des points importants. La gratuité a un coût, supporté par tous les contribuables, y compris ceux qui n'iront jamais à l'université. Est-il juste de demander à un ouvrier de financer les études d'un futur médecin qui gagnera beaucoup plus que lui?\n\nDe plus, ce qui est gratuit est parfois moins valorisé. Les étudiants seraient peut-être plus sérieux s'ils devaient payer pour leurs cours. Le système de prêts étudiants, bien que controversé, pousse les jeunes à réfléchir à leur investissement.\n\nUne solution intermédiaire pourrait être d'offrir la gratuité aux plus défavorisés tout en demandant une contribution aux plus aisés. Des systèmes de bourses généreuses pourraient également réduire les inégalités.\n\nEn définitive, ce débat reflète une question plus large: quel modèle de société voulons-nous? La réponse dépend de nos valeurs collectives.",
+      "questions": [
+        {
+          "question": "Quel argument est avancé en faveur de la gratuité?",
+          "options": ["Les étudiants sont plus motivés", "L'éducation est un droit fondamental", "C'est moins cher pour l'État", "Les professeurs sont mieux payés"],
+          "answer": 1
+        },
+        {
+          "question": "Quels pays sont cités comme exemples de gratuité réussie?",
+          "options": ["États-Unis et Canada", "Finlande et Allemagne", "France et Belgique", "Japon et Corée"],
+          "answer": 1
+        },
+        {
+          "question": "Quel argument contre la gratuité est mentionné?",
+          "options": ["Les professeurs refusent", "Ce qui est gratuit est moins valorisé", "Les bâtiments sont moins beaux", "Il y a trop d'étudiants"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle solution intermédiaire est proposée?",
+          "options": ["Rendre tout payant", "Gratuité pour les plus défavorisés", "Fermer certaines universités", "Réduire le nombre d'étudiants"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "read_005",
+      "title": "Faut-il interdire la voiture en ville?",
+      "topic": "Environment / Urban Life",
+      "wordCount": 295,
+      "content": "De nombreuses villes européennes restreignent de plus en plus l'accès aux voitures dans leurs centres. Cette tendance divise l'opinion publique entre écologistes convaincus et automobilistes frustrés.\n\nLes partisans de ces mesures invoquent des arguments sanitaires et environnementaux. La pollution de l'air tue des milliers de personnes chaque année. Le bruit constant affecte la qualité de vie des citadins. Et le réchauffement climatique exige des actions concrètes, dont la réduction de la circulation automobile.\n\nCes restrictions ont des effets positifs visibles. Les rues piétonnes deviennent des espaces agréables où les gens se promènent, discutent, et profitent des terrasses. Les enfants peuvent jouer en sécurité. Le vélo se développe, favorisant la santé publique.\n\nMais les opposants soulèvent des objections légitimes. Tout le monde n'a pas accès aux transports en commun. Les personnes âgées ou handicapées dépendent souvent de leur voiture. Les commerçants craignent de perdre leur clientèle si les parkings disparaissent.\n\nDe plus, interdire sans proposer d'alternatives n'est pas une solution. Les transports en commun doivent être développés, abordables et efficaces. Les pistes cyclables sécurisées sont nécessaires. Sans ces investissements, les interdictions sont vécues comme des punitions.\n\nLa clé réside dans une approche progressive et inclusive. Certaines villes ont réussi cette transition en impliquant les habitants dans les décisions, en offrant des alternatives crédibles, et en accompagnant les commerces locaux.\n\nEn somme, l'objectif de villes plus vertes et plus agréables à vivre est partagé par beaucoup. C'est la méthode qui fait débat, pas la direction.",
+      "questions": [
+        {
+          "question": "Quel argument sanitaire est avancé pour restreindre les voitures?",
+          "options": ["Les accidents de voiture", "La pollution de l'air", "Le stress des conducteurs", "Les embouteillages"],
+          "answer": 1
+        },
+        {
+          "question": "Quel effet positif des rues piétonnes est mentionné?",
+          "options": ["Plus de commerces", "Les gens se promènent et profitent des terrasses", "Moins de criminalité", "Plus d'emplois"],
+          "answer": 1
+        },
+        {
+          "question": "Qui pourrait être désavantagé par ces restrictions?",
+          "options": ["Les jeunes", "Les personnes âgées ou handicapées", "Les cyclistes", "Les étudiants"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle approche l'auteur recommande-t-il?",
+          "options": ["Interdiction totale immédiate", "Ne rien changer", "Une approche progressive et inclusive", "Laisser les voitures mais augmenter les taxes"],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

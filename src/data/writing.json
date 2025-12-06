@@ -1,0 +1,46 @@
+{
+  "task_1": [
+    { "id": "w1_01", "prompt": "Vous invitez un ami à une fête d'anniversaire. Écrivez un message pour l'inviter en précisant la date, l'heure et le lieu.", "wordLimit": 60 },
+    { "id": "w1_02", "prompt": "Vous voulez reporter un rendez-vous médical. Écrivez un message à la secrétaire du cabinet pour demander un nouveau rendez-vous.", "wordLimit": 60 },
+    { "id": "w1_03", "prompt": "Vous avez trouvé un portefeuille dans la rue. Écrivez un message à afficher dans le quartier pour retrouver son propriétaire.", "wordLimit": 60 },
+    { "id": "w1_04", "prompt": "Vous ne pouvez pas assister à un cours. Écrivez un message à votre professeur pour vous excuser et demander les notes du cours.", "wordLimit": 60 },
+    { "id": "w1_05", "prompt": "Vous organisez un pique-nique avec vos voisins. Écrivez un message pour les inviter en précisant ce que chacun doit apporter.", "wordLimit": 60 },
+    { "id": "w1_06", "prompt": "Vous cherchez quelqu'un pour garder votre chat pendant vos vacances. Écrivez une annonce à afficher dans votre immeuble.", "wordLimit": 60 },
+    { "id": "w1_07", "prompt": "Vous avez acheté un appareil électroménager qui ne fonctionne pas. Écrivez un message au service après-vente pour signaler le problème.", "wordLimit": 60 },
+    { "id": "w1_08", "prompt": "Vous voulez emprunter la voiture d'un ami pour le weekend. Écrivez-lui un message pour faire votre demande.", "wordLimit": 60 },
+    { "id": "w1_09", "prompt": "Vous avez raté le bus et vous serez en retard au travail. Écrivez un message à votre supérieur pour le prévenir.", "wordLimit": 60 },
+    { "id": "w1_10", "prompt": "Vous organisez une soirée cinéma chez vous. Écrivez un message à vos amis pour les inviter et leur demander leurs préférences de films.", "wordLimit": 60 }
+  ],
+  "task_2": [
+    { "id": "w2_01", "prompt": "La machine à laver de votre immeuble est cassée depuis une semaine. Écrivez une lettre de plainte au syndic pour demander une réparation urgente.", "wordLimit": 120 },
+    { "id": "w2_02", "prompt": "Vous cherchez un logement. Écrivez à une agence immobilière pour demander des informations sur les appartements disponibles dans votre budget.", "wordLimit": 120 },
+    { "id": "w2_03", "prompt": "Vous avez commandé un produit en ligne qui n'est jamais arrivé. Écrivez au service client pour demander un remboursement ou une nouvelle livraison.", "wordLimit": 120 },
+    { "id": "w2_04", "prompt": "Vous voulez vous inscrire à un cours de français. Écrivez à l'école de langues pour demander des informations sur les cours, les horaires et les tarifs.", "wordLimit": 120 },
+    { "id": "w2_05", "prompt": "Votre voisin fait du bruit tard le soir. Écrivez-lui une lettre polie pour lui demander de respecter les heures de tranquillité.", "wordLimit": 120 },
+    { "id": "w2_06", "prompt": "Vous avez participé à un stage dans une entreprise. Écrivez une lettre pour remercier votre superviseur et demander une lettre de recommandation.", "wordLimit": 120 },
+    { "id": "w2_07", "prompt": "Vous voulez changer de forfait téléphonique. Écrivez à votre opérateur pour demander des informations sur les offres disponibles.", "wordLimit": 120 },
+    { "id": "w2_08", "prompt": "Un service municipal (bibliothèque, piscine, etc.) a des horaires peu pratiques. Écrivez à la mairie pour suggérer des changements.", "wordLimit": 120 },
+    { "id": "w2_09", "prompt": "Vous avez été mal reçu dans un restaurant. Écrivez au directeur pour exprimer votre mécontentement de façon constructive.", "wordLimit": 120 },
+    { "id": "w2_10", "prompt": "Vous souhaitez organiser un événement dans une salle municipale. Écrivez à la mairie pour demander les conditions de réservation.", "wordLimit": 120 },
+    { "id": "w2_11", "prompt": "Vous avez perdu votre carte de transport. Écrivez au service client pour signaler la perte et demander un remplacement.", "wordLimit": 120 },
+    { "id": "w2_12", "prompt": "Vous voulez proposer vos services comme bénévole dans une association. Écrivez une lettre de motivation présentant vos compétences et disponibilités.", "wordLimit": 120 }
+  ],
+  "task_3": [
+    { "id": "w3_01", "prompt": "Une expérience de vie à l'étranger est toujours positive. Êtes-vous d'accord avec cette affirmation? Justifiez votre opinion avec des arguments et des exemples.", "wordLimit": 180 },
+    { "id": "w3_02", "prompt": "Les métiers les plus difficiles devraient être les mieux payés. Qu'en pensez-vous? Développez votre point de vue avec des arguments structurés.", "wordLimit": 180 },
+    { "id": "w3_03", "prompt": "Regarder la télévision est-ce un bon moyen pour apprendre? Présentez votre opinion en donnant des arguments pour et contre.", "wordLimit": 180 },
+    { "id": "w3_04", "prompt": "Les réseaux sociaux rapprochent-ils vraiment les gens? Donnez votre avis en présentant des arguments nuancés.", "wordLimit": 180 },
+    { "id": "w3_05", "prompt": "Faut-il interdire les voitures dans les centres-villes? Présentez les avantages et les inconvénients de cette mesure.", "wordLimit": 180 },
+    { "id": "w3_06", "prompt": "L'argent fait-il le bonheur? Développez votre réflexion en vous appuyant sur des exemples concrets.", "wordLimit": 180 },
+    { "id": "w3_07", "prompt": "Les jeunes d'aujourd'hui sont-ils moins travailleurs que les générations précédentes? Donnez votre opinion argumentée.", "wordLimit": 180 },
+    { "id": "w3_08", "prompt": "Le télétravail devrait-il devenir la norme? Présentez votre point de vue en considérant différents aspects.", "wordLimit": 180 },
+    { "id": "w3_09", "prompt": "L'éducation devrait-elle être entièrement gratuite? Argumentez votre position avec des exemples.", "wordLimit": 180 },
+    { "id": "w3_10", "prompt": "Les sports violents devraient-ils être interdits? Présentez votre opinion de façon structurée.", "wordLimit": 180 },
+    { "id": "w3_11", "prompt": "Est-il préférable de vivre en ville ou à la campagne? Comparez ces deux modes de vie et donnez votre préférence.", "wordLimit": 180 },
+    { "id": "w3_12", "prompt": "Les voyages forment la jeunesse. Êtes-vous d'accord avec cette affirmation? Justifiez votre réponse.", "wordLimit": 180 },
+    { "id": "w3_13", "prompt": "Devrait-on limiter l'utilisation des téléphones portables chez les enfants? Présentez votre avis argumenté.", "wordLimit": 180 },
+    { "id": "w3_14", "prompt": "Le bénévolat devrait-il être obligatoire pour tous les citoyens? Donnez votre opinion avec des arguments.", "wordLimit": 180 },
+    { "id": "w3_15", "prompt": "L'intelligence artificielle va-t-elle remplacer les humains au travail? Présentez votre analyse de la situation.", "wordLimit": 180 },
+    { "id": "w3_16", "prompt": "Les uniformes scolaires sont-ils une bonne idée? Présentez les arguments pour et contre, puis donnez votre avis.", "wordLimit": 180 }
+  ]
+}

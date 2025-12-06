@@ -141,6 +141,67 @@ const useStore = create(
         })
       },
 
+      // Failed Exercises for Review Mode (spaced repetition)
+      failedExercises: [],
+      recordFailedExercise: (exerciseId, topicId, exerciseData) => {
+        const current = get().failedExercises
+        const existing = current.find(e => e.exerciseId === exerciseId)
+
+        if (existing) {
+          // Update existing entry - increment fail count and update timestamp
+          set({
+            failedExercises: current.map(e =>
+              e.exerciseId === exerciseId
+                ? {
+                    ...e,
+                    failCount: e.failCount + 1,
+                    lastFailedAt: new Date().toISOString(),
+                    // Reset success count on new failure
+                    successCount: 0
+                  }
+                : e
+            )
+          })
+        } else {
+          // Add new failed exercise
+          set({
+            failedExercises: [
+              ...current,
+              {
+                exerciseId,
+                topicId,
+                exerciseData,
+                failCount: 1,
+                successCount: 0,
+                lastFailedAt: new Date().toISOString(),
+                addedAt: new Date().toISOString()
+              }
+            ]
+          })
+        }
+      },
+      recordReviewSuccess: (exerciseId) => {
+        const current = get().failedExercises
+        set({
+          failedExercises: current.map(e =>
+            e.exerciseId === exerciseId
+              ? { ...e, successCount: e.successCount + 1, lastReviewedAt: new Date().toISOString() }
+              : e
+          ).filter(e =>
+            // Remove from review queue after 2 consecutive successes
+            !(e.exerciseId === exerciseId && e.successCount >= 2)
+          )
+        })
+      },
+      removeFromReview: (exerciseId) => {
+        set({
+          failedExercises: get().failedExercises.filter(e => e.exerciseId !== exerciseId)
+        })
+      },
+      clearReviewQueue: () => {
+        set({ failedExercises: [] })
+      },
+
       // Reset all progress
       resetProgress: () => set({
         scores: { listening: 0, reading: 0, writing: 0, speaking: 0, lastUpdated: null },
@@ -149,7 +210,8 @@ const useStore = create(
         readingProgress: { completed: [], scores: {} },
         writingProgress: [],
         listeningProgress: { completed: [], scores: {} },
-        lastActivity: { grammarTopic: null, vocabularySet: null, readingPassage: null, listeningExercise: null, writingTask: null }
+        lastActivity: { grammarTopic: null, vocabularySet: null, readingPassage: null, listeningExercise: null, writingTask: null },
+        failedExercises: []
       })
     }),
     {

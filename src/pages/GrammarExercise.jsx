@@ -8,7 +8,7 @@ import grammarData from '../data/grammar.json'
 function GrammarExercise() {
   const { topicId } = useParams()
   const navigate = useNavigate()
-  const { updateGrammarProgress, setLastActivity } = useStore()
+  const { updateGrammarProgress, setLastActivity, recordFailedExercise } = useStore()
 
   const topic = grammarData[topicId]
   const exercises = topic?.exercises || []
@@ -90,6 +90,19 @@ function GrammarExercise() {
       result = 'correctRetry'
     }
     updateGrammarProgress(topicId, result)
+
+    // Record failed exercises for Review Mode (spaced repetition)
+    if (result === 'incorrect') {
+      recordFailedExercise(currentExercise.id, topicId, {
+        id: currentExercise.id,
+        type: currentExercise.type,
+        instruction: currentExercise.instruction,
+        question: currentExercise.question,
+        options: currentExercise.options,
+        answer: currentExercise.answer,
+        explanation: currentExercise.explanation
+      })
+    }
 
     if (currentIndex < exercises.length - 1) {
       setCurrentIndex(currentIndex + 1)

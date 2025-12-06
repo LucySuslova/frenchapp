@@ -13,6 +13,7 @@ import ListeningIndex from './pages/ListeningIndex'
 import ListeningExercise from './pages/ListeningExercise'
 import Dashboard from './pages/Dashboard'
 import CLBTable from './pages/CLBTable'
+import ReviewMode from './pages/ReviewMode'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="listening/:exerciseId" element={<ListeningExercise />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="clb-table" element={<CLBTable />} />
+          <Route path="review" element={<ReviewMode />} />
         </Route>
       </Routes>
     </BrowserRouter>

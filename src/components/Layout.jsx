@@ -10,11 +10,13 @@ import {
   BarChart3,
   Table,
   Menu,
-  X
+  X,
+  RefreshCw
 } from 'lucide-react'
 
 const navItems = [
   { to: '/', icon: Home, label: 'Home' },
+  { to: '/review', icon: RefreshCw, label: 'Review Mode' },
   { to: '/grammar', icon: BookOpen, label: 'Grammar' },
   { to: '/vocabulary', icon: Languages, label: 'Vocabulary' },
   { to: '/reading', icon: FileText, label: 'Reading' },

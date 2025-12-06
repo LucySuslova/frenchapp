@@ -9,7 +9,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Je (être) ___ étudiant.",
         "answer": "suis",
-        "explanation": "Être: je suis, tu es, il est, nous sommes, vous êtes, ils sont"
+        "explanation": "Être: je suis, tu es, il est, nous sommes, vous êtes, ils sont",
+        "explanationFr": "Le verbe « être » est irrégulier. Conjugaison : je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont."
       },
       {
         "id": "pr_002",
@@ -17,7 +18,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Nous (avoir) ___ beaucoup de travail.",
         "answer": "avons",
-        "explanation": "Avoir: j'ai, tu as, il a, nous avons, vous avez, ils ont"
+        "explanation": "Avoir: j'ai, tu as, il a, nous avons, vous avez, ils ont",
+        "explanationFr": "Le verbe « avoir » est irrégulier. Conjugaison : j'ai, tu as, il/elle a, nous avons, vous avez, ils/elles ont."
       },
       {
         "id": "pr_003",
@@ -26,7 +28,8 @@
         "question": "Vous ___ français très bien.",
         "options": ["parle", "parles", "parlez", "parlent"],
         "answer": "parlez",
-        "explanation": "Avec 'vous', -er verbs end in -ez"
+        "explanation": "Avec 'vous', -er verbs end in -ez",
+        "explanationFr": "Avec « vous », les verbes en -er se terminent par -ez. Parler → vous parlez."
       },
       {
         "id": "pr_004",
@@ -34,7 +37,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Ils (faire) ___ du sport le matin.",
         "answer": "font",
-        "explanation": "Faire: je fais, tu fais, il fait, nous faisons, vous faites, ils font"
+        "explanation": "Faire: je fais, tu fais, il fait, nous faisons, vous faites, ils font",
+        "explanationFr": "Le verbe « faire » est irrégulier. Conjugaison : je fais, tu fais, il/elle fait, nous faisons, vous faites, ils/elles font."
       },
       {
         "id": "pr_005",
@@ -42,7 +46,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Elle (pouvoir) ___ parler trois langues.",
         "answer": "peut",
-        "explanation": "Pouvoir: je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent"
+        "explanation": "Pouvoir: je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent",
+        "explanationFr": "Le verbe « pouvoir » est irrégulier. Conjugaison : je peux, tu peux, il/elle peut, nous pouvons, vous pouvez, ils/elles peuvent."
       },
       {
         "id": "pr_006",
@@ -51,7 +56,8 @@
         "question": "Je ___ mes clés partout.",
         "options": ["cherche", "cherches", "cherchez", "cherchent"],
         "answer": "cherche",
-        "explanation": "Avec 'je', -er verbs end in -e"
+        "explanation": "Avec 'je', -er verbs end in -e",
+        "explanationFr": "Avec « je », les verbes en -er se terminent par -e. Chercher → je cherche."
       },
       {
         "id": "pr_007",
@@ -59,7 +65,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Tu (aller) ___ au marché.",
         "answer": "vas",
-        "explanation": "Aller: je vais, tu vas, il va, nous allons, vous allez, ils vont"
+        "explanation": "Aller: je vais, tu vas, il va, nous allons, vous allez, ils vont",
+        "explanationFr": "Le verbe « aller » est irrégulier. Conjugaison : je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont."
       },
       {
         "id": "pr_008",
@@ -67,7 +74,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Nous (venir) ___ de France.",
         "answer": "venons",
-        "explanation": "Venir: je viens, tu viens, il vient, nous venons, vous venez, ils viennent"
+        "explanation": "Venir: je viens, tu viens, il vient, nous venons, vous venez, ils viennent",
+        "explanationFr": "Le verbe « venir » est irrégulier. Conjugaison : je viens, tu viens, il/elle vient, nous venons, vous venez, ils/elles viennent."
       },
       {
         "id": "pr_009",
@@ -76,7 +84,8 @@
         "question": "Les enfants ___ dans le jardin.",
         "options": ["joue", "joues", "jouez", "jouent"],
         "answer": "jouent",
-        "explanation": "Avec 'ils/elles', -er verbs end in -ent"
+        "explanation": "Avec 'ils/elles', -er verbs end in -ent",
+        "explanationFr": "Avec « ils/elles », les verbes en -er se terminent par -ent. Jouer → ils/elles jouent."
       },
       {
         "id": "pr_010",
@@ -84,7 +93,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Je (vouloir) ___ apprendre le japonais.",
         "answer": "veux",
-        "explanation": "Vouloir: je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent"
+        "explanation": "Vouloir: je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent",
+        "explanationFr": "Le verbe « vouloir » est irrégulier. Conjugaison : je veux, tu veux, il/elle veut, nous voulons, vous voulez, ils/elles veulent."
       },
       {
         "id": "pr_011",
@@ -92,7 +102,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Elle (prendre) ___ le bus tous les jours.",
         "answer": "prend",
-        "explanation": "Prendre: je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent"
+        "explanation": "Prendre: je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent",
+        "explanationFr": "Le verbe « prendre » est irrégulier. Conjugaison : je prends, tu prends, il/elle prend, nous prenons, vous prenez, ils/elles prennent."
       },
       {
         "id": "pr_012",
@@ -101,7 +112,8 @@
         "question": "Nous ___ à la campagne.",
         "options": ["habite", "habites", "habitons", "habitent"],
         "answer": "habitons",
-        "explanation": "Avec 'nous', -er verbs end in -ons"
+        "explanation": "Avec 'nous', -er verbs end in -ons",
+        "explanationFr": "Avec « nous », les verbes en -er se terminent par -ons. Habiter → nous habitons."
       },
       {
         "id": "pr_013",
@@ -109,7 +121,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Tu (devoir) ___ finir tes devoirs.",
         "answer": "dois",
-        "explanation": "Devoir: je dois, tu dois, il doit, nous devons, vous devez, ils doivent"
+        "explanation": "Devoir: je dois, tu dois, il doit, nous devons, vous devez, ils doivent",
+        "explanationFr": "Le verbe « devoir » est irrégulier. Conjugaison : je dois, tu dois, il/elle doit, nous devons, vous devez, ils/elles doivent."
       },
       {
         "id": "pr_014",
@@ -117,7 +130,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Ils (savoir) ___ nager.",
         "answer": "savent",
-        "explanation": "Savoir: je sais, tu sais, il sait, nous savons, vous savez, ils savent"
+        "explanation": "Savoir: je sais, tu sais, il sait, nous savons, vous savez, ils savent",
+        "explanationFr": "Le verbe « savoir » est irrégulier. Conjugaison : je sais, tu sais, il/elle sait, nous savons, vous savez, ils/elles savent."
       },
       {
         "id": "pr_015",
@@ -126,7 +140,8 @@
         "question": "Tu ___ trop vite.",
         "options": ["conduis", "conduit", "conduisons", "conduisent"],
         "answer": "conduis",
-        "explanation": "Conduire: je conduis, tu conduis, il conduit, nous conduisons, vous conduisez, ils conduisent"
+        "explanation": "Conduire: je conduis, tu conduis, il conduit, nous conduisons, vous conduisez, ils conduisent",
+        "explanationFr": "Le verbe « conduire » se conjugue : je conduis, tu conduis, il/elle conduit, nous conduisons, vous conduisez, ils/elles conduisent."
       },
       {
         "id": "pr_016",
@@ -134,7 +149,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Je (dire) ___ toujours la vérité.",
         "answer": "dis",
-        "explanation": "Dire: je dis, tu dis, il dit, nous disons, vous dites, ils disent"
+        "explanation": "Dire: je dis, tu dis, il dit, nous disons, vous dites, ils disent",
+        "explanationFr": "Le verbe « dire » est irrégulier. Conjugaison : je dis, tu dis, il/elle dit, nous disons, vous dites, ils/elles disent."
       },
       {
         "id": "pr_017",
@@ -142,7 +158,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Vous (écrire) ___ un roman.",
         "answer": "écrivez",
-        "explanation": "Écrire: j'écris, tu écris, il écrit, nous écrivons, vous écrivez, ils écrivent"
+        "explanation": "Écrire: j'écris, tu écris, il écrit, nous écrivons, vous écrivez, ils écrivent",
+        "explanationFr": "Le verbe « écrire » se conjugue : j'écris, tu écris, il/elle écrit, nous écrivons, vous écrivez, ils/elles écrivent."
       },
       {
         "id": "pr_018",
@@ -151,7 +168,8 @@
         "question": "Il ___ dans un restaurant.",
         "options": ["travaille", "travailles", "travaillons", "travaillent"],
         "answer": "travaille",
-        "explanation": "Avec 'il/elle', -er verbs end in -e"
+        "explanation": "Avec 'il/elle', -er verbs end in -e",
+        "explanationFr": "Avec « il/elle », les verbes en -er se terminent par -e. Travailler → il/elle travaille."
       },
       {
         "id": "pr_019",
@@ -159,7 +177,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Nous (lire) ___ le journal le matin.",
         "answer": "lisons",
-        "explanation": "Lire: je lis, tu lis, il lit, nous lisons, vous lisez, ils lisent"
+        "explanation": "Lire: je lis, tu lis, il lit, nous lisons, vous lisez, ils lisent",
+        "explanationFr": "Le verbe « lire » se conjugue : je lis, tu lis, il/elle lit, nous lisons, vous lisez, ils/elles lisent."
       },
       {
         "id": "pr_020",
@@ -167,7 +186,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Elles (partir) ___ en vacances demain.",
         "answer": "partent",
-        "explanation": "Partir: je pars, tu pars, il part, nous partons, vous partez, ils partent"
+        "explanation": "Partir: je pars, tu pars, il part, nous partons, vous partez, ils partent",
+        "explanationFr": "Le verbe « partir » se conjugue : je pars, tu pars, il/elle part, nous partons, vous partez, ils/elles partent."
       }
     ]
   },
@@ -181,7 +201,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "J'(manger) ___ une pomme.",
         "answer": "ai mangé",
-        "explanation": "Manger uses avoir: j'ai mangé. Regular -er verbs form past participle with -é"
+        "explanation": "Manger uses avoir: j'ai mangé. Regular -er verbs form past participle with -é",
+        "explanationFr": "« Manger » se conjugue avec l'auxiliaire « avoir ». Les verbes en -er forment le participe passé avec -é."
       },
       {
         "id": "pc_002",
@@ -189,7 +210,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Elle (aller) ___ au cinéma.",
         "answer": "est allée",
-        "explanation": "Aller uses être and agrees with subject. Elle → est allée (feminine)"
+        "explanation": "Aller uses être and agrees with subject. Elle → est allée (feminine)",
+        "explanationFr": "« Aller » se conjugue avec « être ». Le participe passé s'accorde avec le sujet. Elle → est allée (féminin)."
       },
       {
         "id": "pc_003",
@@ -198,7 +220,8 @@
         "question": "Nous ___ nos devoirs.",
         "options": ["avons fait", "sommes fait", "avons faits", "sommes faits"],
         "answer": "avons fait",
-        "explanation": "Faire uses avoir. With avoir, past participle doesn't agree with subject."
+        "explanation": "Faire uses avoir. With avoir, past participle doesn't agree with subject.",
+        "explanationFr": "« Faire » se conjugue avec « avoir ». Avec « avoir », le participe passé ne s'accorde pas avec le sujet."
       },
       {
         "id": "pc_004",
@@ -206,7 +229,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Ils (partir) ___ tôt ce matin.",
         "answer": "sont partis",
-        "explanation": "Partir uses être. Ils → sont partis (masculine plural agreement)"
+        "explanation": "Partir uses être. Ils → sont partis (masculine plural agreement)",
+        "explanationFr": "« Partir » se conjugue avec « être ». Le participe passé s'accorde : ils → sont partis (masculin pluriel)."
       },
       {
         "id": "pc_005",
@@ -214,7 +238,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Tu (voir) ___ ce film?",
         "answer": "as vu",
-        "explanation": "Voir uses avoir: tu as vu. Past participle: vu"
+        "explanation": "Voir uses avoir: tu as vu. Past participle: vu",
+        "explanationFr": "« Voir » se conjugue avec « avoir » : tu as vu. Participe passé : vu."
       },
       {
         "id": "pc_006",
@@ -223,7 +248,8 @@
         "question": "Marie ___ à la maison.",
         "options": ["a resté", "est resté", "a restée", "est restée"],
         "answer": "est restée",
-        "explanation": "Rester uses être. Marie (feminine) → est restée"
+        "explanation": "Rester uses être. Marie (feminine) → est restée",
+        "explanationFr": "« Rester » se conjugue avec « être ». Marie (féminin) → est restée."
       },
       {
         "id": "pc_007",
@@ -231,7 +257,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Vous (finir) ___ votre travail?",
         "answer": "avez fini",
-        "explanation": "Finir uses avoir: vous avez fini. Regular -ir verbs form past participle with -i"
+        "explanation": "Finir uses avoir: vous avez fini. Regular -ir verbs form past participle with -i",
+        "explanationFr": "« Finir » se conjugue avec « avoir ». Les verbes en -ir forment le participe passé avec -i."
       },
       {
         "id": "pc_008",
@@ -239,7 +266,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Les filles (venir) ___ hier soir.",
         "answer": "sont venues",
-        "explanation": "Venir uses être. Les filles (feminine plural) → sont venues"
+        "explanation": "Venir uses être. Les filles (feminine plural) → sont venues",
+        "explanationFr": "« Venir » se conjugue avec « être ». Les filles (féminin pluriel) → sont venues."
       },
       {
         "id": "pc_009",
@@ -248,7 +276,8 @@
         "question": "Il ___ pendant deux heures.",
         "options": ["a dormi", "est dormi", "a dormis", "est dormis"],
         "answer": "a dormi",
-        "explanation": "Dormir uses avoir: il a dormi"
+        "explanation": "Dormir uses avoir: il a dormi",
+        "explanationFr": "« Dormir » se conjugue avec « avoir » : il a dormi."
       },
       {
         "id": "pc_010",
@@ -256,7 +285,8 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Nous (naître) ___ en France.",
         "answer": "sommes nés",
-        "explanation": "Naître uses être. Nous (assuming mixed/masculine) → sommes nés"
+        "explanation": "Naître uses être. Nous (assuming mixed/masculine) → sommes nés",
+        "explanationFr": "« Naître » se conjugue avec « être ». Nous → sommes nés (accord au masculin pluriel)."
       },
       {
         "id": "pc_011",

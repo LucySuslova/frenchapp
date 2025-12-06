@@ -202,6 +202,19 @@ const useStore = create(
         set({ failedExercises: [] })
       },
 
+      // Settings
+      settings: {
+        explanationsInFrench: false
+      },
+      updateSettings: (newSettings) => {
+        set({
+          settings: {
+            ...get().settings,
+            ...newSettings
+          }
+        })
+      },
+
       // Reset all progress
       resetProgress: () => set({
         scores: { listening: 0, reading: 0, writing: 0, speaking: 0, lastUpdated: null },

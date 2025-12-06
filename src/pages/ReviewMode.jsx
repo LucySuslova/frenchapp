@@ -11,7 +11,8 @@ function ReviewMode() {
     grammarProgress,
     failedExercises,
     recordFailedExercise,
-    recordReviewSuccess
+    recordReviewSuccess,
+    settings
   } = useStore()
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -268,7 +269,8 @@ function ReviewMode() {
         question: currentExercise.question,
         options: currentExercise.options,
         answer: currentExercise.answer,
-        explanation: currentExercise.explanation
+        explanation: currentExercise.explanation,
+        explanationFr: currentExercise.explanationFr
       })
     }
 
@@ -411,10 +413,14 @@ function ReviewMode() {
             </div>
             <div className="space-y-2">
               <p className="text-ink">
-                <span className="text-ink-light">Answer: </span>
+                <span className="text-ink-light">{settings.explanationsInFrench ? 'Réponse : ' : 'Answer: '}</span>
                 <span className="font-medium">{currentExercise.answer}</span>
               </p>
-              <p className="text-ink-light text-sm">{currentExercise.explanation}</p>
+              <p className="text-ink-light text-sm">
+                {settings.explanationsInFrench && currentExercise.explanationFr
+                  ? currentExercise.explanationFr
+                  : currentExercise.explanation}
+              </p>
             </div>
           </div>
         )}

@@ -41,6 +41,26 @@ const useStore = create(
         })
       },
 
+      // Grammar Session State (for continuing where user left off)
+      grammarSessions: {},
+      updateGrammarSession: (topicId, currentIndex, shuffledOrder = null) => {
+        set({
+          grammarSessions: {
+            ...get().grammarSessions,
+            [topicId]: {
+              currentIndex,
+              shuffledOrder,
+              lastUpdated: new Date().toISOString()
+            }
+          }
+        })
+      },
+      clearGrammarSession: (topicId) => {
+        const sessions = { ...get().grammarSessions }
+        delete sessions[topicId]
+        set({ grammarSessions: sessions })
+      },
+
       // Vocabulary Progress
       vocabularyProgress: {
         mastered: [],
@@ -219,6 +239,7 @@ const useStore = create(
       resetProgress: () => set({
         scores: { listening: 0, reading: 0, writing: 0, speaking: 0, lastUpdated: null },
         grammarProgress: {},
+        grammarSessions: {},
         vocabularyProgress: { mastered: [], needsReview: [], attempts: {} },
         readingProgress: { completed: [], scores: {} },
         writingProgress: [],

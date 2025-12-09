@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { ArrowLeft, Check, X, RotateCcw, ArrowRight } from 'lucide-react'
+import { ArrowLeft, Check, X, ArrowRight, Lightbulb } from 'lucide-react'
 import useStore from '../store/useStore'
 import { FrenchKeyboard } from '../components/FrenchKeyboard'
 import vocabularyData from '../data/vocabulary.json'
@@ -17,6 +17,8 @@ function VocabularySet() {
   const [showResult, setShowResult] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [mode, setMode] = useState('translate') // 'translate' or 'fill'
+  const [showHint, setShowHint] = useState(false)
+  const [hintLevel, setHintLevel] = useState(0)
 
   const inputRef = useRef(null)
   const currentItem = items[currentIndex]
@@ -29,9 +31,42 @@ function VocabularySet() {
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
+    setShowHint(false)
+    setHintLevel(0)
     // Randomize mode
     setMode(Math.random() > 0.5 ? 'translate' : 'fill')
   }, [currentIndex])
+
+  // Generate progressive hints for vocabulary
+  const getHint = () => {
+    const answer = currentItem.french
+
+    if (hintLevel === 0) {
+      return `${answer.length} characters`
+    } else if (hintLevel === 1) {
+      return `Starts with "${answer[0]}"`
+    } else if (hintLevel === 2) {
+      // Show first and last letter
+      if (answer.length > 2) {
+        return `${answer[0]}${'_'.repeat(answer.length - 2)}${answer[answer.length - 1]}`
+      }
+      return `${answer[0]}_`
+    } else {
+      // Show every other letter
+      return answer.split('').map((char, i) => {
+        if (char === ' ') return ' '
+        return i % 2 === 0 ? char : '_'
+      }).join('')
+    }
+  }
+
+  const handleShowHint = () => {
+    if (!showHint) {
+      setShowHint(true)
+    } else {
+      setHintLevel(prev => Math.min(prev + 1, 3))
+    }
+  }
 
   if (!vocabSet || items.length === 0) {
     return (
@@ -46,9 +81,7 @@ function VocabularySet() {
 
   const checkAnswer = () => {
     const answer = userAnswer.trim().toLowerCase()
-    const correct = mode === 'translate'
-      ? currentItem.french.toLowerCase()
-      : currentItem.french.toLowerCase()
+    const correct = currentItem.french.toLowerCase()
 
     // Allow some flexibility in answers
     const isMatch = answer === correct ||
@@ -111,15 +144,17 @@ function VocabularySet() {
         )}
 
         {mode === 'translate' ? (
-          <>
+          <div className="space-y-2">
             <p className="text-ink-light">Translate to French:</p>
-            <p className="text-2xl font-display text-ink">{currentItem.english}</p>
+            <div className="bg-sand/50 p-4 rounded-lg">
+              <p className="text-2xl font-display text-ink">{currentItem.english}</p>
+            </div>
             {currentItem.category && (
               <span className="inline-block text-xs bg-sand px-2 py-1 rounded text-ink-light">
                 {currentItem.category}
               </span>
             )}
-          </>
+          </div>
         ) : (
           <>
             <p className="text-ink-light">Complete the sentence with the correct word:</p>
@@ -134,11 +169,29 @@ function VocabularySet() {
           onChange={(e) => setUserAnswer(e.target.value)}
           onKeyPress={handleKeyPress}
           disabled={showResult}
-          placeholder="Type your answer..."
+          placeholder="Type the French word..."
           className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:border-bamboo focus:ring-1 focus:ring-bamboo outline-none transition-colors disabled:bg-sand"
         />
 
         <FrenchKeyboard inputRef={inputRef} />
+
+        {/* Hint section */}
+        {!showResult && (
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              onClick={handleShowHint}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-gold/20 text-gold hover:bg-gold/30 transition-colors"
+            >
+              <Lightbulb size={16} />
+              {showHint ? 'More Hints' : 'Show Hint'}
+            </button>
+            {showHint && (
+              <span className="text-sm text-ink-light italic">
+                Hint: {getHint()}
+              </span>
+            )}
+          </div>
+        )}
 
         {/* Result */}
         {showResult && (

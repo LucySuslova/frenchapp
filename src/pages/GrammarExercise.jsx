@@ -8,7 +8,7 @@ import grammarData from '../data/grammar.json'
 function GrammarExercise() {
   const { topicId } = useParams()
   const navigate = useNavigate()
-  const { updateGrammarProgress, setLastActivity, recordFailedExercise } = useStore()
+  const { updateGrammarProgress, setLastActivity, recordFailedExercise, settings } = useStore()
 
   const topic = grammarData[topicId]
   const exercises = topic?.exercises || []
@@ -224,7 +224,11 @@ function GrammarExercise() {
                   <span className="text-ink-light">Answer: </span>
                   <span className="font-medium">{currentExercise.answer}</span>
                 </p>
-                <p className="text-ink-light text-sm">{currentExercise.explanation}</p>
+                <p className="text-ink-light text-sm">
+                  {settings.explainInFrench && currentExercise.explanationFr
+                    ? currentExercise.explanationFr
+                    : currentExercise.explanation}
+                </p>
               </div>
             )}
           </div>

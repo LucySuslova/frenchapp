@@ -1,9 +1,12 @@
 import { useRef, useEffect, useState } from 'react'
+import { ArrowBigUp } from 'lucide-react'
 
-const FRENCH_CHARS = ['é', 'è', 'ê', 'ë', 'à', 'â', 'ù', 'û', 'ô', 'î', 'ï', 'ç', 'œ', 'æ', '«', '»']
+const FRENCH_CHARS_LOWER = ['é', 'è', 'ê', 'ë', 'à', 'â', 'ù', 'û', 'ô', 'î', 'ï', 'ç', 'œ', 'æ', '«', '»']
+const FRENCH_CHARS_UPPER = ['É', 'È', 'Ê', 'Ë', 'À', 'Â', 'Ù', 'Û', 'Ô', 'Î', 'Ï', 'Ç', 'Œ', 'Æ', '«', '»']
 
 function FrenchKeyboard({ inputRef, onInsert }) {
   const [visible, setVisible] = useState(false)
+  const [isUpperCase, setIsUpperCase] = useState(false)
 
   useEffect(() => {
     const handleFocus = () => setVisible(true)
@@ -44,22 +47,42 @@ function FrenchKeyboard({ inputRef, onInsert }) {
     }
   }
 
+  const toggleCase = () => {
+    setIsUpperCase(!isUpperCase)
+  }
+
+  const chars = isUpperCase ? FRENCH_CHARS_UPPER : FRENCH_CHARS_LOWER
+
   if (!visible) return null
 
   return (
-    <div className="french-keyboard fixed bottom-0 left-0 right-0 bg-white border-t border-border p-2 z-50 shadow-lg">
-      <div className="flex flex-wrap justify-center gap-1 max-w-lg mx-auto">
-        {FRENCH_CHARS.map((char) => (
+    <div className="french-keyboard fixed right-4 top-1/2 -translate-y-1/2 bg-white border border-border p-3 z-50 shadow-lg rounded-xl">
+      <div className="grid grid-cols-4 gap-1.5 w-44">
+        {chars.map((char, index) => (
           <button
-            key={char}
+            key={`${char}-${index}`}
             type="button"
             onMouseDown={(e) => e.preventDefault()}
             onClick={() => insertChar(char)}
-            className="w-9 h-9 bg-sand hover:bg-bamboo hover:text-white rounded-lg font-medium text-ink transition-colors"
+            className="w-10 h-10 bg-sand hover:bg-bamboo hover:text-white rounded-lg font-medium text-ink transition-colors text-lg"
           >
             {char}
           </button>
         ))}
+        <button
+          type="button"
+          onMouseDown={(e) => e.preventDefault()}
+          onClick={toggleCase}
+          className={`col-span-4 h-10 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 ${
+            isUpperCase
+              ? 'bg-bamboo text-white'
+              : 'bg-sand hover:bg-bamboo hover:text-white text-ink'
+          }`}
+          title={isUpperCase ? 'Switch to lowercase' : 'Switch to uppercase'}
+        >
+          <ArrowBigUp size={20} className={isUpperCase ? 'fill-current' : ''} />
+          <span className="text-sm">{isUpperCase ? 'ABC' : 'abc'}</span>
+        </button>
       </div>
     </div>
   )

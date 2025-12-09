@@ -3,6 +3,21 @@ import { TrendingUp, AlertTriangle, Target, BookOpen, Languages, FileText, Headp
 import useStore from '../store/useStore'
 import grammarData from '../data/grammar.json'
 
+// NCLC 7 thresholds (minimum scores to achieve NCLC 7)
+const NCLC7_THRESHOLDS = {
+  listening: 458,  // 458-502 is NCLC 7
+  reading: 453,    // 453-498 is NCLC 7
+  writing: 10,     // 10-11 is NCLC 7
+  speaking: 10     // 10-11 is NCLC 7
+}
+
+// Check if a score meets NCLC 7 threshold
+const meetsNCLC7 = (type, score) => {
+  if (!score) return null
+  const numScore = parseInt(score)
+  return numScore >= NCLC7_THRESHOLDS[type]
+}
+
 function Dashboard() {
   const {
     scores,
@@ -69,25 +84,89 @@ function Dashboard() {
             Your TCF Scores
           </h2>
           <div className="grid grid-cols-2 gap-4">
-            <div className="text-center p-3 bg-sand rounded-lg">
-              <p className="text-2xl font-bold text-ink">{scores.listening}</p>
+            <div className={`text-center p-3 rounded-lg ${
+              meetsNCLC7('listening', scores.listening) === true
+                ? 'bg-green-100 border border-green-300'
+                : meetsNCLC7('listening', scores.listening) === false
+                  ? 'bg-red-100 border border-red-300'
+                  : 'bg-sand'
+            }`}>
+              <p className={`text-2xl font-bold ${
+                meetsNCLC7('listening', scores.listening) === true
+                  ? 'text-green-700'
+                  : meetsNCLC7('listening', scores.listening) === false
+                    ? 'text-red-700'
+                    : 'text-ink'
+              }`}>{scores.listening}</p>
               <p className="text-sm text-ink-light">Listening</p>
-              <p className="text-xs text-bamboo">Target: 458+</p>
+              <p className={`text-xs ${
+                meetsNCLC7('listening', scores.listening) === true
+                  ? 'text-green-600'
+                  : 'text-bamboo'
+              }`}>Target: 458+</p>
             </div>
-            <div className="text-center p-3 bg-sand rounded-lg">
-              <p className="text-2xl font-bold text-ink">{scores.reading}</p>
+            <div className={`text-center p-3 rounded-lg ${
+              meetsNCLC7('reading', scores.reading) === true
+                ? 'bg-green-100 border border-green-300'
+                : meetsNCLC7('reading', scores.reading) === false
+                  ? 'bg-red-100 border border-red-300'
+                  : 'bg-sand'
+            }`}>
+              <p className={`text-2xl font-bold ${
+                meetsNCLC7('reading', scores.reading) === true
+                  ? 'text-green-700'
+                  : meetsNCLC7('reading', scores.reading) === false
+                    ? 'text-red-700'
+                    : 'text-ink'
+              }`}>{scores.reading}</p>
               <p className="text-sm text-ink-light">Reading</p>
-              <p className="text-xs text-bamboo">Target: 453+</p>
+              <p className={`text-xs ${
+                meetsNCLC7('reading', scores.reading) === true
+                  ? 'text-green-600'
+                  : 'text-bamboo'
+              }`}>Target: 453+</p>
             </div>
-            <div className="text-center p-3 bg-sand rounded-lg">
-              <p className="text-2xl font-bold text-ink">{scores.writing}</p>
+            <div className={`text-center p-3 rounded-lg ${
+              meetsNCLC7('writing', scores.writing) === true
+                ? 'bg-green-100 border border-green-300'
+                : meetsNCLC7('writing', scores.writing) === false
+                  ? 'bg-red-100 border border-red-300'
+                  : 'bg-sand'
+            }`}>
+              <p className={`text-2xl font-bold ${
+                meetsNCLC7('writing', scores.writing) === true
+                  ? 'text-green-700'
+                  : meetsNCLC7('writing', scores.writing) === false
+                    ? 'text-red-700'
+                    : 'text-ink'
+              }`}>{scores.writing}</p>
               <p className="text-sm text-ink-light">Writing</p>
-              <p className="text-xs text-bamboo">Target: 10+</p>
+              <p className={`text-xs ${
+                meetsNCLC7('writing', scores.writing) === true
+                  ? 'text-green-600'
+                  : 'text-bamboo'
+              }`}>Target: 10+</p>
             </div>
-            <div className="text-center p-3 bg-sand rounded-lg">
-              <p className="text-2xl font-bold text-ink">{scores.speaking}</p>
+            <div className={`text-center p-3 rounded-lg ${
+              meetsNCLC7('speaking', scores.speaking) === true
+                ? 'bg-green-100 border border-green-300'
+                : meetsNCLC7('speaking', scores.speaking) === false
+                  ? 'bg-red-100 border border-red-300'
+                  : 'bg-sand'
+            }`}>
+              <p className={`text-2xl font-bold ${
+                meetsNCLC7('speaking', scores.speaking) === true
+                  ? 'text-green-700'
+                  : meetsNCLC7('speaking', scores.speaking) === false
+                    ? 'text-red-700'
+                    : 'text-ink'
+              }`}>{scores.speaking}</p>
               <p className="text-sm text-ink-light">Speaking</p>
-              <p className="text-xs text-bamboo">Target: 10+</p>
+              <p className={`text-xs ${
+                meetsNCLC7('speaking', scores.speaking) === true
+                  ? 'text-green-600'
+                  : 'text-bamboo'
+              }`}>Target: 10+</p>
             </div>
           </div>
           <p className="text-xs text-ink-light mt-3 text-center">

@@ -1,29 +1,71 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { ArrowLeft, Check, X, RotateCcw, ArrowRight } from 'lucide-react'
+import { ArrowLeft, Check, X, ArrowRight, Shuffle, RotateCcw, Lightbulb } from 'lucide-react'
 import useStore from '../store/useStore'
 import { FrenchKeyboard } from '../components/FrenchKeyboard'
 import grammarData from '../data/grammar.json'
 
+// Fisher-Yates shuffle
+const shuffleArray = (array) => {
+  const shuffled = [...array]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  return shuffled
+}
+
 function GrammarExercise() {
   const { topicId } = useParams()
   const navigate = useNavigate()
-  const { updateGrammarProgress, setLastActivity, recordFailedExercise, settings } = useStore()
+  const {
+    updateGrammarProgress,
+    setLastActivity,
+    recordFailedExercise,
+    settings,
+    grammarSessions,
+    updateGrammarSession,
+    clearGrammarSession
+  } = useStore()
 
   const topic = grammarData[topicId]
   const exercises = topic?.exercises || []
 
-  const [currentIndex, setCurrentIndex] = useState(0)
+  // Get saved session or initialize
+  const savedSession = grammarSessions[topicId]
+
+  const [isShuffled, setIsShuffled] = useState(savedSession?.shuffledOrder !== null)
+  const [exerciseOrder, setExerciseOrder] = useState(() => {
+    if (savedSession?.shuffledOrder) {
+      return savedSession.shuffledOrder
+    }
+    return exercises.map((_, i) => i)
+  })
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    if (savedSession?.currentIndex !== undefined && savedSession.currentIndex < exercises.length) {
+      return savedSession.currentIndex
+    }
+    return 0
+  })
   const [userAnswer, setUserAnswer] = useState('')
   const [selectedOption, setSelectedOption] = useState(null)
   const [showResult, setShowResult] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
-  const [hasRetried, setHasRetried] = useState(false)
-  const [wasCorrectFirst, setWasCorrectFirst] = useState(false)
+  const [showHint, setShowHint] = useState(false)
+  const [hintLevel, setHintLevel] = useState(0)
 
   const inputRef = useRef(null)
 
-  const currentExercise = exercises[currentIndex]
+  // Get current exercise based on order
+  const currentExerciseIndex = exerciseOrder[currentIndex]
+  const currentExercise = exercises[currentExerciseIndex]
+
+  // Save session when index or order changes
+  useEffect(() => {
+    if (exercises.length > 0) {
+      updateGrammarSession(topicId, currentIndex, isShuffled ? exerciseOrder : null)
+    }
+  }, [currentIndex, exerciseOrder, isShuffled, topicId, exercises.length])
 
   useEffect(() => {
     setLastActivity('grammarTopic', topicId)
@@ -35,9 +77,60 @@ function GrammarExercise() {
     setSelectedOption(null)
     setShowResult(false)
     setIsCorrect(false)
-    setHasRetried(false)
-    setWasCorrectFirst(false)
+    setShowHint(false)
+    setHintLevel(0)
   }, [currentIndex])
+
+  // Generate progressive hints for translation exercises
+  const getHint = () => {
+    const answer = currentExercise.answer
+    const hints = currentExercise.hints || []
+
+    if (hints.length > 0 && hintLevel < hints.length) {
+      return hints[hintLevel]
+    }
+
+    // Generate automatic hints based on answer
+    if (hintLevel === 0) {
+      return `${answer.length} characters`
+    } else if (hintLevel === 1) {
+      return `Starts with "${answer[0]}"`
+    } else if (hintLevel === 2) {
+      // Show first and last letter
+      return `${answer[0]}${'_'.repeat(answer.length - 2)}${answer[answer.length - 1]}`
+    } else {
+      // Show every other letter
+      return answer.split('').map((char, i) => i % 2 === 0 ? char : '_').join('')
+    }
+  }
+
+  const handleShowHint = () => {
+    if (!showHint) {
+      setShowHint(true)
+    } else {
+      setHintLevel(prev => prev + 1)
+    }
+  }
+
+  const handleShuffle = () => {
+    if (isShuffled) {
+      // Reset to sequential order
+      setExerciseOrder(exercises.map((_, i) => i))
+      setIsShuffled(false)
+    } else {
+      // Shuffle exercises
+      const shuffled = shuffleArray(exercises.map((_, i) => i))
+      setExerciseOrder(shuffled)
+      setIsShuffled(true)
+    }
+    // Reset to beginning when toggling shuffle
+    setCurrentIndex(0)
+  }
+
+  const handleRestart = () => {
+    setCurrentIndex(0)
+    clearGrammarSession(topicId)
+  }
 
   if (!topic) {
     return (
@@ -68,27 +161,11 @@ function GrammarExercise() {
 
     setIsCorrect(isMatch)
     setShowResult(true)
-
-    if (isMatch && !hasRetried) {
-      setWasCorrectFirst(true)
-    }
-  }
-
-  const handleRetry = () => {
-    setShowResult(false)
-    setUserAnswer('')
-    setSelectedOption(null)
-    setHasRetried(true)
   }
 
   const handleNext = () => {
-    // Record progress
-    let result = 'incorrect'
-    if (isCorrect && wasCorrectFirst) {
-      result = 'correctFirst'
-    } else if (isCorrect) {
-      result = 'correctRetry'
-    }
+    // Record progress - no retry, so correct means correctFirst
+    const result = isCorrect ? 'correctFirst' : 'incorrect'
     updateGrammarProgress(topicId, result)
 
     // Record failed exercises for Review Mode (spaced repetition)
@@ -100,13 +177,16 @@ function GrammarExercise() {
         question: currentExercise.question,
         options: currentExercise.options,
         answer: currentExercise.answer,
-        explanation: currentExercise.explanation
+        explanation: currentExercise.explanation,
+        explanationFr: currentExercise.explanationFr
       })
     }
 
     if (currentIndex < exercises.length - 1) {
       setCurrentIndex(currentIndex + 1)
     } else {
+      // Clear session when topic is completed
+      clearGrammarSession(topicId)
       navigate('/grammar')
     }
   }
@@ -150,7 +230,48 @@ function GrammarExercise() {
       )
     }
 
-    // Fill in the blank
+    // Translation exercise (English to French)
+    if (type === 'translation') {
+      return (
+        <div className="space-y-4">
+          <div className="bg-sand/50 p-4 rounded-lg">
+            <p className="text-sm text-ink-light mb-1">Translate to French:</p>
+            <p className="text-xl font-medium text-ink">{question}</p>
+          </div>
+          <input
+            ref={inputRef}
+            type="text"
+            value={userAnswer}
+            onChange={(e) => setUserAnswer(e.target.value)}
+            onKeyPress={handleKeyPress}
+            disabled={showResult}
+            placeholder="Type the French translation..."
+            className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:border-bamboo focus:ring-1 focus:ring-bamboo outline-none transition-colors disabled:bg-sand"
+          />
+          <FrenchKeyboard inputRef={inputRef} />
+
+          {/* Hint section */}
+          {!showResult && (
+            <div className="flex items-center gap-2">
+              <button
+                onClick={handleShowHint}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-gold/20 text-gold hover:bg-gold/30 transition-colors"
+              >
+                <Lightbulb size={16} />
+                {showHint ? 'More Hints' : 'Show Hint'}
+              </button>
+              {showHint && (
+                <span className="text-sm text-ink-light italic">
+                  Hint: {getHint()}
+                </span>
+              )}
+            </div>
+          )}
+        </div>
+      )
+    }
+
+    // Fill in the blank (default)
     return (
       <div className="space-y-4">
         <p className="text-lg text-ink">{question}</p>
@@ -165,6 +286,24 @@ function GrammarExercise() {
           className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:border-bamboo focus:ring-1 focus:ring-bamboo outline-none transition-colors disabled:bg-sand"
         />
         <FrenchKeyboard inputRef={inputRef} />
+
+        {/* Hint section for fill_blank too */}
+        {!showResult && currentExercise.hints && (
+          <div className="flex items-center gap-2">
+            <button
+              onClick={handleShowHint}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-gold/20 text-gold hover:bg-gold/30 transition-colors"
+            >
+              <Lightbulb size={16} />
+              {showHint ? 'More Hints' : 'Show Hint'}
+            </button>
+            {showHint && (
+              <span className="text-sm text-ink-light italic">
+                Hint: {getHint()}
+              </span>
+            )}
+          </div>
+        )}
       </div>
     )
   }
@@ -180,8 +319,33 @@ function GrammarExercise() {
           <h1 className="font-display text-xl font-bold text-ink">{topic.name}</h1>
           <p className="text-sm text-ink-light">
             Exercise {currentIndex + 1} of {exercises.length}
+            {isShuffled && <span className="ml-2 text-bamboo">(Shuffled)</span>}
           </p>
         </div>
+      </div>
+
+      {/* Controls */}
+      <div className="flex gap-2">
+        <button
+          onClick={handleShuffle}
+          className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+            isShuffled
+              ? 'bg-bamboo text-white'
+              : 'bg-sand text-ink hover:bg-sand/80'
+          }`}
+        >
+          <Shuffle size={16} />
+          {isShuffled ? 'Shuffled' : 'Shuffle'}
+        </button>
+        {currentIndex > 0 && (
+          <button
+            onClick={handleRestart}
+            className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-sand text-ink hover:bg-sand/80 transition-colors"
+          >
+            <RotateCcw size={16} />
+            Restart
+          </button>
+        )}
       </div>
 
       {/* Progress Bar */}
@@ -212,25 +376,24 @@ function GrammarExercise() {
               ) : (
                 <>
                   <X size={20} className="text-rust" />
-                  <span className="font-semibold text-rust">
-                    {hasRetried ? 'Incorrect' : 'Not quite right'}
-                  </span>
+                  <span className="font-semibold text-rust">Incorrect</span>
                 </>
               )}
             </div>
-            {(!isCorrect || showResult) && (
-              <div className="space-y-2">
+            <div className="space-y-2">
+              {!isCorrect && (
                 <p className="text-ink">
                   <span className="text-ink-light">Answer: </span>
                   <span className="font-medium">{currentExercise.answer}</span>
                 </p>
-                <p className="text-ink-light text-sm">
-                  {settings.explainInFrench && currentExercise.explanationFr
-                    ? currentExercise.explanationFr
-                    : currentExercise.explanation}
-                </p>
-              </div>
-            )}
+              )}
+              <p className="text-ink-light text-sm">
+                {/* Always show French explanation when incorrect, otherwise follow user settings */}
+                {!isCorrect || settings.explainInFrench
+                  ? (currentExercise.explanationFr || currentExercise.explanation)
+                  : currentExercise.explanation}
+              </p>
+            </div>
           </div>
         )}
 
@@ -244,7 +407,7 @@ function GrammarExercise() {
             >
               Check Answer
             </button>
-          ) : isCorrect || hasRetried ? (
+          ) : (
             <button
               onClick={handleNext}
               className="flex-1 bg-bamboo text-white py-3 rounded-lg font-medium hover:bg-bamboo-dark transition-colors flex items-center justify-center gap-2"
@@ -257,14 +420,6 @@ function GrammarExercise() {
               ) : (
                 'Finish Topic'
               )}
-            </button>
-          ) : (
-            <button
-              onClick={handleRetry}
-              className="flex-1 bg-gold text-white py-3 rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
-            >
-              <RotateCcw size={20} />
-              Try Again
             </button>
           )}
         </div>

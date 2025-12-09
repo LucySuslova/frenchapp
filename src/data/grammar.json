@@ -218,6 +218,56 @@
         "answer": "partent",
         "explanation": "Partir: je pars, tu pars, il part, nous partons, vous partez, ils partent",
         "explanationFr": "Partir : je pars, tu pars, il part, nous partons, vous partez, ils partent"
+      },
+      {
+        "id": "pr_021",
+        "type": "translation",
+        "instruction": "Traduisez la phrase en français.",
+        "question": "I am a student.",
+        "answer": "je suis étudiant",
+        "hints": ["Use être (to be)", "je + suis", "étudiant = student"],
+        "explanation": "Use 'être' conjugated as 'suis' for 'je'. No article before professions in French.",
+        "explanationFr": "Utilisez 'être' conjugué à 'suis' pour 'je'. Pas d'article devant les professions en français."
+      },
+      {
+        "id": "pr_022",
+        "type": "translation",
+        "instruction": "Traduisez la phrase en français.",
+        "question": "We have a lot of work.",
+        "answer": "nous avons beaucoup de travail",
+        "hints": ["Use avoir (to have)", "beaucoup de = a lot of", "travail = work"],
+        "explanation": "Use 'avoir' conjugated as 'avons' for 'nous'. 'Beaucoup de' means 'a lot of'.",
+        "explanationFr": "Utilisez 'avoir' conjugué à 'avons' pour 'nous'. 'Beaucoup de' signifie 'a lot of'."
+      },
+      {
+        "id": "pr_023",
+        "type": "translation",
+        "instruction": "Traduisez la phrase en français.",
+        "question": "She can speak three languages.",
+        "answer": "elle peut parler trois langues",
+        "hints": ["Use pouvoir (to be able)", "parler = to speak", "trois langues = three languages"],
+        "explanation": "Use 'pouvoir' conjugated as 'peut' for 'elle'. Infinitive 'parler' follows.",
+        "explanationFr": "Utilisez 'pouvoir' conjugué à 'peut' pour 'elle'. L'infinitif 'parler' suit."
+      },
+      {
+        "id": "pr_024",
+        "type": "translation",
+        "instruction": "Traduisez la phrase en français.",
+        "question": "They do sports in the morning.",
+        "answer": "ils font du sport le matin",
+        "hints": ["Use faire (to do/make)", "du sport = sports", "le matin = in the morning"],
+        "explanation": "Use 'faire' conjugated as 'font' for 'ils'. 'Faire du sport' is the expression for doing sports.",
+        "explanationFr": "Utilisez 'faire' conjugué à 'font' pour 'ils'. 'Faire du sport' est l'expression pour faire du sport."
+      },
+      {
+        "id": "pr_025",
+        "type": "translation",
+        "instruction": "Traduisez la phrase en français.",
+        "question": "You (formal) speak French very well.",
+        "answer": "vous parlez français très bien",
+        "hints": ["Use parler (to speak)", "vous = you (formal)", "très bien = very well"],
+        "explanation": "Use 'parler' conjugated as 'parlez' for 'vous'. No article before languages after 'parler'.",
+        "explanationFr": "Utilisez 'parler' conjugué à 'parlez' pour 'vous'. Pas d'article devant les langues après 'parler'."
       }
     ]
   },

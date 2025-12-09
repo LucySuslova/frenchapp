@@ -24,7 +24,7 @@ const navItems = [
   { to: '/listening', icon: Headphones, label: 'Listening' },
   { to: '/writing', icon: PenTool, label: 'Writing' },
   { to: '/dashboard', icon: BarChart3, label: 'Dashboard' },
-  { to: '/clb-table', icon: Table, label: 'CLB Reference' },
+  { to: '/nclc-table', icon: Table, label: 'NCLC Reference' },
   { to: '/settings', icon: SettingsIcon, label: 'Settings' },
 ]
 
@@ -61,7 +61,7 @@ function Layout() {
           </ul>
         </nav>
         <div className="pt-4 border-t border-border">
-          <p className="text-xs text-ink-light">Target: CLB 7+</p>
+          <p className="text-xs text-ink-light">Target: NCLC 7+</p>
         </div>
       </aside>
 

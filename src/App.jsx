@@ -12,7 +12,7 @@ import WritingTask from './pages/WritingTask'
 import ListeningIndex from './pages/ListeningIndex'
 import ListeningExercise from './pages/ListeningExercise'
 import Dashboard from './pages/Dashboard'
-import CLBTable from './pages/CLBTable'
+import NCLCTable from './pages/NCLCTable'
 import ReviewMode from './pages/ReviewMode'
 import Settings from './pages/Settings'
 
@@ -33,7 +33,7 @@ function App() {
           <Route path="listening" element={<ListeningIndex />} />
           <Route path="listening/:exerciseId" element={<ListeningExercise />} />
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="clb-table" element={<CLBTable />} />
+          <Route path="nclc-table" element={<NCLCTable />} />
           <Route path="review" element={<ReviewMode />} />
           <Route path="settings" element={<Settings />} />
         </Route>

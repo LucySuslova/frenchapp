@@ -97,11 +97,11 @@ const useStore = create(
 
       // Writing Progress
       writingProgress: [],
-      addWritingAttempt: (taskId, clbScore) => {
+      addWritingAttempt: (taskId, nclcScore) => {
         set({
           writingProgress: [
             ...get().writingProgress,
-            { taskId, clbScore, date: new Date().toISOString() }
+            { taskId, nclcScore, date: new Date().toISOString() }
           ]
         })
       },

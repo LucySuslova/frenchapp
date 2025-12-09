@@ -3,19 +3,17 @@ import { Link } from 'react-router-dom'
 import { ArrowLeft, Info } from 'lucide-react'
 import useStore from '../store/useStore'
 
-const clbData = [
-  { clb: 12, listening: '549-699', reading: '549-699', writing: '18-20', speaking: '18-20' },
-  { clb: 11, listening: '523-548', reading: '524-548', writing: '14-17', speaking: '14-17' },
-  { clb: 10, listening: '503-522', reading: '499-523', writing: '12-13', speaking: '12-13' },
-  { clb: 9, listening: '458-502', reading: '453-498', writing: '10-11', speaking: '10-11' },
-  { clb: 8, listening: '398-457', reading: '406-452', writing: '7-9', speaking: '7-9' },
-  { clb: 7, listening: '369-397', reading: '375-405', writing: '6', speaking: '6' },
-  { clb: 6, listening: '331-368', reading: '342-374', writing: '5', speaking: '5' },
-  { clb: 5, listening: '298-330', reading: '306-341', writing: '4', speaking: '4' },
-  { clb: 4, listening: '248-297', reading: '217-305', writing: '3', speaking: '3' },
+const nclcData = [
+  { nclc: 10, cefr: 'C2', listening: '549-699', reading: '549-699', writing: '16-20', speaking: '16-20' },
+  { nclc: 9, cefr: 'C1', listening: '523-548', reading: '524-548', writing: '14-15', speaking: '14-15' },
+  { nclc: 8, cefr: 'B2+', listening: '503-522', reading: '499-523', writing: '12-13', speaking: '12-13' },
+  { nclc: 7, cefr: 'B2', listening: '458-502', reading: '453-498', writing: '10-11', speaking: '10-11' },
+  { nclc: 6, cefr: 'B1+', listening: '398-457', reading: '406-452', writing: '7-9', speaking: '7-9' },
+  { nclc: 5, cefr: 'B1', listening: '369-397', reading: '375-405', writing: '6', speaking: '6' },
+  { nclc: 4, cefr: 'A2+', listening: '331-368', reading: '342-374', writing: '4-5', speaking: '4-5' },
 ]
 
-function CLBTable() {
+function NCLCTable() {
   const { scores, setScores } = useStore()
   const [editing, setEditing] = useState(false)
   const [tempScores, setTempScores] = useState({ ...scores })
@@ -25,27 +23,27 @@ function CLBTable() {
     setEditing(false)
   }
 
-  const getCLBLevel = (type, score) => {
+  const getNCLCLevel = (type, score) => {
     if (!score) return null
     const numScore = parseInt(score)
 
-    for (const row of clbData) {
+    for (const row of nclcData) {
       const range = row[type]
       if (range.includes('-')) {
         const [min, max] = range.split('-').map(Number)
-        if (numScore >= min && numScore <= max) return row.clb
+        if (numScore >= min && numScore <= max) return row.nclc
       } else {
-        if (numScore === parseInt(range)) return row.clb
+        if (numScore === parseInt(range)) return row.nclc
       }
     }
 
     // Check if above or below range
     if (type === 'listening' || type === 'reading') {
-      if (numScore >= 549) return '12+'
-      if (numScore < 248) return '<4'
+      if (numScore >= 549) return '10+'
+      if (numScore < 331) return '<4'
     } else {
-      if (numScore >= 18) return '12+'
-      if (numScore < 3) return '<4'
+      if (numScore >= 16) return '10+'
+      if (numScore < 4) return '<4'
     }
     return null
   }
@@ -57,8 +55,8 @@ function CLBTable() {
           <ArrowLeft size={20} className="text-ink" />
         </Link>
         <div>
-          <h1 className="font-display text-2xl font-bold text-ink">CLB Reference</h1>
-          <p className="text-ink-light mt-1">TCF Canada to CLB conversion table</p>
+          <h1 className="font-display text-2xl font-bold text-ink">NCLC Reference</h1>
+          <p className="text-ink-light mt-1">TCF Canada to NCLC conversion table</p>
         </div>
       </div>
 
@@ -99,7 +97,7 @@ function CLBTable() {
               <div className="flex items-center gap-2">
                 <span className="text-xl font-bold text-ink">{scores.listening || '-'}</span>
                 {scores.listening && (
-                  <span className="text-sm text-bamboo">CLB {getCLBLevel('listening', scores.listening)}</span>
+                  <span className="text-sm text-bamboo">NCLC {getNCLCLevel('listening', scores.listening)}</span>
                 )}
               </div>
             )}
@@ -120,7 +118,7 @@ function CLBTable() {
               <div className="flex items-center gap-2">
                 <span className="text-xl font-bold text-ink">{scores.reading || '-'}</span>
                 {scores.reading && (
-                  <span className="text-sm text-bamboo">CLB {getCLBLevel('reading', scores.reading)}</span>
+                  <span className="text-sm text-bamboo">NCLC {getNCLCLevel('reading', scores.reading)}</span>
                 )}
               </div>
             )}
@@ -141,7 +139,7 @@ function CLBTable() {
               <div className="flex items-center gap-2">
                 <span className="text-xl font-bold text-ink">{scores.writing || '-'}</span>
                 {scores.writing && (
-                  <span className="text-sm text-bamboo">CLB {getCLBLevel('writing', scores.writing)}</span>
+                  <span className="text-sm text-bamboo">NCLC {getNCLCLevel('writing', scores.writing)}</span>
                 )}
               </div>
             )}
@@ -162,7 +160,7 @@ function CLBTable() {
               <div className="flex items-center gap-2">
                 <span className="text-xl font-bold text-ink">{scores.speaking || '-'}</span>
                 {scores.speaking && (
-                  <span className="text-sm text-bamboo">CLB {getCLBLevel('speaking', scores.speaking)}</span>
+                  <span className="text-sm text-bamboo">NCLC {getNCLCLevel('speaking', scores.speaking)}</span>
                 )}
               </div>
             )}
@@ -170,13 +168,14 @@ function CLBTable() {
         </div>
       </div>
 
-      {/* CLB Table */}
+      {/* NCLC Table */}
       <div className="bg-white rounded-xl border border-border overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="bg-sand border-b border-border">
-                <th className="px-4 py-3 text-left font-semibold text-ink">CLB</th>
+                <th className="px-4 py-3 text-left font-semibold text-ink">NCLC</th>
+                <th className="px-4 py-3 text-left font-semibold text-ink">CEFR</th>
                 <th className="px-4 py-3 text-left font-semibold text-ink">Listening</th>
                 <th className="px-4 py-3 text-left font-semibold text-ink">Reading</th>
                 <th className="px-4 py-3 text-left font-semibold text-ink">Writing</th>
@@ -184,23 +183,24 @@ function CLBTable() {
               </tr>
             </thead>
             <tbody>
-              {clbData.map((row) => (
+              {nclcData.map((row) => (
                 <tr
-                  key={row.clb}
+                  key={row.nclc}
                   className={`border-b border-border ${
-                    row.clb === 9 ? 'bg-bamboo/10' : ''
+                    row.nclc === 7 ? 'bg-bamboo/10' : ''
                   }`}
                 >
                   <td className={`px-4 py-3 font-semibold ${
-                    row.clb === 9 ? 'text-bamboo' : 'text-ink'
+                    row.nclc === 7 ? 'text-bamboo' : 'text-ink'
                   }`}>
-                    {row.clb}
-                    {row.clb === 9 && (
+                    {row.nclc}
+                    {row.nclc === 7 && (
                       <span className="ml-2 text-xs bg-bamboo text-white px-1.5 py-0.5 rounded">
                         Target
                       </span>
                     )}
                   </td>
+                  <td className="px-4 py-3 text-ink">{row.cefr}</td>
                   <td className="px-4 py-3 text-ink">{row.listening}</td>
                   <td className="px-4 py-3 text-ink">{row.reading}</td>
                   <td className="px-4 py-3 text-ink">{row.writing}</td>
@@ -217,8 +217,12 @@ function CLBTable() {
         <Info size={20} className="text-ink-light flex-shrink-0 mt-0.5" />
         <div className="text-sm text-ink-light">
           <p className="mb-2">
-            <span className="font-semibold text-ink">CLB 9 (highlighted)</span> is the target for TCF Canada,
-            equivalent to CLB 7 for immigration purposes. This is the minimum for Express Entry competitiveness.
+            <span className="font-semibold text-ink">NCLC 7 (highlighted)</span> is the target level,
+            equivalent to CEFR B2. This is the minimum for Express Entry competitiveness.
+          </p>
+          <p className="mb-2">
+            <span className="font-semibold text-ink">CEFR</span> (Common European Framework of Reference for Languages)
+            provides a standardized way to compare language proficiency across different systems.
           </p>
           <p>
             Listening & Reading: 0-699 scale. Writing & Speaking: 0-20 scale.
@@ -229,4 +233,4 @@ function CLBTable() {
   )
 }
 
-export default CLBTable
+export default NCLCTable

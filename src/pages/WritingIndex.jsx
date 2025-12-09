@@ -8,21 +8,21 @@ const writingTasks = [
     name: 'Task 1: Short Messages',
     description: 'Write 60-word messages: invitations, requests, informal notes',
     wordLimit: 60,
-    clbTarget: '7-8'
+    nclcTarget: '7-8'
   },
   {
     id: 'task_2',
     name: 'Task 2: Formal Letters',
     description: 'Write 120-word formal correspondence: complaints, inquiries, applications',
     wordLimit: 120,
-    clbTarget: '8-9'
+    nclcTarget: '8-9'
   },
   {
     id: 'task_3',
     name: 'Task 3: Opinion Essays',
     description: 'Write 180-word argumentative texts on social topics',
     wordLimit: 180,
-    clbTarget: '9-10'
+    nclcTarget: '9-10'
   }
 ]
 
@@ -32,7 +32,7 @@ function WritingIndex() {
   const getTaskStats = (taskId) => {
     const attempts = writingProgress.filter(w => w.taskId.startsWith(taskId))
     if (attempts.length === 0) return null
-    const avgScore = attempts.reduce((sum, a) => sum + a.clbScore, 0) / attempts.length
+    const avgScore = attempts.reduce((sum, a) => sum + a.nclcScore, 0) / attempts.length
     return { attempts: attempts.length, avgScore: avgScore.toFixed(1) }
   }
 
@@ -49,7 +49,7 @@ function WritingIndex() {
           <li>Select a task type and write your response</li>
           <li>Click "Generate Evaluation Prompt" when done</li>
           <li>Copy the generated text to Claude or ChatGPT</li>
-          <li>Enter the CLB score you receive back into the app</li>
+          <li>Enter the NCLC score you receive back into the app</li>
         </ol>
       </div>
 
@@ -71,7 +71,7 @@ function WritingIndex() {
                     <p className="text-sm text-ink-light mt-1">{task.description}</p>
                     <div className="flex items-center gap-3 mt-2 text-xs text-ink-light">
                       <span>{task.wordLimit} words</span>
-                      <span>Target: CLB {task.clbTarget}</span>
+                      <span>Target: NCLC {task.nclcTarget}</span>
                     </div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ function WritingIndex() {
                   {stats && (
                     <div className="text-right text-sm">
                       <p className="text-ink-light">{stats.attempts} attempts</p>
-                      <p className="text-bamboo font-medium">Avg CLB {stats.avgScore}</p>
+                      <p className="text-bamboo font-medium">Avg NCLC {stats.avgScore}</p>
                     </div>
                   )}
                   <ChevronRight size={20} className="text-ink-light" />
@@ -99,7 +99,7 @@ function WritingIndex() {
                 <span className="text-ink-light">
                   {attempt.taskId.replace('_', ' ').toUpperCase()} - {new Date(attempt.date).toLocaleDateString()}
                 </span>
-                <span className="text-bamboo font-medium">CLB {attempt.clbScore}</span>
+                <span className="text-bamboo font-medium">NCLC {attempt.nclcScore}</span>
               </div>
             ))}
           </div>

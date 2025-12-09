@@ -11,7 +11,8 @@ import {
   Table,
   Menu,
   X,
-  RefreshCw
+  RefreshCw,
+  Settings as SettingsIcon
 } from 'lucide-react'
 
 const navItems = [
@@ -24,6 +25,7 @@ const navItems = [
   { to: '/writing', icon: PenTool, label: 'Writing' },
   { to: '/dashboard', icon: BarChart3, label: 'Dashboard' },
   { to: '/clb-table', icon: Table, label: 'CLB Reference' },
+  { to: '/settings', icon: SettingsIcon, label: 'Settings' },
 ]
 
 function Layout() {

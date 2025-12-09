@@ -141,6 +141,19 @@ const useStore = create(
         })
       },
 
+      // Settings
+      settings: {
+        explainInFrench: false
+      },
+      toggleExplainInFrench: () => {
+        set({
+          settings: {
+            ...get().settings,
+            explainInFrench: !get().settings.explainInFrench
+          }
+        })
+      },
+
       // Failed Exercises for Review Mode (spaced repetition)
       failedExercises: [],
       recordFailedExercise: (exerciseId, topicId, exerciseData) => {
@@ -211,7 +224,8 @@ const useStore = create(
         writingProgress: [],
         listeningProgress: { completed: [], scores: {} },
         lastActivity: { grammarTopic: null, vocabularySet: null, readingPassage: null, listeningExercise: null, writingTask: null },
-        failedExercises: []
+        failedExercises: [],
+        settings: { explainInFrench: false }
       })
     }),
     {

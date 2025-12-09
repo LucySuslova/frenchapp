@@ -40,8 +40,8 @@ function Dashboard() {
     .sort((a, b) => a.accuracy - b.accuracy)
     .slice(0, 5)
 
-  // CLB estimation based on accuracy
-  const estimateCLB = (accuracy) => {
+  // NCLC estimation based on accuracy
+  const estimateNCLC = (accuracy) => {
     if (accuracy >= 90) return '10-11'
     if (accuracy >= 80) return '8-9'
     if (accuracy >= 70) return '7-8'
@@ -51,14 +51,14 @@ function Dashboard() {
 
   // Writing average
   const writingAvg = writingProgress.length > 0
-    ? (writingProgress.reduce((sum, w) => sum + w.clbScore, 0) / writingProgress.length).toFixed(1)
+    ? (writingProgress.reduce((sum, w) => sum + w.nclcScore, 0) / writingProgress.length).toFixed(1)
     : null
 
   return (
     <div className="space-y-6">
       <div>
         <h1 className="font-display text-2xl font-bold text-ink">Dashboard</h1>
-        <p className="text-ink-light mt-1">Track your progress toward CLB 7+</p>
+        <p className="text-ink-light mt-1">Track your progress toward NCLC 7+</p>
       </div>
 
       {/* TCF Scores */}
@@ -143,7 +143,7 @@ function Dashboard() {
               </div>
             </div>
             <div className="text-center">
-              <p className="text-lg font-bold text-bamboo">CLB {estimateCLB(grammarAccuracy)}</p>
+              <p className="text-lg font-bold text-bamboo">NCLC {estimateNCLC(grammarAccuracy)}</p>
               <p className="text-xs text-ink-light">Estimated</p>
             </div>
           </div>
@@ -185,7 +185,7 @@ function Dashboard() {
           </h2>
           <div className="flex items-center gap-4 mb-4">
             <div className="text-center">
-              <p className="text-2xl font-bold text-bamboo">CLB {writingAvg}</p>
+              <p className="text-2xl font-bold text-bamboo">NCLC {writingAvg}</p>
               <p className="text-sm text-ink-light">Average Score</p>
             </div>
             <div className="text-center">
@@ -194,7 +194,7 @@ function Dashboard() {
             </div>
           </div>
           <p className="text-sm text-ink-light">
-            Target: CLB 10-11 for writing tasks
+            Target: NCLC 10-11 for writing tasks
           </p>
         </div>
       )}
@@ -215,13 +215,13 @@ function Dashboard() {
         </div>
       )}
 
-      {/* CLB Reference Link */}
+      {/* NCLC Reference Link */}
       <Link
-        to="/clb-table"
+        to="/nclc-table"
         className="block bg-sand rounded-xl p-4 text-center hover:bg-sand/80 transition-colors"
       >
         <p className="text-ink">
-          View CLB Conversion Table →
+          View NCLC Conversion Table →
         </p>
       </Link>
     </div>

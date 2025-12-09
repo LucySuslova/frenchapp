@@ -73,7 +73,7 @@ function Home() {
       {/* Header */}
       <div className="text-center space-y-2">
         <h1 className="font-display text-3xl font-bold text-ink">TCF Canada Prep</h1>
-        <p className="text-ink-light">Your path to CLB 7+ in all competences</p>
+        <p className="text-ink-light">Your path to NCLC 7+ in all competences</p>
       </div>
 
       {/* Quick Stats */}
@@ -127,7 +127,7 @@ function Home() {
       {/* Target Reminder */}
       <div className="bg-sand rounded-xl p-4 text-center">
         <p className="text-ink-light text-sm">
-          <span className="font-semibold text-ink">Target:</span> CLB 7 requires
+          <span className="font-semibold text-ink">Target:</span> NCLC 7 requires
           Listening 458-502, Reading 453-498, Writing 10-11, Speaking 10-11
         </p>
       </div>

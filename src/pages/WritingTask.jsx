@@ -22,7 +22,7 @@ function WritingTask() {
   const [text, setText] = useState('')
   const [showEvalPrompt, setShowEvalPrompt] = useState(false)
   const [copied, setCopied] = useState(false)
-  const [clbScore, setClbScore] = useState('')
+  const [nclcScore, setNclcScore] = useState('')
   const [scoreSaved, setScoreSaved] = useState(false)
 
   const textareaRef = useRef(null)
@@ -71,7 +71,7 @@ Please provide:
 1. Strengths (2-3 points)
 2. Areas for improvement (2-3 points)
 3. Specific corrections with explanations
-4. Estimated CLB level (4-12)
+4. Estimated NCLC level (4-10)
 
 ===`
 
@@ -86,8 +86,8 @@ Please provide:
   }
 
   const saveScore = () => {
-    const score = parseInt(clbScore)
-    if (score >= 1 && score <= 12) {
+    const score = parseInt(nclcScore)
+    if (score >= 1 && score <= 10) {
       addWritingAttempt(`${taskId}_${currentPrompt.id}`, score)
       setScoreSaved(true)
     }
@@ -99,7 +99,7 @@ Please provide:
     setText('')
     setShowEvalPrompt(false)
     setCopied(false)
-    setClbScore('')
+    setNclcScore('')
     setScoreSaved(false)
   }
 
@@ -185,21 +185,21 @@ Please provide:
 
           {/* Score Input */}
           <div className="border-t border-border pt-4 mt-4">
-            <h4 className="font-semibold text-ink mb-2">Enter your CLB score:</h4>
+            <h4 className="font-semibold text-ink mb-2">Enter your NCLC score:</h4>
             <div className="flex gap-3">
               <input
                 type="number"
                 min="1"
-                max="12"
-                value={clbScore}
-                onChange={(e) => setClbScore(e.target.value)}
-                placeholder="CLB (1-12)"
+                max="10"
+                value={nclcScore}
+                onChange={(e) => setNclcScore(e.target.value)}
+                placeholder="NCLC (1-10)"
                 disabled={scoreSaved}
                 className="flex-1 px-4 py-2 rounded-lg border border-border bg-white focus:border-bamboo focus:ring-1 focus:ring-bamboo outline-none transition-colors disabled:bg-sand"
               />
               <button
                 onClick={saveScore}
-                disabled={!clbScore || scoreSaved}
+                disabled={!nclcScore || scoreSaved}
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   scoreSaved
                     ? 'bg-bamboo/10 text-bamboo'

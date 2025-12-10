@@ -9,6 +9,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Je (être) ___ étudiant.",
         "answer": "suis",
+        "pronunciation": "sɥi",
         "explanation": "Être: je suis, tu es, il est, nous sommes, vous êtes, ils sont",
         "explanationFr": "Être : je suis, tu es, il est, nous sommes, vous êtes, ils sont"
       },
@@ -18,6 +19,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Nous (avoir) ___ beaucoup de travail.",
         "answer": "avons",
+        "pronunciation": "a.vɔ̃",
         "explanation": "Avoir: j'ai, tu as, il a, nous avons, vous avez, ils ont",
         "explanationFr": "Avoir : j'ai, tu as, il a, nous avons, vous avez, ils ont"
       },
@@ -33,6 +35,7 @@
           "parlent"
         ],
         "answer": "parlez",
+        "pronunciation": "paʁ.le",
         "explanation": "Avec 'vous', -er verbs end in -ez",
         "explanationFr": "Avec 'vous', les verbes en -er se terminent par -ez"
       },
@@ -42,6 +45,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Ils (faire) ___ du sport le matin.",
         "answer": "font",
+        "pronunciation": "fɔ̃",
         "explanation": "Faire: je fais, tu fais, il fait, nous faisons, vous faites, ils font",
         "explanationFr": "Faire : je fais, tu fais, il fait, nous faisons, vous faites, ils font"
       },
@@ -51,6 +55,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Elle (pouvoir) ___ parler trois langues.",
         "answer": "peut",
+        "pronunciation": "pø",
         "explanation": "Pouvoir: je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent",
         "explanationFr": "Pouvoir : je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent"
       },
@@ -66,6 +71,7 @@
           "cherchent"
         ],
         "answer": "cherche",
+        "pronunciation": "ʃɛʁʃ",
         "explanation": "Avec 'je', -er verbs end in -e",
         "explanationFr": "Avec 'je', les verbes en -er se terminent par -e"
       },
@@ -75,6 +81,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Tu (aller) ___ au marché.",
         "answer": "vas",
+        "pronunciation": "va",
         "explanation": "Aller: je vais, tu vas, il va, nous allons, vous allez, ils vont",
         "explanationFr": "Aller : je vais, tu vas, il va, nous allons, vous allez, ils vont"
       },
@@ -84,6 +91,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Nous (venir) ___ de France.",
         "answer": "venons",
+        "pronunciation": "və.nɔ̃",
         "explanation": "Venir: je viens, tu viens, il vient, nous venons, vous venez, ils viennent",
         "explanationFr": "Venir : je viens, tu viens, il vient, nous venons, vous venez, ils viennent"
       },
@@ -99,6 +107,7 @@
           "jouent"
         ],
         "answer": "jouent",
+        "pronunciation": "ʒu",
         "explanation": "Avec 'ils/elles', -er verbs end in -ent",
         "explanationFr": "Avec 'ils/elles', les verbes en -er se terminent par -ent"
       },
@@ -108,6 +117,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Je (vouloir) ___ apprendre le japonais.",
         "answer": "veux",
+        "pronunciation": "vø",
         "explanation": "Vouloir: je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent",
         "explanationFr": "Vouloir : je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent"
       },
@@ -117,6 +127,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Elle (prendre) ___ le bus tous les jours.",
         "answer": "prend",
+        "pronunciation": "pʁɑ̃",
         "explanation": "Prendre: je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent",
         "explanationFr": "Prendre : je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent"
       },
@@ -132,6 +143,7 @@
           "habitent"
         ],
         "answer": "habitons",
+        "pronunciation": "a.bi.tɔ̃",
         "explanation": "Avec 'nous', -er verbs end in -ons",
         "explanationFr": "Avec 'nous', les verbes en -er se terminent par -ons"
       },
@@ -141,6 +153,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Tu (devoir) ___ finir tes devoirs.",
         "answer": "dois",
+        "pronunciation": "dwa",
         "explanation": "Devoir: je dois, tu dois, il doit, nous devons, vous devez, ils doivent",
         "explanationFr": "Devoir : je dois, tu dois, il doit, nous devons, vous devez, ils doivent"
       },
@@ -150,6 +163,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Ils (savoir) ___ nager.",
         "answer": "savent",
+        "pronunciation": "sav",
         "explanation": "Savoir: je sais, tu sais, il sait, nous savons, vous savez, ils savent",
         "explanationFr": "Savoir : je sais, tu sais, il sait, nous savons, vous savez, ils savent"
       },
@@ -165,6 +179,7 @@
           "conduisent"
         ],
         "answer": "conduis",
+        "pronunciation": "kɔ̃.dɥi",
         "explanation": "Conduire: je conduis, tu conduis, il conduit, nous conduisons, vous conduisez, ils conduisent",
         "explanationFr": "Conduire : je conduis, tu conduis, il conduit, nous conduisons, vous conduisez, ils conduisent"
       },
@@ -174,6 +189,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Je (dire) ___ toujours la vérité.",
         "answer": "dis",
+        "pronunciation": "di",
         "explanation": "Dire: je dis, tu dis, il dit, nous disons, vous dites, ils disent",
         "explanationFr": "Dire : je dis, tu dis, il dit, nous disons, vous dites, ils disent"
       },
@@ -183,6 +199,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Vous (écrire) ___ un roman.",
         "answer": "écrivez",
+        "pronunciation": "e.kʁi.ve",
         "explanation": "Écrire: j'écris, tu écris, il écrit, nous écrivons, vous écrivez, ils écrivent",
         "explanationFr": "Écrire : j'écris, tu écris, il écrit, nous écrivons, vous écrivez, ils écrivent"
       },
@@ -198,6 +215,7 @@
           "travaillent"
         ],
         "answer": "travaille",
+        "pronunciation": "tʁa.vaj",
         "explanation": "Avec 'il/elle', -er verbs end in -e",
         "explanationFr": "Avec 'il/elle', les verbes en -er se terminent par -e"
       },
@@ -207,6 +225,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Nous (lire) ___ le journal le matin.",
         "answer": "lisons",
+        "pronunciation": "li.zɔ̃",
         "explanation": "Lire: je lis, tu lis, il lit, nous lisons, vous lisez, ils lisent",
         "explanationFr": "Lire : je lis, tu lis, il lit, nous lisons, vous lisez, ils lisent"
       },
@@ -216,6 +235,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au présent.",
         "question": "Elles (partir) ___ en vacances demain.",
         "answer": "partent",
+        "pronunciation": "paʁt",
         "explanation": "Partir: je pars, tu pars, il part, nous partons, vous partez, ils partent",
         "explanationFr": "Partir : je pars, tu pars, il part, nous partons, vous partez, ils partent"
       },
@@ -225,6 +245,7 @@
         "instruction": "Traduisez la phrase en français.",
         "question": "I am a student.",
         "answer": "je suis étudiant",
+        "pronunciation": "ʒə sɥi e.ty.djɑ̃",
         "hints": ["Use être (to be)", "je + suis", "étudiant = student"],
         "explanation": "Use 'être' conjugated as 'suis' for 'je'. No article before professions in French.",
         "explanationFr": "Utilisez 'être' conjugué à 'suis' pour 'je'. Pas d'article devant les professions en français."
@@ -235,6 +256,7 @@
         "instruction": "Traduisez la phrase en français.",
         "question": "We have a lot of work.",
         "answer": "nous avons beaucoup de travail",
+        "pronunciation": "nu.z‿a.vɔ̃ bo.ku də tʁa.vaj",
         "hints": ["Use avoir (to have)", "beaucoup de = a lot of", "travail = work"],
         "explanation": "Use 'avoir' conjugated as 'avons' for 'nous'. 'Beaucoup de' means 'a lot of'.",
         "explanationFr": "Utilisez 'avoir' conjugué à 'avons' pour 'nous'. 'Beaucoup de' signifie 'a lot of'."
@@ -245,6 +267,7 @@
         "instruction": "Traduisez la phrase en français.",
         "question": "She can speak three languages.",
         "answer": "elle peut parler trois langues",
+        "pronunciation": "ɛl pø paʁ.le tʁwa lɑ̃ɡ",
         "hints": ["Use pouvoir (to be able)", "parler = to speak", "trois langues = three languages"],
         "explanation": "Use 'pouvoir' conjugated as 'peut' for 'elle'. Infinitive 'parler' follows.",
         "explanationFr": "Utilisez 'pouvoir' conjugué à 'peut' pour 'elle'. L'infinitif 'parler' suit."
@@ -255,6 +278,7 @@
         "instruction": "Traduisez la phrase en français.",
         "question": "They do sports in the morning.",
         "answer": "ils font du sport le matin",
+        "pronunciation": "il fɔ̃ dy spɔʁ lə ma.tɛ̃",
         "hints": ["Use faire (to do/make)", "du sport = sports", "le matin = in the morning"],
         "explanation": "Use 'faire' conjugated as 'font' for 'ils'. 'Faire du sport' is the expression for doing sports.",
         "explanationFr": "Utilisez 'faire' conjugué à 'font' pour 'ils'. 'Faire du sport' est l'expression pour faire du sport."
@@ -265,6 +289,7 @@
         "instruction": "Traduisez la phrase en français.",
         "question": "You (formal) speak French very well.",
         "answer": "vous parlez français très bien",
+        "pronunciation": "vu paʁ.le fʁɑ̃.sɛ tʁɛ bjɛ̃",
         "hints": ["Use parler (to speak)", "vous = you (formal)", "très bien = very well"],
         "explanation": "Use 'parler' conjugated as 'parlez' for 'vous'. No article before languages after 'parler'.",
         "explanationFr": "Utilisez 'parler' conjugué à 'parlez' pour 'vous'. Pas d'article devant les langues après 'parler'."
@@ -281,6 +306,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "J'(manger) ___ une pomme.",
         "answer": "ai mangé",
+        "pronunciation": "e mɑ̃.ʒe",
         "explanation": "Manger uses avoir: j'ai mangé. Regular -er verbs form past participle with -é",
         "explanationFr": "Manger utilise avoir : j'ai mangé. Les verbes réguliers en -er forment le participe passé avec -é"
       },
@@ -290,6 +316,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Elle (aller) ___ au cinéma.",
         "answer": "est allée",
+        "pronunciation": "ɛ.t‿a.le",
         "explanation": "Aller uses être and agrees with subject. Elle → est allée (feminine)",
         "explanationFr": "Aller utilise être et s'accorde avec le sujet. Elle → est allée (féminin)"
       },
@@ -305,6 +332,7 @@
           "sommes faits"
         ],
         "answer": "avons fait",
+        "pronunciation": "a.vɔ̃ fɛ",
         "explanation": "Faire uses avoir. With avoir, past participle doesn't agree with subject.",
         "explanationFr": "Faire utilise avoir. Avec avoir, le participe passé ne s'accorde pas avec le sujet."
       },
@@ -314,6 +342,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Ils (partir) ___ tôt ce matin.",
         "answer": "sont partis",
+        "pronunciation": "sɔ̃ paʁ.ti",
         "explanation": "Partir uses être. Ils → sont partis (masculine plural agreement)",
         "explanationFr": "Partir utilise être. Ils → sont partis (accord masculin pluriel)"
       },
@@ -323,6 +352,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Tu (voir) ___ ce film?",
         "answer": "as vu",
+        "pronunciation": "a vy",
         "explanation": "Voir uses avoir: tu as vu. Past participle: vu",
         "explanationFr": "Voir utilise avoir : tu as vu. Participe passé : vu"
       },
@@ -338,6 +368,7 @@
           "est restée"
         ],
         "answer": "est restée",
+        "pronunciation": "ɛ ʁɛs.te",
         "explanation": "Rester uses être. Marie (feminine) → est restée",
         "explanationFr": "Rester utilise être. Marie (féminin) → est restée"
       },
@@ -347,6 +378,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Vous (finir) ___ votre travail?",
         "answer": "avez fini",
+        "pronunciation": "a.ve fi.ni",
         "explanation": "Finir uses avoir: vous avez fini. Regular -ir verbs form past participle with -i",
         "explanationFr": "Finir utilise avoir : vous avez fini. Les verbes réguliers en -ir forment le participe passé avec -i"
       },
@@ -356,6 +388,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Les filles (venir) ___ hier soir.",
         "answer": "sont venues",
+        "pronunciation": "sɔ̃ və.ny",
         "explanation": "Venir uses être. Les filles (feminine plural) → sont venues",
         "explanationFr": "Venir utilise être. Les filles (féminin pluriel) → sont venues"
       },
@@ -371,6 +404,7 @@
           "est dormis"
         ],
         "answer": "a dormi",
+        "pronunciation": "a dɔʁ.mi",
         "explanation": "Dormir uses avoir: il a dormi",
         "explanationFr": "Dormir utilise avoir : il a dormi"
       },
@@ -380,6 +414,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Nous (naître) ___ en France.",
         "answer": "sommes nés",
+        "pronunciation": "sɔm ne",
         "explanation": "Naître uses être. Nous (assuming mixed/masculine) → sommes nés",
         "explanationFr": "Naître utilise être. Nous (mixte/masculin) → sommes nés"
       },
@@ -389,6 +424,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "J'(prendre) ___ le train.",
         "answer": "ai pris",
+        "pronunciation": "e pʁi",
         "explanation": "Prendre uses avoir: j'ai pris. Past participle: pris",
         "explanationFr": "Prendre uses avoir: j'ai pris. Past participle: pris"
       },
@@ -404,6 +440,7 @@
           "sont arrivés"
         ],
         "answer": "sont arrivées",
+        "pronunciation": "sɔ̃.t‿a.ʁi.ve",
         "explanation": "Arriver uses être. Elles (feminine plural) → sont arrivées",
         "explanationFr": "Arriver uses être. Elles (feminine plural) → sont arrivées"
       },
@@ -413,6 +450,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Tu (écrire) ___ une lettre.",
         "answer": "as écrit",
+        "pronunciation": "a.z‿e.kʁi",
         "explanation": "Écrire uses avoir: tu as écrit. Past participle: écrit",
         "explanationFr": "Écrire uses avoir: tu as écrit. Past participle: écrit"
       },
@@ -422,6 +460,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Pierre et Marie (se marier) ___ l'année dernière.",
         "answer": "se sont mariés",
+        "pronunciation": "sə sɔ̃ ma.ʁje",
         "explanation": "Se marier is reflexive, uses être. Pierre et Marie → se sont mariés",
         "explanationFr": "Se marier is reflexive, uses être. Pierre et Marie → se sont mariés"
       },
@@ -437,6 +476,7 @@
           "ai perdus"
         ],
         "answer": "ai perdu",
+        "pronunciation": "e pɛʁ.dy",
         "explanation": "Perdre uses avoir: j'ai perdu",
         "explanationFr": "Perdre uses avoir: j'ai perdu"
       },
@@ -446,6 +486,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Elle (descendre) ___ les escaliers.",
         "answer": "a descendu",
+        "pronunciation": "a de.sɑ̃.dy",
         "explanation": "Descendre with direct object uses avoir: elle a descendu les escaliers",
         "explanationFr": "Descendre with direct object uses avoir: elle a descendu les escaliers"
       },
@@ -455,6 +496,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Ils (mourir) ___ pendant la guerre.",
         "answer": "sont morts",
+        "pronunciation": "sɔ̃ mɔʁ",
         "explanation": "Mourir uses être: ils sont morts",
         "explanationFr": "Mourir uses être: ils sont morts"
       },
@@ -470,6 +512,7 @@
           "êtes bus"
         ],
         "answer": "avez bu",
+        "pronunciation": "a.ve by",
         "explanation": "Boire uses avoir: vous avez bu. Past participle: bu",
         "explanationFr": "Boire uses avoir: vous avez bu. Past participle: bu"
       },
@@ -479,6 +522,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Nous (rentrer) ___ tard hier soir.",
         "answer": "sommes rentrés",
+        "pronunciation": "sɔm ʁɑ̃.tʁe",
         "explanation": "Rentrer (intransitive) uses être: nous sommes rentrés",
         "explanationFr": "Rentrer (intransitive) uses être: nous sommes rentrés"
       },
@@ -488,6 +532,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au passé composé.",
         "question": "Elle (se lever) ___ à 7 heures.",
         "answer": "s'est levée",
+        "pronunciation": "sɛ lə.ve",
         "explanation": "Se lever is reflexive, uses être. Elle → s'est levée (feminine agreement)",
         "explanationFr": "Se lever is reflexive, uses être. Elle → s'est levée (feminine agreement)"
       }
@@ -503,6 +548,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Quand j'(être) ___ enfant, j'habitais à Paris.",
         "answer": "étais",
+        "pronunciation": "e.tɛ",
         "explanation": "Être à l'imparfait: j'étais, tu étais, il était, nous étions, vous étiez, ils étaient",
         "explanationFr": "Être à l'imparfait : j'étais, tu étais, il était, nous étions, vous étiez, ils étaient"
       },
@@ -512,6 +558,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Nous (aller) ___ à la plage chaque été.",
         "answer": "allions",
+        "pronunciation": "a.ljɔ̃",
         "explanation": "Aller à l'imparfait: j'allais, tu allais, il allait, nous allions, vous alliez, ils allaient",
         "explanationFr": "Aller à l'imparfait : j'allais, tu allais, il allait, nous allions, vous alliez, ils allaient"
       },
@@ -527,6 +574,7 @@
           "avaient"
         ],
         "answer": "avait",
+        "pronunciation": "a.vɛ",
         "explanation": "Avoir à l'imparfait avec 'elle': avait",
         "explanationFr": "Avoir à l'imparfait avec 'elle' : avait"
       },
@@ -536,6 +584,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Ils (faire) ___ leurs devoirs avant le dîner.",
         "answer": "faisaient",
+        "pronunciation": "fə.zɛ",
         "explanation": "Faire à l'imparfait: je faisais, tu faisais, il faisait, nous faisions, vous faisiez, ils faisaient",
         "explanationFr": "Faire à l'imparfait : je faisais, tu faisais, il faisait, nous faisions, vous faisiez, ils faisaient"
       },
@@ -545,6 +594,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Tu (jouer) ___ au football tous les samedis.",
         "answer": "jouais",
+        "pronunciation": "ʒwɛ",
         "explanation": "For -er verbs, stem + imparfait endings: -ais, -ais, -ait, -ions, -iez, -aient",
         "explanationFr": "Pour les verbes en -er, radical + terminaisons de l'imparfait : -ais, -ais, -ait, -ions, -iez, -aient"
       },
@@ -560,6 +610,7 @@
           "arrivaient"
         ],
         "answer": "arriviez",
+        "pronunciation": "a.ʁi.vje",
         "explanation": "Avec 'vous', l'imparfait se termine en -iez",
         "explanationFr": "Avec 'vous', l'imparfait se termine en -iez"
       },
@@ -569,6 +620,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Il (pleuvoir) ___ souvent en automne.",
         "answer": "pleuvait",
+        "pronunciation": "plø.vɛ",
         "explanation": "Pleuvoir à l'imparfait: il pleuvait (impersonal verb)",
         "explanationFr": "Pleuvoir à l'imparfait: il pleuvait (impersonal verb)"
       },
@@ -578,6 +630,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Je (vouloir) ___ devenir médecin.",
         "answer": "voulais",
+        "pronunciation": "vu.lɛ",
         "explanation": "Vouloir à l'imparfait: je voulais, tu voulais, il voulait...",
         "explanationFr": "Vouloir à l'imparfait: je voulais, tu voulais, il voulait..."
       },
@@ -593,6 +646,7 @@
           "lisaient"
         ],
         "answer": "lisions",
+        "pronunciation": "li.zjɔ̃",
         "explanation": "Lire à l'imparfait avec 'nous': lisions",
         "explanationFr": "Lire à l'imparfait avec 'nous': lisions"
       },
@@ -602,6 +656,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Les enfants (dormir) ___ jusqu'à midi.",
         "answer": "dormaient",
+        "pronunciation": "dɔʁ.mɛ",
         "explanation": "Dormir à l'imparfait: je dormais, tu dormais, il dormait, nous dormions, vous dormiez, ils dormaient",
         "explanationFr": "Dormir à l'imparfait: je dormais, tu dormais, il dormait, nous dormions, vous dormiez, ils dormaient"
       },
@@ -611,6 +666,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Elle (prendre) ___ le métro pour aller au travail.",
         "answer": "prenait",
+        "pronunciation": "pʁə.nɛ",
         "explanation": "Prendre à l'imparfait: je prenais, tu prenais, il prenait...",
         "explanationFr": "Prendre à l'imparfait: je prenais, tu prenais, il prenait..."
       },
@@ -626,6 +682,7 @@
           "mangeaient"
         ],
         "answer": "mangeais",
+        "pronunciation": "mɑ̃.ʒɛ",
         "explanation": "Manger à l'imparfait avec 'tu': mangeais. Note: keep the 'e' before 'a'",
         "explanationFr": "Manger à l'imparfait avec 'tu': mangeais. Note: keep the 'e' before 'a'"
       },
@@ -635,6 +692,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Nous (commencer) ___ les cours à 8 heures.",
         "answer": "commencions",
+        "pronunciation": "kɔ.mɑ̃.sjɔ̃",
         "explanation": "Commencer à l'imparfait: nous commencions. The cedilla (ç) is not needed before 'i'",
         "explanationFr": "Commencer à l'imparfait: nous commencions. The cedilla (ç) is not needed before 'i'"
       },
@@ -644,6 +702,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Mon père (travailler) ___ dans une usine.",
         "answer": "travaillait",
+        "pronunciation": "tʁa.va.jɛ",
         "explanation": "Travailler à l'imparfait avec 'il': travaillait",
         "explanationFr": "Travailler à l'imparfait avec 'il': travaillait"
       },
@@ -659,6 +718,7 @@
           "apprenaient"
         ],
         "answer": "apprenais",
+        "pronunciation": "a.pʁə.nɛ",
         "explanation": "Apprendre à l'imparfait avec 'je': apprenais",
         "explanationFr": "Apprendre à l'imparfait avec 'je': apprenais"
       },
@@ -668,6 +728,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Ils (savoir) ___ nager.",
         "answer": "savaient",
+        "pronunciation": "sa.vɛ",
         "explanation": "Savoir à l'imparfait: je savais, tu savais, il savait, nous savions, vous saviez, ils savaient",
         "explanationFr": "Savoir à l'imparfait: je savais, tu savais, il savait, nous savions, vous saviez, ils savaient"
       },
@@ -677,6 +738,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Vous (voir) ___ vos grands-parents chaque dimanche.",
         "answer": "voyiez",
+        "pronunciation": "vwa.je",
         "explanation": "Voir à l'imparfait: je voyais, tu voyais, il voyait, nous voyions, vous voyiez, ils voyaient",
         "explanationFr": "Voir à l'imparfait: je voyais, tu voyais, il voyait, nous voyions, vous voyiez, ils voyaient"
       },
@@ -692,6 +754,7 @@
           "entendaient"
         ],
         "answer": "entendait",
+        "pronunciation": "ɑ̃.tɑ̃.dɛ",
         "explanation": "'On' se conjugue comme 'il/elle': entendait",
         "explanationFr": "'On' se conjugue comme 'il/elle': entendait"
       },
@@ -701,6 +764,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Elle (pouvoir) ___ courir très vite.",
         "answer": "pouvait",
+        "pronunciation": "pu.vɛ",
         "explanation": "Pouvoir à l'imparfait: je pouvais, tu pouvais, il pouvait...",
         "explanationFr": "Pouvoir à l'imparfait: je pouvais, tu pouvais, il pouvait..."
       },
@@ -710,6 +774,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses à l'imparfait.",
         "question": "Tu (croire) ___ au Père Noël.",
         "answer": "croyais",
+        "pronunciation": "kʁwa.jɛ",
         "explanation": "Croire à l'imparfait: je croyais, tu croyais, il croyait, nous croyions, vous croyiez, ils croyaient",
         "explanationFr": "Croire à l'imparfait: je croyais, tu croyais, il croyait, nous croyions, vous croyiez, ils croyaient"
       }
@@ -731,6 +796,7 @@
           "ai été / habitais"
         ],
         "answer": "étais / habitais",
+        "pronunciation": "e.tɛ / a.bi.tɛ",
         "explanation": "Both describe ongoing states/situations in the past → imparfait",
         "explanationFr": "Les deux décrivent des états/situations en cours dans le passé → imparfait"
       },
@@ -746,6 +812,7 @@
           "tombai"
         ],
         "answer": "suis tombé",
+        "pronunciation": "sɥi tɔ̃.be",
         "explanation": "Single completed action at a specific time (hier) → passé composé",
         "explanationFr": "Action unique et complétée à un moment précis (hier) → passé composé"
       },
@@ -761,6 +828,7 @@
           "a plu / sommes sortis"
         ],
         "answer": "pleuvait / sommes sortis",
+        "pronunciation": "plø.vɛ / sɔm sɔʁ.ti",
         "explanation": "Ongoing background (imparfait) interrupted by completed action (passé composé)",
         "explanationFr": "Action en cours en arrière-plan (imparfait) interrompue par action complétée (passé composé)"
       },
@@ -770,6 +838,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "Tous les étés, nous (aller) ___ à la mer.",
         "answer": "allions",
+        "pronunciation": "a.ljɔ̃",
         "explanation": "Habitual action in the past (tous les étés) → imparfait",
         "explanationFr": "Action habituelle dans le passé (tous les étés) → imparfait"
       },
@@ -779,6 +848,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "Ce matin, elle (se lever) ___ à 6 heures.",
         "answer": "s'est levée",
+        "pronunciation": "sɛ lə.ve",
         "explanation": "Specific completed action (ce matin) → passé composé",
         "explanationFr": "Action spécifique complétée (ce matin) → passé composé"
       },
@@ -794,6 +864,7 @@
           "a eu / a commencé"
         ],
         "answer": "avait / a commencé",
+        "pronunciation": "a.vɛ / a kɔ.mɑ̃.se",
         "explanation": "Age description (imparfait) + completed event (passé composé)",
         "explanationFr": "Description d'âge (imparfait) + événement complété (passé composé)"
       },
@@ -803,6 +874,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "Je (lire) ___ quand le téléphone a sonné.",
         "answer": "lisais",
+        "pronunciation": "li.zɛ",
         "explanation": "Ongoing action interrupted → imparfait",
         "explanationFr": "Ongoing action interrupted → imparfait"
       },
@@ -812,6 +884,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "Soudain, il (entendre) ___ un bruit étrange.",
         "answer": "a entendu",
+        "pronunciation": "a ɑ̃.tɑ̃.dy",
         "explanation": "Soudain indicates sudden action → passé composé",
         "explanationFr": "Soudain indicates sudden action → passé composé"
       },
@@ -827,6 +900,7 @@
           "a brillé / chantaient"
         ],
         "answer": "brillait / chantaient",
+        "pronunciation": "bʁi.jɛ / ʃɑ̃.tɛ",
         "explanation": "Scene description, ongoing states → both imparfait",
         "explanationFr": "Scene description, ongoing states → both imparfait"
       },
@@ -836,6 +910,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "Pendant que je (dormir) ___, quelqu'un a frappé à la porte.",
         "answer": "dormais",
+        "pronunciation": "dɔʁ.mɛ",
         "explanation": "Pendant que + ongoing action → imparfait",
         "explanationFr": "Pendant que + ongoing action → imparfait"
       },
@@ -851,6 +926,7 @@
           "visitâmes"
         ],
         "answer": "avons visité",
+        "pronunciation": "a.vɔ̃ vi.zi.te",
         "explanation": "Countable completed actions (trois fois) → passé composé",
         "explanationFr": "Countable completed actions (trois fois) → passé composé"
       },
@@ -860,6 +936,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "Elle ne (savoir) ___ pas qu'il était marié.",
         "answer": "savait",
+        "pronunciation": "sa.vɛ",
         "explanation": "Mental state, condition → imparfait",
         "explanationFr": "Mental state, condition → imparfait"
       },
@@ -869,6 +946,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "À ce moment-là, je (comprendre) ___ tout.",
         "answer": "ai compris",
+        "pronunciation": "e kɔ̃.pʁi",
         "explanation": "À ce moment-là indicates specific point → passé composé",
         "explanationFr": "À ce moment-là indicates specific point → passé composé"
       },
@@ -884,6 +962,7 @@
           "a fait / a décidé"
         ],
         "answer": "faisait / a décidé",
+        "pronunciation": "fə.zɛ / a de.si.de",
         "explanation": "Weather description (imparfait) + resulting decision (passé composé)",
         "explanationFr": "Weather description (imparfait) + resulting decision (passé composé)"
       },
@@ -893,6 +972,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "Autrefois, on (voyager) ___ en bateau.",
         "answer": "voyageait",
+        "pronunciation": "vwa.ja.ʒɛ",
         "explanation": "Autrefois indicates habitual past → imparfait",
         "explanationFr": "Autrefois indicates habitual past → imparfait"
       },
@@ -902,6 +982,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "En 2010, ils (déménager) ___ à Toronto.",
         "answer": "ont déménagé",
+        "pronunciation": "ɔ̃ de.me.na.ʒe",
         "explanation": "Specific date + completed action → passé composé",
         "explanationFr": "Specific date + completed action → passé composé"
       },
@@ -917,6 +998,7 @@
           "ai voulu / ai oublié"
         ],
         "answer": "voulais / ai oublié",
+        "pronunciation": "vu.lɛ / e u.bli.je",
         "explanation": "Intention (imparfait) followed by completed action (passé composé)",
         "explanationFr": "Intention (imparfait) followed by completed action (passé composé)"
       },
@@ -926,6 +1008,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "Nous (attendre) ___ depuis une heure quand le bus est arrivé.",
         "answer": "attendions",
+        "pronunciation": "a.tɑ̃.djɔ̃",
         "explanation": "Ongoing duration before another action → imparfait",
         "explanationFr": "Ongoing duration before another action → imparfait"
       },
@@ -935,6 +1018,7 @@
         "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
         "question": "Tout à coup, elle (éclater) ___ en sanglots.",
         "answer": "a éclaté",
+        "pronunciation": "a e.kla.te",
         "explanation": "Tout à coup signals sudden action → passé composé",
         "explanationFr": "Tout à coup signals sudden action → passé composé"
       },
@@ -950,6 +1034,7 @@
           "a parlé / écoutait"
         ],
         "answer": "parlait / écoutait",
+        "pronunciation": "paʁ.lɛ / e.ku.tɛ",
         "explanation": "Two simultaneous ongoing actions → both imparfait",
         "explanationFr": "Two simultaneous ongoing actions → both imparfait"
       }
@@ -965,6 +1050,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au plus-que-parfait.",
         "question": "Elle (finir) ___ ses devoirs avant de sortir.",
         "answer": "avait fini",
+        "pronunciation": "a.vɛ fi.ni",
         "explanation": "Plus-que-parfait = imparfait of avoir/être + past participle. Finir uses avoir.",
         "explanationFr": "Plus-que-parfait = imparfait of avoir/être + past participle. Finir uses avoir."
       },
@@ -974,6 +1060,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au plus-que-parfait.",
         "question": "Ils (partir) ___ quand je suis arrivé.",
         "answer": "étaient partis",
+        "pronunciation": "e.tɛ paʁ.ti",
         "explanation": "Partir uses être. Ils → étaient partis",
         "explanationFr": "Partir uses être. Ils → étaient partis"
       },
@@ -989,6 +1076,7 @@
           "sommes vus"
         ],
         "answer": "avions vu",
+        "pronunciation": "a.vjɔ̃ vy",
         "explanation": "Voir uses avoir: avions vu",
         "explanationFr": "Voir uses avoir: avions vu"
       },
@@ -998,6 +1086,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au plus-que-parfait.",
         "question": "Tu (manger) ___ avant de venir?",
         "answer": "avais mangé",
+        "pronunciation": "a.vɛ mɑ̃.ʒe",
         "explanation": "Manger uses avoir: tu avais mangé",
         "explanationFr": "Manger uses avoir: tu avais mangé"
       },
@@ -1007,6 +1096,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au plus-que-parfait.",
         "question": "Je (ne jamais voir) ___ un tel spectacle.",
         "answer": "n'avais jamais vu",
+        "pronunciation": "na.vɛ ʒa.mɛ vy",
         "explanation": "Negation wraps the auxiliary: n'avais jamais vu",
         "explanationFr": "Negation wraps the auxiliary: n'avais jamais vu"
       },
@@ -1022,6 +1112,7 @@
           "était habitée"
         ],
         "answer": "avait habité",
+        "pronunciation": "a.vɛ a.bi.te",
         "explanation": "Habiter uses avoir: avait habité",
         "explanationFr": "Habiter uses avoir: avait habité"
       },
@@ -1031,6 +1122,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au plus-que-parfait.",
         "question": "Les enfants (se coucher) ___ tôt.",
         "answer": "s'étaient couchés",
+        "pronunciation": "se.tɛ ku.ʃe",
         "explanation": "Reflexive verb uses être: s'étaient couchés",
         "explanationFr": "Reflexive verb uses être: s'étaient couchés"
       },
@@ -1040,6 +1132,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au plus-que-parfait.",
         "question": "Vous (comprendre) ___ le problème?",
         "answer": "aviez compris",
+        "pronunciation": "a.vje kɔ̃.pʁi",
         "explanation": "Comprendre uses avoir: aviez compris",
         "explanationFr": "Comprendre uses avoir: aviez compris"
       },
@@ -1055,6 +1148,7 @@
           "avait allée"
         ],
         "answer": "était allée",
+        "pronunciation": "e.tɛ.t‿a.le",
         "explanation": "Aller uses être. Elle → était allée (feminine agreement)",
         "explanationFr": "Aller uses être. Elle → était allée (feminine agreement)"
       },
@@ -1064,6 +1158,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au plus-que-parfait.",
         "question": "On (prévenir) ___ la police.",
         "answer": "avait prévenu",
+        "pronunciation": "a.vɛ pʁe.və.ny",
         "explanation": "Prévenir uses avoir: on avait prévenu",
         "explanationFr": "Prévenir uses avoir: on avait prévenu"
       }
@@ -1079,6 +1174,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur simple.",
         "question": "Demain, je (aller) ___ au cinéma.",
         "answer": "irai",
+        "pronunciation": "i.ʁe",
         "explanation": "Aller au futur: j'irai, tu iras, il ira, nous irons, vous irez, ils iront",
         "explanationFr": "Aller au futur: j'irai, tu iras, il ira, nous irons, vous irez, ils iront"
       },
@@ -1088,6 +1184,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur simple.",
         "question": "Nous (être) ___ en vacances la semaine prochaine.",
         "answer": "serons",
+        "pronunciation": "sə.ʁɔ̃",
         "explanation": "Être au futur: je serai, tu seras, il sera, nous serons, vous serez, ils seront",
         "explanationFr": "Être au futur: je serai, tu seras, il sera, nous serons, vous serez, ils seront"
       },
@@ -1103,6 +1200,7 @@
           "aimeront"
         ],
         "answer": "aimeras",
+        "pronunciation": "ɛm.ʁa",
         "explanation": "Aimer au futur avec 'tu': aimeras. Regular -er verbs: infinitive + -ai, -as, -a, -ons, -ez, -ont",
         "explanationFr": "Aimer au futur avec 'tu': aimeras. Regular -er verbs: infinitive + -ai, -as, -a, -ons, -ez, -ont"
       },
@@ -1112,6 +1210,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur simple.",
         "question": "Ils (avoir) ___ 18 ans l'année prochaine.",
         "answer": "auront",
+        "pronunciation": "o.ʁɔ̃",
         "explanation": "Avoir au futur: j'aurai, tu auras, il aura, nous aurons, vous aurez, ils auront",
         "explanationFr": "Avoir au futur: j'aurai, tu auras, il aura, nous aurons, vous aurez, ils auront"
       },
@@ -1121,6 +1220,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur simple.",
         "question": "Elle (faire) ___ le ménage ce weekend.",
         "answer": "fera",
+        "pronunciation": "fə.ʁa",
         "explanation": "Faire au futur: je ferai, tu feras, il fera, nous ferons, vous ferez, ils feront",
         "explanationFr": "Faire au futur: je ferai, tu feras, il fera, nous ferons, vous ferez, ils feront"
       },
@@ -1136,6 +1236,7 @@
           "sauront"
         ],
         "answer": "saurez",
+        "pronunciation": "so.ʁe",
         "explanation": "Savoir au futur avec 'vous': saurez. Stem: saur-",
         "explanationFr": "Savoir au futur avec 'vous': saurez. Stem: saur-"
       },
@@ -1145,6 +1246,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur simple.",
         "question": "Je (pouvoir) ___ t'aider demain.",
         "answer": "pourrai",
+        "pronunciation": "pu.ʁe",
         "explanation": "Pouvoir au futur: je pourrai, tu pourras... Stem: pourr-",
         "explanationFr": "Pouvoir au futur: je pourrai, tu pourras... Stem: pourr-"
       },
@@ -1154,6 +1256,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur simple.",
         "question": "Nous (venir) ___ te chercher à 8 heures.",
         "answer": "viendrons",
+        "pronunciation": "vjɛ̃.dʁɔ̃",
         "explanation": "Venir au futur: je viendrai, tu viendras, il viendra, nous viendrons... Stem: viendr-",
         "explanationFr": "Venir au futur: je viendrai, tu viendras, il viendra, nous viendrons... Stem: viendr-"
       },
@@ -1169,6 +1272,7 @@
           "feront"
         ],
         "answer": "fera",
+        "pronunciation": "fə.ʁa",
         "explanation": "Faire au futur avec 'il': fera",
         "explanationFr": "Faire au futur avec 'il': fera"
       },
@@ -1178,6 +1282,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur simple.",
         "question": "Tu (devoir) ___ travailler plus.",
         "answer": "devras",
+        "pronunciation": "də.vʁa",
         "explanation": "Devoir au futur: je devrai, tu devras... Stem: devr-",
         "explanationFr": "Devoir au futur: je devrai, tu devras... Stem: devr-"
       }
@@ -1193,6 +1298,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur antérieur.",
         "question": "J'(finir) ___ avant midi.",
         "answer": "aurai fini",
+        "pronunciation": "o.ʁe fi.ni",
         "explanation": "Futur antérieur = futur of avoir/être + past participle. Finir uses avoir.",
         "explanationFr": "Futur antérieur = futur of avoir/être + past participle. Finir uses avoir."
       },
@@ -1202,6 +1308,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur antérieur.",
         "question": "Quand tu arriveras, ils (partir) ___.",
         "answer": "seront partis",
+        "pronunciation": "sə.ʁɔ̃ paʁ.ti",
         "explanation": "Partir uses être: seront partis",
         "explanationFr": "Partir uses être: seront partis"
       },
@@ -1217,6 +1324,7 @@
           "sommes compris"
         ],
         "answer": "aurons compris",
+        "pronunciation": "o.ʁɔ̃ kɔ̃.pʁi",
         "explanation": "Comprendre uses avoir: aurons compris",
         "explanationFr": "Comprendre uses avoir: aurons compris"
       },
@@ -1226,6 +1334,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur antérieur.",
         "question": "Elle (se lever) ___ avant nous.",
         "answer": "se sera levée",
+        "pronunciation": "sə sə.ʁa lə.ve",
         "explanation": "Reflexive verb uses être: se sera levée",
         "explanationFr": "Reflexive verb uses être: se sera levée"
       },
@@ -1235,6 +1344,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur antérieur.",
         "question": "Dès que vous (manger) ___, on partira.",
         "answer": "aurez mangé",
+        "pronunciation": "o.ʁe mɑ̃.ʒe",
         "explanation": "Manger uses avoir: aurez mangé",
         "explanationFr": "Manger uses avoir: aurez mangé"
       },
@@ -1250,6 +1360,7 @@
           "terminera"
         ],
         "answer": "aura terminé",
+        "pronunciation": "o.ʁa tɛʁ.mi.ne",
         "explanation": "Terminer uses avoir: aura terminé",
         "explanationFr": "Terminer uses avoir: aura terminé"
       },
@@ -1259,6 +1370,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur antérieur.",
         "question": "Ils (rentrer) ___ avant la nuit.",
         "answer": "seront rentrés",
+        "pronunciation": "sə.ʁɔ̃ ʁɑ̃.tʁe",
         "explanation": "Rentrer (intransitive) uses être: seront rentrés",
         "explanationFr": "Rentrer (intransitive) uses être: seront rentrés"
       },
@@ -1268,6 +1380,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur antérieur.",
         "question": "Tu (lire) ___ ce livre en une semaine.",
         "answer": "auras lu",
+        "pronunciation": "o.ʁa ly",
         "explanation": "Lire uses avoir: auras lu",
         "explanationFr": "Lire uses avoir: auras lu"
       },
@@ -1283,6 +1396,7 @@
           "dormira"
         ],
         "answer": "aura dormi",
+        "pronunciation": "o.ʁa dɔʁ.mi",
         "explanation": "Dormir uses avoir: aura dormi",
         "explanationFr": "Dormir uses avoir: aura dormi"
       },
@@ -1292,6 +1406,7 @@
         "instruction": "Conjuguez le verbe entre parenthèses au futur antérieur.",
         "question": "Nous (voir) ___ le résultat dans une semaine.",
         "answer": "aurons vu",
+        "pronunciation": "o.ʁɔ̃ vy",
         "explanation": "Voir uses avoir: aurons vu",
         "explanationFr": "Voir uses avoir: aurons vu"
       }

@@ -277,6 +277,10 @@ function VocabularySet() {
               <span className="text-ink-light">Answer: </span>
               <span className="font-medium">{currentItem.french}</span>
             </p>
+            <p className="text-ink-light text-sm mt-1">
+              <span className="font-medium text-ink">Meaning: </span>
+              {currentItem.english}
+            </p>
             {currentItem.literal && (
               <p className="text-ink-light text-sm mt-1">
                 <span className="font-medium text-ink">Literal: </span>
@@ -284,7 +288,7 @@ function VocabularySet() {
               </p>
             )}
             {currentItem.example && (
-              <p className="text-ink-light text-sm mt-1 italic">{currentItem.example}</p>
+              <p className="text-ink-light text-sm mt-2 italic border-l-2 border-sand pl-3">{currentItem.example}</p>
             )}
           </div>
         )}

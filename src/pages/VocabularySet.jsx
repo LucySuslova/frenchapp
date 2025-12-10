@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { ArrowLeft, Check, X, ArrowRight, Lightbulb, Bookmark, BookmarkCheck, MessageCircle, Sparkles } from 'lucide-react'
+import { ArrowLeft, Check, X, ArrowRight, Lightbulb, Bookmark, BookmarkCheck, MessageCircle, Sparkles, RotateCcw, Trophy } from 'lucide-react'
 import useStore from '../store/useStore'
 import { FrenchKeyboard } from '../components/FrenchKeyboard'
 import vocabularyData from '../data/vocabulary.json'
@@ -20,11 +20,19 @@ function VocabularySet() {
   const [showHint, setShowHint] = useState(false)
   const [hintLevel, setHintLevel] = useState(0)
 
+  // Session stats tracking
+  const [sessionStats, setSessionStats] = useState({ correct: 0, incorrect: 0 })
+  const [showCompletionStats, setShowCompletionStats] = useState(false)
+
   const inputRef = useRef(null)
   const currentItem = items[currentIndex]
 
   useEffect(() => {
     setLastActivity('vocabularySet', setId)
+    // Reset session stats when changing vocabulary set
+    setCurrentIndex(0)
+    setSessionStats({ correct: 0, incorrect: 0 })
+    setShowCompletionStats(false)
   }, [setId, setLastActivity])
 
   useEffect(() => {
@@ -90,15 +98,32 @@ function VocabularySet() {
     setIsCorrect(isMatch)
     setShowResult(true)
     updateVocabularyAttempt(`${setId}_${currentItem.id}`, isMatch)
+
+    // Update session stats
+    setSessionStats(prev => ({
+      correct: prev.correct + (isMatch ? 1 : 0),
+      incorrect: prev.incorrect + (isMatch ? 0 : 1)
+    }))
   }
 
   const handleNext = () => {
     if (currentIndex < items.length - 1) {
       setCurrentIndex(currentIndex + 1)
     } else {
-      // Shuffle and restart
-      setCurrentIndex(0)
+      // Show completion stats when section is finished
+      setShowCompletionStats(true)
     }
+  }
+
+  const handleRestartSession = () => {
+    setCurrentIndex(0)
+    setSessionStats({ correct: 0, incorrect: 0 })
+    setShowCompletionStats(false)
+    setUserAnswer('')
+    setShowResult(false)
+    setIsCorrect(false)
+    setShowHint(false)
+    setHintLevel(0)
   }
 
   const handleKeyPress = (e) => {
@@ -308,12 +333,80 @@ function VocabularySet() {
               onClick={handleNext}
               className="flex-1 bg-bamboo text-white py-3 rounded-lg font-medium hover:bg-bamboo-dark transition-colors flex items-center justify-center gap-2"
             >
-              Next Item
+              {currentIndex < items.length - 1 ? 'Next Item' : 'Finish'}
               <ArrowRight size={20} />
             </button>
           )}
         </div>
       </div>
+
+      {/* Completion Stats Modal */}
+      {showCompletionStats && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl max-w-md w-full p-6 space-y-6">
+            {/* Header with trophy */}
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gold/20 rounded-full mb-4">
+                <Trophy size={32} className="text-gold" />
+              </div>
+              <h2 className="font-display text-2xl font-bold text-ink">Section Complete!</h2>
+              <p className="text-ink-light mt-1">{vocabSet.name}</p>
+            </div>
+
+            {/* Stats */}
+            <div className="space-y-4">
+              {/* Score percentage */}
+              <div className="text-center">
+                <div className="text-4xl font-bold text-ink">
+                  {items.length > 0 ? Math.round((sessionStats.correct / items.length) * 100) : 0}%
+                </div>
+                <p className="text-ink-light text-sm">Overall Score</p>
+              </div>
+
+              {/* Correct/Incorrect breakdown */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-bamboo/10 rounded-lg p-4 text-center">
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <Check size={20} className="text-bamboo" />
+                    <span className="text-2xl font-bold text-bamboo">{sessionStats.correct}</span>
+                  </div>
+                  <p className="text-sm text-ink-light">Correct</p>
+                </div>
+                <div className="bg-rust/10 rounded-lg p-4 text-center">
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <X size={20} className="text-rust" />
+                    <span className="text-2xl font-bold text-rust">{sessionStats.incorrect}</span>
+                  </div>
+                  <p className="text-sm text-ink-light">Incorrect</p>
+                </div>
+              </div>
+
+              {/* Total items */}
+              <div className="text-center text-sm text-ink-light">
+                {items.length} items completed
+              </div>
+            </div>
+
+            {/* Actions */}
+            <div className="space-y-3">
+              <button
+                onClick={handleRestartSession}
+                className="w-full flex items-center justify-center gap-2 bg-bamboo text-white py-3 rounded-lg font-medium hover:bg-bamboo-dark transition-colors"
+              >
+                <RotateCcw size={20} />
+                Practice Again
+              </button>
+              <Link
+                to="/vocabulary"
+                className="w-full flex items-center justify-center gap-2 bg-sand text-ink py-3 rounded-lg font-medium hover:bg-sand/80 transition-colors"
+              >
+                <ArrowLeft size={20} />
+                Back to Vocabulary
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

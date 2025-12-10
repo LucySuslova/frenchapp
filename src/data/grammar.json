@@ -782,7 +782,7 @@
   },
   "1_4_pc_vs_imparfait": {
     "name": "PC vs Imparfait",
-    "description": "Choosing between passé composé and imparfait",
+    "description": "Master the difference between passé composé (completed actions) and imparfait (ongoing states, habits, descriptions)",
     "exercises": [
       {
         "id": "pcim_001",
@@ -797,8 +797,8 @@
         ],
         "answer": "étais / habitais",
         "pronunciation": "e.tɛ / a.bi.tɛ",
-        "explanation": "Both describe ongoing states/situations in the past → imparfait",
-        "explanationFr": "Les deux décrivent des états/situations en cours dans le passé → imparfait"
+        "explanation": "Both verbs describe ongoing states in the past. Being young and living somewhere are continuous conditions, not completed events. Use IMPARFAIT for descriptions of how things were.",
+        "explanationFr": "Les deux verbes décrivent des états continus dans le passé. Être jeune et habiter quelque part sont des conditions continues, pas des événements terminés. Utilisez l'IMPARFAIT pour décrire comment les choses étaient."
       },
       {
         "id": "pcim_002",
@@ -813,8 +813,8 @@
         ],
         "answer": "suis tombé",
         "pronunciation": "sɥi tɔ̃.be",
-        "explanation": "Single completed action at a specific time (hier) → passé composé",
-        "explanationFr": "Action unique et complétée à un moment précis (hier) → passé composé"
+        "explanation": "Falling is a single, completed action that happened at a specific time (yesterday). Use PASSÉ COMPOSÉ for completed events with clear boundaries.",
+        "explanationFr": "Tomber est une action unique et complétée qui s'est produite à un moment précis (hier). Utilisez le PASSÉ COMPOSÉ pour les événements terminés avec des limites claires."
       },
       {
         "id": "pcim_003",
@@ -829,8 +829,8 @@
         ],
         "answer": "pleuvait / sommes sortis",
         "pronunciation": "plø.vɛ / sɔm sɔʁ.ti",
-        "explanation": "Ongoing background (imparfait) interrupted by completed action (passé composé)",
-        "explanationFr": "Action en cours en arrière-plan (imparfait) interrompue par action complétée (passé composé)"
+        "explanation": "The rain was ongoing (background) when we left (completed action). Use IMPARFAIT for the backdrop/setting and PASSÉ COMPOSÉ for the main event that occurred.",
+        "explanationFr": "La pluie était en cours (arrière-plan) quand nous sommes sortis (action complétée). Utilisez l'IMPARFAIT pour le décor et le PASSÉ COMPOSÉ pour l'événement principal."
       },
       {
         "id": "pcim_004",
@@ -839,8 +839,8 @@
         "question": "Tous les étés, nous (aller) ___ à la mer.",
         "answer": "allions",
         "pronunciation": "a.ljɔ̃",
-        "explanation": "Habitual action in the past (tous les étés) → imparfait",
-        "explanationFr": "Action habituelle dans le passé (tous les étés) → imparfait"
+        "explanation": "'Tous les étés' (every summer) indicates a repeated, habitual action in the past. Use IMPARFAIT for habits and routines that happened regularly.",
+        "explanationFr": "« Tous les étés » indique une action répétée et habituelle dans le passé. Utilisez l'IMPARFAIT pour les habitudes et routines qui se produisaient régulièrement."
       },
       {
         "id": "pcim_005",
@@ -849,8 +849,8 @@
         "question": "Ce matin, elle (se lever) ___ à 6 heures.",
         "answer": "s'est levée",
         "pronunciation": "sɛ lə.ve",
-        "explanation": "Specific completed action (ce matin) → passé composé",
-        "explanationFr": "Action spécifique complétée (ce matin) → passé composé"
+        "explanation": "'Ce matin' (this morning) refers to a specific point in time. Getting up is a completed action. Use PASSÉ COMPOSÉ for single events at specific times.",
+        "explanationFr": "« Ce matin » fait référence à un moment précis. Se lever est une action complétée. Utilisez le PASSÉ COMPOSÉ pour les événements uniques à des moments précis."
       },
       {
         "id": "pcim_006",
@@ -865,8 +865,8 @@
         ],
         "answer": "avait / a commencé",
         "pronunciation": "a.vɛ / a kɔ.mɑ̃.se",
-        "explanation": "Age description (imparfait) + completed event (passé composé)",
-        "explanationFr": "Description d'âge (imparfait) + événement complété (passé composé)"
+        "explanation": "Age is a state/description (IMPARFAIT), while starting university is a specific event that happened once (PASSÉ COMPOSÉ). The age provides context for when the event occurred.",
+        "explanationFr": "L'âge est un état/description (IMPARFAIT), tandis que commencer l'université est un événement précis qui s'est produit une fois (PASSÉ COMPOSÉ). L'âge fournit le contexte de l'événement."
       },
       {
         "id": "pcim_007",
@@ -875,8 +875,8 @@
         "question": "Je (lire) ___ quand le téléphone a sonné.",
         "answer": "lisais",
         "pronunciation": "li.zɛ",
-        "explanation": "Ongoing action interrupted → imparfait",
-        "explanationFr": "Ongoing action interrupted → imparfait"
+        "explanation": "Reading was in progress when the phone rang. The reading is the ongoing background action (IMPARFAIT) interrupted by the phone (PASSÉ COMPOSÉ).",
+        "explanationFr": "La lecture était en cours quand le téléphone a sonné. La lecture est l'action de fond en cours (IMPARFAIT) interrompue par le téléphone (PASSÉ COMPOSÉ)."
       },
       {
         "id": "pcim_008",
@@ -885,8 +885,8 @@
         "question": "Soudain, il (entendre) ___ un bruit étrange.",
         "answer": "a entendu",
         "pronunciation": "a ɑ̃.tɑ̃.dy",
-        "explanation": "Soudain indicates sudden action → passé composé",
-        "explanationFr": "Soudain indicates sudden action → passé composé"
+        "explanation": "'Soudain' (suddenly) signals a sudden, punctual event. Use PASSÉ COMPOSÉ for actions that happen at a specific moment, especially with words like soudain, tout à coup.",
+        "explanationFr": "« Soudain » signale un événement soudain et ponctuel. Utilisez le PASSÉ COMPOSÉ pour les actions qui se produisent à un moment précis, surtout avec des mots comme soudain, tout à coup."
       },
       {
         "id": "pcim_009",
@@ -901,8 +901,8 @@
         ],
         "answer": "brillait / chantaient",
         "pronunciation": "bʁi.jɛ / ʃɑ̃.tɛ",
-        "explanation": "Scene description, ongoing states → both imparfait",
-        "explanationFr": "Scene description, ongoing states → both imparfait"
+        "explanation": "This is a scene description - setting the atmosphere. Both actions are ongoing states that paint a picture of the moment. Use IMPARFAIT for descriptive scenes.",
+        "explanationFr": "C'est une description de scène - créer l'atmosphère. Les deux actions sont des états continus qui peignent une image du moment. Utilisez l'IMPARFAIT pour les scènes descriptives."
       },
       {
         "id": "pcim_010",
@@ -911,8 +911,8 @@
         "question": "Pendant que je (dormir) ___, quelqu'un a frappé à la porte.",
         "answer": "dormais",
         "pronunciation": "dɔʁ.mɛ",
-        "explanation": "Pendant que + ongoing action → imparfait",
-        "explanationFr": "Pendant que + ongoing action → imparfait"
+        "explanation": "'Pendant que' (while) introduces a simultaneous ongoing action. Sleeping was in progress when the knocking occurred. Use IMPARFAIT after 'pendant que' for the background action.",
+        "explanationFr": "« Pendant que » introduit une action simultanée en cours. Le sommeil était en cours quand quelqu'un a frappé. Utilisez l'IMPARFAIT après « pendant que » pour l'action de fond."
       },
       {
         "id": "pcim_011",
@@ -927,8 +927,8 @@
         ],
         "answer": "avons visité",
         "pronunciation": "a.vɔ̃ vi.zi.te",
-        "explanation": "Countable completed actions (trois fois) → passé composé",
-        "explanationFr": "Countable completed actions (trois fois) → passé composé"
+        "explanation": "'Trois fois' (three times) indicates countable, completed visits. Each visit had a beginning and end. Use PASSÉ COMPOSÉ for actions you can count.",
+        "explanationFr": "« Trois fois » indique des visites comptables et complétées. Chaque visite avait un début et une fin. Utilisez le PASSÉ COMPOSÉ pour les actions que vous pouvez compter."
       },
       {
         "id": "pcim_012",
@@ -937,8 +937,8 @@
         "question": "Elle ne (savoir) ___ pas qu'il était marié.",
         "answer": "savait",
         "pronunciation": "sa.vɛ",
-        "explanation": "Mental state, condition → imparfait",
-        "explanationFr": "Mental state, condition → imparfait"
+        "explanation": "Not knowing is a mental state that existed over time, not a completed event. Use IMPARFAIT for mental states, emotions, and beliefs in the past.",
+        "explanationFr": "Ne pas savoir est un état mental qui existait dans le temps, pas un événement terminé. Utilisez l'IMPARFAIT pour les états mentaux, émotions et croyances dans le passé."
       },
       {
         "id": "pcim_013",
@@ -947,8 +947,8 @@
         "question": "À ce moment-là, je (comprendre) ___ tout.",
         "answer": "ai compris",
         "pronunciation": "e kɔ̃.pʁi",
-        "explanation": "À ce moment-là indicates specific point → passé composé",
-        "explanationFr": "À ce moment-là indicates specific point → passé composé"
+        "explanation": "'À ce moment-là' (at that moment) indicates the precise instant when understanding occurred. This is a change of state - from not understanding to understanding. Use PASSÉ COMPOSÉ.",
+        "explanationFr": "« À ce moment-là » indique l'instant précis où la compréhension s'est produite. C'est un changement d'état - de ne pas comprendre à comprendre. Utilisez le PASSÉ COMPOSÉ."
       },
       {
         "id": "pcim_014",
@@ -963,8 +963,8 @@
         ],
         "answer": "faisait / a décidé",
         "pronunciation": "fə.zɛ / a de.si.de",
-        "explanation": "Weather description (imparfait) + resulting decision (passé composé)",
-        "explanationFr": "Weather description (imparfait) + resulting decision (passé composé)"
+        "explanation": "Weather is a background state (IMPARFAIT). The decision to go out is a completed action triggered by the weather (PASSÉ COMPOSÉ). The weather explains why the decision was made.",
+        "explanationFr": "Le temps est un état de fond (IMPARFAIT). La décision de sortir est une action complétée déclenchée par le temps (PASSÉ COMPOSÉ). Le temps explique pourquoi la décision a été prise."
       },
       {
         "id": "pcim_015",
@@ -973,8 +973,8 @@
         "question": "Autrefois, on (voyager) ___ en bateau.",
         "answer": "voyageait",
         "pronunciation": "vwa.ja.ʒɛ",
-        "explanation": "Autrefois indicates habitual past → imparfait",
-        "explanationFr": "Autrefois indicates habitual past → imparfait"
+        "explanation": "'Autrefois' (in the old days) refers to how things used to be - a general habit or custom of the past. Use IMPARFAIT for things that were generally true in the past.",
+        "explanationFr": "« Autrefois » fait référence à comment les choses étaient - une habitude ou coutume générale du passé. Utilisez l'IMPARFAIT pour les choses qui étaient généralement vraies dans le passé."
       },
       {
         "id": "pcim_016",
@@ -983,8 +983,8 @@
         "question": "En 2010, ils (déménager) ___ à Toronto.",
         "answer": "ont déménagé",
         "pronunciation": "ɔ̃ de.me.na.ʒe",
-        "explanation": "Specific date + completed action → passé composé",
-        "explanationFr": "Specific date + completed action → passé composé"
+        "explanation": "A specific year (2010) plus a single event (moving). Moving to Toronto happened once and was completed. Use PASSÉ COMPOSÉ for one-time events at specific dates.",
+        "explanationFr": "Une année précise (2010) plus un événement unique (déménager). Déménager à Toronto s'est produit une fois et a été complété. Utilisez le PASSÉ COMPOSÉ pour les événements uniques à des dates précises."
       },
       {
         "id": "pcim_017",
@@ -999,8 +999,8 @@
         ],
         "answer": "voulais / ai oublié",
         "pronunciation": "vu.lɛ / e u.bli.je",
-        "explanation": "Intention (imparfait) followed by completed action (passé composé)",
-        "explanationFr": "Intention (imparfait) followed by completed action (passé composé)"
+        "explanation": "Wanting is an ongoing intention/state (IMPARFAIT). Forgetting is a completed action - the moment you forgot (PASSÉ COMPOSÉ). The intention was interrupted by forgetting.",
+        "explanationFr": "Vouloir est une intention/état continu (IMPARFAIT). Oublier est une action complétée - le moment où vous avez oublié (PASSÉ COMPOSÉ). L'intention a été interrompue par l'oubli."
       },
       {
         "id": "pcim_018",
@@ -1009,8 +1009,8 @@
         "question": "Nous (attendre) ___ depuis une heure quand le bus est arrivé.",
         "answer": "attendions",
         "pronunciation": "a.tɑ̃.djɔ̃",
-        "explanation": "Ongoing duration before another action → imparfait",
-        "explanationFr": "Ongoing duration before another action → imparfait"
+        "explanation": "The waiting was ongoing when the bus arrived. 'Depuis une heure' emphasizes the duration of the wait. Use IMPARFAIT for actions in progress before another event.",
+        "explanationFr": "L'attente était en cours quand le bus est arrivé. « Depuis une heure » souligne la durée de l'attente. Utilisez l'IMPARFAIT pour les actions en cours avant un autre événement."
       },
       {
         "id": "pcim_019",
@@ -1019,8 +1019,8 @@
         "question": "Tout à coup, elle (éclater) ___ en sanglots.",
         "answer": "a éclaté",
         "pronunciation": "a e.kla.te",
-        "explanation": "Tout à coup signals sudden action → passé composé",
-        "explanationFr": "Tout à coup signals sudden action → passé composé"
+        "explanation": "'Tout à coup' (all of a sudden) signals a sudden event. Bursting into tears happened at a specific moment. Use PASSÉ COMPOSÉ with suddenness indicators.",
+        "explanationFr": "« Tout à coup » signale un événement soudain. Éclater en sanglots s'est produit à un moment précis. Utilisez le PASSÉ COMPOSÉ avec les indicateurs de soudaineté."
       },
       {
         "id": "pcim_020",
@@ -1035,8 +1035,528 @@
         ],
         "answer": "parlait / écoutait",
         "pronunciation": "paʁ.lɛ / e.ku.tɛ",
-        "explanation": "Two simultaneous ongoing actions → both imparfait",
-        "explanationFr": "Two simultaneous ongoing actions → both imparfait"
+        "explanation": "Both actions were happening simultaneously over a period of time. Neither interrupts the other. Use IMPARFAIT for two parallel ongoing actions.",
+        "explanationFr": "Les deux actions se produisaient simultanément sur une période de temps. Aucune n'interrompt l'autre. Utilisez l'IMPARFAIT pour deux actions parallèles en cours."
+      },
+      {
+        "id": "pcim_021",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Chaque matin, il (prendre) ___ son café sur la terrasse.",
+        "answer": "prenait",
+        "pronunciation": "pʁə.nɛ",
+        "explanation": "'Chaque matin' (every morning) indicates a habitual action. This was his routine, not a single event. Use IMPARFAIT for repeated habits in the past.",
+        "explanationFr": "« Chaque matin » indique une action habituelle. C'était sa routine, pas un événement unique. Utilisez l'IMPARFAIT pour les habitudes répétées dans le passé."
+      },
+      {
+        "id": "pcim_022",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "La maison ___ (être) vide quand les cambrioleurs ___ (entrer).",
+        "options": [
+          "était / sont entrés",
+          "a été / entraient",
+          "était / entraient",
+          "a été / sont entrés"
+        ],
+        "answer": "était / sont entrés",
+        "pronunciation": "e.tɛ / sɔ̃.t‿ɑ̃.tʁe",
+        "explanation": "The house being empty is a state/description (IMPARFAIT). The burglars entering is a completed action (PASSÉ COMPOSÉ). The state provides context for the event.",
+        "explanationFr": "La maison vide est un état/description (IMPARFAIT). L'entrée des cambrioleurs est une action complétée (PASSÉ COMPOSÉ). L'état fournit le contexte de l'événement."
+      },
+      {
+        "id": "pcim_023",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Elle (porter) ___ une robe rouge à la fête hier soir.",
+        "answer": "portait",
+        "pronunciation": "pɔʁ.tɛ",
+        "explanation": "What someone was wearing is a description of their appearance at the party. Use IMPARFAIT to describe what things/people looked like, even at a specific event.",
+        "explanationFr": "Ce que quelqu'un portait est une description de son apparence à la fête. Utilisez l'IMPARFAIT pour décrire l'apparence des choses/personnes, même lors d'un événement précis."
+      },
+      {
+        "id": "pcim_024",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Je ___ (marcher) dans la rue quand je ___ (rencontrer) Marie.",
+        "options": [
+          "marchais / ai rencontré",
+          "ai marché / rencontrais",
+          "marchais / rencontrais",
+          "ai marché / ai rencontré"
+        ],
+        "answer": "marchais / ai rencontré",
+        "pronunciation": "maʁ.ʃɛ / e ʁɑ̃.kɔ̃.tʁe",
+        "explanation": "Walking was ongoing (IMPARFAIT) when the meeting occurred (PASSÉ COMPOSÉ). Meeting Marie was a sudden, completed event that interrupted the walk.",
+        "explanationFr": "La marche était en cours (IMPARFAIT) quand la rencontre s'est produite (PASSÉ COMPOSÉ). Rencontrer Marie était un événement soudain et complété qui a interrompu la marche."
+      },
+      {
+        "id": "pcim_025",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "À cette époque, nous (habiter) ___ dans un petit appartement.",
+        "answer": "habitions",
+        "pronunciation": "a.bi.tjɔ̃",
+        "explanation": "'À cette époque' (at that time) refers to a period in the past. Living somewhere is a state that continued over time. Use IMPARFAIT for ongoing situations in the past.",
+        "explanationFr": "« À cette époque » fait référence à une période dans le passé. Habiter quelque part est un état qui continuait dans le temps. Utilisez l'IMPARFAIT pour les situations continues dans le passé."
+      },
+      {
+        "id": "pcim_026",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Il ___ (neiger) toute la nuit et ce matin tout ___ (être) blanc.",
+        "options": [
+          "a neigé / était",
+          "neigeait / a été",
+          "a neigé / a été",
+          "neigeait / était"
+        ],
+        "answer": "a neigé / était",
+        "pronunciation": "a ne.ʒe / e.tɛ",
+        "explanation": "Snowing all night is a completed event with duration (PASSÉ COMPOSÉ - 'toute la nuit' = beginning to end). The white scenery this morning is a descriptive state (IMPARFAIT).",
+        "explanationFr": "Neiger toute la nuit est un événement complété avec durée (PASSÉ COMPOSÉ - « toute la nuit » = du début à la fin). Le paysage blanc ce matin est un état descriptif (IMPARFAIT)."
+      },
+      {
+        "id": "pcim_027",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Quand j'étais jeune, je (croire) ___ au Père Noël.",
+        "answer": "croyais",
+        "pronunciation": "kʁwa.jɛ",
+        "explanation": "Believing in Santa Claus was an ongoing mental state during childhood. Use IMPARFAIT for beliefs, opinions, and mental states that existed over a period.",
+        "explanationFr": "Croire au Père Noël était un état mental continu pendant l'enfance. Utilisez l'IMPARFAIT pour les croyances, opinions et états mentaux qui existaient sur une période."
+      },
+      {
+        "id": "pcim_028",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Le train ___ (partir) à 8 heures mais je ___ (arriver) à 8h05.",
+        "options": [
+          "est parti / suis arrivé",
+          "partait / arrivais",
+          "est parti / arrivais",
+          "partait / suis arrivé"
+        ],
+        "answer": "est parti / suis arrivé",
+        "pronunciation": "ɛ paʁ.ti / sɥi a.ʁi.ve",
+        "explanation": "Both are completed events at specific times. The train leaving at 8:00 and arriving at 8:05 are both single, completed actions. Use PASSÉ COMPOSÉ for both.",
+        "explanationFr": "Les deux sont des événements complétés à des moments précis. Le train partant à 8h et l'arrivée à 8h05 sont des actions uniques et complétées. Utilisez le PASSÉ COMPOSÉ pour les deux."
+      },
+      {
+        "id": "pcim_029",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "D'habitude, elle (se coucher) ___ tôt.",
+        "answer": "se couchait",
+        "pronunciation": "sə ku.ʃɛ",
+        "explanation": "'D'habitude' (usually) indicates a habitual action. This was her normal routine in the past. Use IMPARFAIT for what someone used to do regularly.",
+        "explanationFr": "« D'habitude » indique une action habituelle. C'était sa routine normale dans le passé. Utilisez l'IMPARFAIT pour ce que quelqu'un faisait régulièrement."
+      },
+      {
+        "id": "pcim_030",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Je ___ (ne pas savoir) quoi dire, alors je ___ (se taire).",
+        "options": [
+          "ne savais pas / me suis tu",
+          "n'ai pas su / me taisais",
+          "ne savais pas / me taisais",
+          "n'ai pas su / me suis tu"
+        ],
+        "answer": "ne savais pas / me suis tu",
+        "pronunciation": "nə sa.vɛ pa / mə sɥi ty",
+        "explanation": "Not knowing what to say is a state (IMPARFAIT). Staying silent is the resulting action/decision (PASSÉ COMPOSÉ). The state led to the action.",
+        "explanationFr": "Ne pas savoir quoi dire est un état (IMPARFAIT). Se taire est l'action/décision qui en résulte (PASSÉ COMPOSÉ). L'état a mené à l'action."
+      },
+      {
+        "id": "pcim_031",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Les enfants (jouer) ___ dans le jardin quand il a commencé à pleuvoir.",
+        "answer": "jouaient",
+        "pronunciation": "ʒwɛ",
+        "explanation": "The children playing is the background activity that was interrupted by the rain starting. Use IMPARFAIT for the ongoing action that gets interrupted.",
+        "explanationFr": "Les enfants qui jouaient est l'activité de fond qui a été interrompue par la pluie. Utilisez l'IMPARFAIT pour l'action en cours qui est interrompue."
+      },
+      {
+        "id": "pcim_032",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Elle ___ (être) très fatiguée parce qu'elle ___ (travailler) toute la journée.",
+        "options": [
+          "était / avait travaillé",
+          "a été / travaillait",
+          "était / a travaillé",
+          "a été / avait travaillé"
+        ],
+        "answer": "était / avait travaillé",
+        "pronunciation": "e.tɛ / a.vɛ tʁa.va.je",
+        "explanation": "Being tired is a state (IMPARFAIT). Working all day happened before being tired (PLUS-QUE-PARFAIT). However, 'était / a travaillé' is also acceptable in casual speech.",
+        "explanationFr": "Être fatiguée est un état (IMPARFAIT). Travailler toute la journée s'est produit avant d'être fatiguée (PLUS-QUE-PARFAIT). Cependant, « était / a travaillé » est aussi acceptable à l'oral."
+      },
+      {
+        "id": "pcim_033",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Hier soir, nous (dîner) ___ dans un restaurant italien.",
+        "answer": "avons dîné",
+        "pronunciation": "a.vɔ̃ di.ne",
+        "explanation": "'Hier soir' (last night) is a specific time, and dining is a completed event. Use PASSÉ COMPOSÉ for events that happened and finished at a specific time.",
+        "explanationFr": "« Hier soir » est un moment précis, et dîner est un événement complété. Utilisez le PASSÉ COMPOSÉ pour les événements qui se sont produits et terminés à un moment précis."
+      },
+      {
+        "id": "pcim_034",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Quand j'___ (arriver) à la gare, le train ___ (partir) déjà.",
+        "options": [
+          "suis arrivé / était parti",
+          "arrivais / est parti",
+          "suis arrivé / partait",
+          "arrivais / partait"
+        ],
+        "answer": "suis arrivé / était parti",
+        "pronunciation": "sɥi a.ʁi.ve / e.tɛ paʁ.ti",
+        "explanation": "Arriving is a completed action (PASSÉ COMPOSÉ). The train had already left before arrival (PLUS-QUE-PARFAIT). 'Déjà' signals the earlier action.",
+        "explanationFr": "Arriver est une action complétée (PASSÉ COMPOSÉ). Le train était déjà parti avant l'arrivée (PLUS-QUE-PARFAIT). « Déjà » signale l'action antérieure."
+      },
+      {
+        "id": "pcim_035",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Il (faire) ___ très froid, alors nous avons allumé le chauffage.",
+        "answer": "faisait",
+        "pronunciation": "fə.zɛ",
+        "explanation": "The cold weather is the condition/state (IMPARFAIT) that caused the action of turning on the heating (PASSÉ COMPOSÉ in the sentence). Weather is typically IMPARFAIT.",
+        "explanationFr": "Le froid est la condition/état (IMPARFAIT) qui a causé l'action d'allumer le chauffage (PASSÉ COMPOSÉ dans la phrase). Le temps météo est typiquement à l'IMPARFAIT."
+      },
+      {
+        "id": "pcim_036",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Avant, il ___ (fumer) beaucoup, mais il ___ (arrêter) l'année dernière.",
+        "options": [
+          "fumait / a arrêté",
+          "a fumé / arrêtait",
+          "fumait / arrêtait",
+          "a fumé / a arrêté"
+        ],
+        "answer": "fumait / a arrêté",
+        "pronunciation": "fy.mɛ / a a.ʁɛ.te",
+        "explanation": "'Avant' (before) introduces a past habit (IMPARFAIT). 'L'année dernière' marks when he stopped - a completed change (PASSÉ COMPOSÉ). Habits vs. single events.",
+        "explanationFr": "« Avant » introduit une habitude passée (IMPARFAIT). « L'année dernière » marque quand il a arrêté - un changement complété (PASSÉ COMPOSÉ). Habitudes vs. événements uniques."
+      },
+      {
+        "id": "pcim_037",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Elle (avoir) ___ les cheveux longs quand elle était adolescente.",
+        "answer": "avait",
+        "pronunciation": "a.vɛ",
+        "explanation": "Having long hair is a physical description of how she looked during a period (adolescence). Use IMPARFAIT for physical descriptions in the past.",
+        "explanationFr": "Avoir les cheveux longs est une description physique de son apparence pendant une période (adolescence). Utilisez l'IMPARFAIT pour les descriptions physiques dans le passé."
+      },
+      {
+        "id": "pcim_038",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Ce matin-là, je ___ (se réveiller) tôt et je ___ (décider) d'aller courir.",
+        "options": [
+          "me suis réveillé / ai décidé",
+          "me réveillais / décidais",
+          "me suis réveillé / décidais",
+          "me réveillais / ai décidé"
+        ],
+        "answer": "me suis réveillé / ai décidé",
+        "pronunciation": "mə sɥi ʁe.vɛ.je / e de.si.de",
+        "explanation": "Both waking up and deciding are completed events that happened in sequence that morning. Use PASSÉ COMPOSÉ for a series of completed actions telling a story.",
+        "explanationFr": "Se réveiller et décider sont des événements complétés qui se sont produits en séquence ce matin-là. Utilisez le PASSÉ COMPOSÉ pour une série d'actions complétées racontant une histoire."
+      },
+      {
+        "id": "pcim_039",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Quand j'étais enfant, je (détester) ___ les épinards.",
+        "answer": "détestais",
+        "pronunciation": "de.tɛs.tɛ",
+        "explanation": "Hating spinach was an ongoing feeling/attitude during childhood. Use IMPARFAIT for feelings, preferences, and attitudes that existed over time.",
+        "explanationFr": "Détester les épinards était un sentiment/attitude continu pendant l'enfance. Utilisez l'IMPARFAIT pour les sentiments, préférences et attitudes qui existaient dans le temps."
+      },
+      {
+        "id": "pcim_040",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Il ___ (pleuvoir) quand soudain le soleil ___ (apparaître).",
+        "options": [
+          "pleuvait / est apparu",
+          "a plu / apparaissait",
+          "pleuvait / apparaissait",
+          "a plu / est apparu"
+        ],
+        "answer": "pleuvait / est apparu",
+        "pronunciation": "plø.vɛ / ɛ.t‿a.pa.ʁy",
+        "explanation": "Rain was ongoing (IMPARFAIT) when suddenly the sun appeared (PASSÉ COMPOSÉ). 'Soudain' signals the sudden event that changed the situation.",
+        "explanationFr": "La pluie était en cours (IMPARFAIT) quand soudain le soleil est apparu (PASSÉ COMPOSÉ). « Soudain » signale l'événement soudain qui a changé la situation."
+      },
+      {
+        "id": "pcim_041",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "La semaine dernière, je (rencontrer) ___ mon ancien professeur.",
+        "answer": "ai rencontré",
+        "pronunciation": "e ʁɑ̃.kɔ̃.tʁe",
+        "explanation": "'La semaine dernière' (last week) is a specific timeframe, and meeting someone is a completed event. Use PASSÉ COMPOSÉ for one-time encounters.",
+        "explanationFr": "« La semaine dernière » est une période précise, et rencontrer quelqu'un est un événement complété. Utilisez le PASSÉ COMPOSÉ pour les rencontres uniques."
+      },
+      {
+        "id": "pcim_042",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Elle ___ (lire) un livre tandis que son mari ___ (regarder) la télé.",
+        "options": [
+          "lisait / regardait",
+          "a lu / a regardé",
+          "lisait / a regardé",
+          "a lu / regardait"
+        ],
+        "answer": "lisait / regardait",
+        "pronunciation": "li.zɛ / ʁə.ɡaʁ.dɛ",
+        "explanation": "'Tandis que' (while) introduces two simultaneous ongoing actions. Both were happening at the same time. Use IMPARFAIT for both parallel actions.",
+        "explanationFr": "« Tandis que » introduit deux actions simultanées en cours. Les deux se produisaient en même temps. Utilisez l'IMPARFAIT pour les deux actions parallèles."
+      },
+      {
+        "id": "pcim_043",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Ils (se promener) ___ souvent au parc le dimanche.",
+        "answer": "se promenaient",
+        "pronunciation": "sə pʁɔm.nɛ",
+        "explanation": "'Souvent' (often) and 'le dimanche' (on Sundays) indicate a repeated habit. Use IMPARFAIT for actions that happened regularly over a period.",
+        "explanationFr": "« Souvent » et « le dimanche » indiquent une habitude répétée. Utilisez l'IMPARFAIT pour les actions qui se produisaient régulièrement sur une période."
+      },
+      {
+        "id": "pcim_044",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "À minuit, le téléphone ___ (sonner). Je ___ (se demander) qui pouvait appeler si tard.",
+        "options": [
+          "a sonné / me demandais",
+          "sonnait / me suis demandé",
+          "a sonné / me suis demandé",
+          "sonnait / me demandais"
+        ],
+        "answer": "a sonné / me demandais",
+        "pronunciation": "a sɔ.ne / mə də.mɑ̃.dɛ",
+        "explanation": "The phone ringing at midnight is a punctual event (PASSÉ COMPOSÉ). Wondering who could call is a mental state/thought that followed (IMPARFAIT).",
+        "explanationFr": "Le téléphone qui sonne à minuit est un événement ponctuel (PASSÉ COMPOSÉ). Se demander qui pouvait appeler est un état mental/pensée qui a suivi (IMPARFAIT)."
+      },
+      {
+        "id": "pcim_045",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Mon grand-père (raconter) ___ toujours des histoires incroyables.",
+        "answer": "racontait",
+        "pronunciation": "ʁa.kɔ̃.tɛ",
+        "explanation": "'Toujours' (always) signals a habitual action. This was something he did regularly. Use IMPARFAIT for recurring actions in the past.",
+        "explanationFr": "« Toujours » signale une action habituelle. C'était quelque chose qu'il faisait régulièrement. Utilisez l'IMPARFAIT pour les actions récurrentes dans le passé."
+      },
+      {
+        "id": "pcim_046",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Ce jour-là, elle ___ (prendre) une décision importante: elle ___ (quitter) son travail.",
+        "options": [
+          "a pris / a quitté",
+          "prenait / quittait",
+          "a pris / quittait",
+          "prenait / a quitté"
+        ],
+        "answer": "a pris / a quitté",
+        "pronunciation": "a pʁi / a ki.te",
+        "explanation": "'Ce jour-là' signals a specific day. Making a decision and quitting are both completed actions that happened. Use PASSÉ COMPOSÉ for the main story events.",
+        "explanationFr": "« Ce jour-là » signale un jour précis. Prendre une décision et quitter sont des actions complétées. Utilisez le PASSÉ COMPOSÉ pour les événements principaux de l'histoire."
+      },
+      {
+        "id": "pcim_047",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Il y (avoir) ___ beaucoup de monde dans la rue.",
+        "answer": "avait",
+        "pronunciation": "a.vɛ",
+        "explanation": "'Il y avait' describes the scene - what the situation was like. This sets the backdrop. Use IMPARFAIT for 'il y avait' when describing a setting.",
+        "explanationFr": "« Il y avait » décrit la scène - à quoi ressemblait la situation. Cela établit le décor. Utilisez l'IMPARFAIT pour « il y avait » quand vous décrivez un cadre."
+      },
+      {
+        "id": "pcim_048",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Je ___ (penser) à toi quand tu m'___ (envoyer) ce message.",
+        "options": [
+          "pensais / as envoyé",
+          "ai pensé / envoyais",
+          "pensais / envoyais",
+          "ai pensé / as envoyé"
+        ],
+        "answer": "pensais / as envoyé",
+        "pronunciation": "pɑ̃.sɛ / a ɑ̃.vwa.je",
+        "explanation": "Thinking about someone is an ongoing mental activity (IMPARFAIT). Sending a message is a completed action at a specific moment (PASSÉ COMPOSÉ).",
+        "explanationFr": "Penser à quelqu'un est une activité mentale continue (IMPARFAIT). Envoyer un message est une action complétée à un moment précis (PASSÉ COMPOSÉ)."
+      },
+      {
+        "id": "pcim_049",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "À l'époque, on ne (pouvoir) ___ pas voyager facilement.",
+        "answer": "pouvait",
+        "pronunciation": "pu.vɛ",
+        "explanation": "'À l'époque' (at that time) refers to a past period. The inability to travel easily was a general condition of that era. Use IMPARFAIT for past conditions.",
+        "explanationFr": "« À l'époque » fait référence à une période passée. L'impossibilité de voyager facilement était une condition générale de cette époque. Utilisez l'IMPARFAIT pour les conditions passées."
+      },
+      {
+        "id": "pcim_050",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Nous ___ (être) en train de manger quand l'orage ___ (éclater).",
+        "options": [
+          "étions / a éclaté",
+          "avons été / éclatait",
+          "étions / éclatait",
+          "avons été / a éclaté"
+        ],
+        "answer": "étions / a éclaté",
+        "pronunciation": "e.tjɔ̃ / a e.kla.te",
+        "explanation": "'Être en train de' emphasizes an ongoing action (IMPARFAIT). The storm breaking is a sudden event (PASSÉ COMPOSÉ) that interrupted the meal.",
+        "explanationFr": "« Être en train de » souligne une action en cours (IMPARFAIT). L'orage qui éclate est un événement soudain (PASSÉ COMPOSÉ) qui a interrompu le repas."
+      },
+      {
+        "id": "pcim_051",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "En 1995, mes parents (se marier) ___ à Paris.",
+        "answer": "se sont mariés",
+        "pronunciation": "sə sɔ̃ ma.ʁje",
+        "explanation": "Getting married in a specific year (1995) is a completed event. Use PASSÉ COMPOSÉ for life events that happened at specific times.",
+        "explanationFr": "Se marier dans une année précise (1995) est un événement complété. Utilisez le PASSÉ COMPOSÉ pour les événements de vie qui se sont produits à des moments précis."
+      },
+      {
+        "id": "pcim_052",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Pendant les vacances, nous ___ (aller) à la plage et nous ___ (nager) tous les jours.",
+        "options": [
+          "allions / nagions",
+          "sommes allés / avons nagé",
+          "allions / avons nagé",
+          "sommes allés / nagions"
+        ],
+        "answer": "allions / nagions",
+        "pronunciation": "a.ljɔ̃ / na.ʒjɔ̃",
+        "explanation": "'Tous les jours' (every day) indicates repeated actions during the vacation period. These were regular activities, not one-time events. Use IMPARFAIT for both.",
+        "explanationFr": "« Tous les jours » indique des actions répétées pendant la période de vacances. C'étaient des activités régulières, pas des événements uniques. Utilisez l'IMPARFAIT pour les deux."
+      },
+      {
+        "id": "pcim_053",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Elle (sembler) ___ triste, alors je lui ai demandé ce qui n'allait pas.",
+        "answer": "semblait",
+        "pronunciation": "sɑ̃.blɛ",
+        "explanation": "Seeming sad is an observation about her state/appearance (IMPARFAIT). It provides the reason for the question that followed (PASSÉ COMPOSÉ in the sentence).",
+        "explanationFr": "Sembler triste est une observation sur son état/apparence (IMPARFAIT). Cela fournit la raison de la question qui a suivi (PASSÉ COMPOSÉ dans la phrase)."
+      },
+      {
+        "id": "pcim_054",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Aussitôt qu'il ___ (voir) le chien, l'enfant ___ (se mettre) à pleurer.",
+        "options": [
+          "a vu / s'est mis",
+          "voyait / se mettait",
+          "a vu / se mettait",
+          "voyait / s'est mis"
+        ],
+        "answer": "a vu / s'est mis",
+        "pronunciation": "a vy / sɛ mi",
+        "explanation": "'Aussitôt que' (as soon as) introduces an immediate sequence: seeing then crying. Both are quick, completed actions. Use PASSÉ COMPOSÉ for both.",
+        "explanationFr": "« Aussitôt que » introduit une séquence immédiate : voir puis pleurer. Les deux sont des actions rapides et complétées. Utilisez le PASSÉ COMPOSÉ pour les deux."
+      },
+      {
+        "id": "pcim_055",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "La rue (être) ___ calme et silencieuse à cette heure-là.",
+        "answer": "était",
+        "pronunciation": "e.tɛ",
+        "explanation": "Describing how the street was - calm and silent - is setting the scene. Use IMPARFAIT for descriptions of places and atmosphere.",
+        "explanationFr": "Décrire comment était la rue - calme et silencieuse - c'est planter le décor. Utilisez l'IMPARFAIT pour les descriptions de lieux et d'atmosphère."
+      },
+      {
+        "id": "pcim_056",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Quand il ___ (être) jeune, il ___ (vouloir) devenir astronaute.",
+        "options": [
+          "était / voulait",
+          "a été / a voulu",
+          "était / a voulu",
+          "a été / voulait"
+        ],
+        "answer": "était / voulait",
+        "pronunciation": "e.tɛ / vu.lɛ",
+        "explanation": "Being young is a past period (IMPARFAIT). Wanting to be an astronaut was an ongoing desire during that period (IMPARFAIT). Both are states, not completed events.",
+        "explanationFr": "Être jeune est une période passée (IMPARFAIT). Vouloir devenir astronaute était un désir continu pendant cette période (IMPARFAIT). Les deux sont des états, pas des événements complétés."
+      },
+      {
+        "id": "pcim_057",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Ce matin, je (oublier) ___ mon parapluie à la maison.",
+        "answer": "ai oublié",
+        "pronunciation": "e u.bli.je",
+        "explanation": "Forgetting your umbrella this morning is a completed action. It happened once, this morning. Use PASSÉ COMPOSÉ for single events at specific times.",
+        "explanationFr": "Oublier son parapluie ce matin est une action complétée. C'est arrivé une fois, ce matin. Utilisez le PASSÉ COMPOSÉ pour les événements uniques à des moments précis."
+      },
+      {
+        "id": "pcim_058",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "Comme il ___ (faire) chaud, nous ___ (ouvrir) toutes les fenêtres.",
+        "options": [
+          "faisait / avons ouvert",
+          "a fait / ouvrions",
+          "faisait / ouvrions",
+          "a fait / avons ouvert"
+        ],
+        "answer": "faisait / avons ouvert",
+        "pronunciation": "fə.zɛ / a.vɔ̃.z‿u.vɛʁ",
+        "explanation": "'Comme' (since/as) introduces the reason - the heat (IMPARFAIT). Opening the windows is the resulting action (PASSÉ COMPOSÉ). Cause (state) → Effect (action).",
+        "explanationFr": "« Comme » introduit la raison - la chaleur (IMPARFAIT). Ouvrir les fenêtres est l'action qui en résulte (PASSÉ COMPOSÉ). Cause (état) → Effet (action)."
+      },
+      {
+        "id": "pcim_059",
+        "type": "fill_blank",
+        "instruction": "Conjuguez le verbe au temps approprié (PC ou imparfait).",
+        "question": "Avant, je (ne pas aimer) ___ le café, mais maintenant j'adore ça.",
+        "answer": "n'aimais pas",
+        "pronunciation": "nɛ.mɛ pa",
+        "explanation": "'Avant' (before) signals how things used to be. Not liking coffee was an ongoing preference in the past. Use IMPARFAIT for past preferences that have changed.",
+        "explanationFr": "« Avoir » signale comment les choses étaient. Ne pas aimer le café était une préférence continue dans le passé. Utilisez l'IMPARFAIT pour les préférences passées qui ont changé."
+      },
+      {
+        "id": "pcim_060",
+        "type": "multiple_choice",
+        "instruction": "Choisissez le temps approprié.",
+        "question": "J'___ (entrer) dans la pièce et j'___ (voir) qu'il y avait un problème.",
+        "options": [
+          "suis entré / ai vu",
+          "entrais / voyais",
+          "suis entré / voyais",
+          "entrais / ai vu"
+        ],
+        "answer": "suis entré / ai vu",
+        "pronunciation": "sɥi ɑ̃.tʁe / e vy",
+        "explanation": "Entering and seeing are sequential completed actions in a narrative. Use PASSÉ COMPOSÉ for the main events of a story happening one after another.",
+        "explanationFr": "Entrer et voir sont des actions complétées séquentielles dans un récit. Utilisez le PASSÉ COMPOSÉ pour les événements principaux d'une histoire qui se succèdent."
       }
     ]
   },

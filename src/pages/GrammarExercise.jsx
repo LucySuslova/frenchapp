@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { ArrowLeft, Check, X, ArrowRight, Shuffle, RotateCcw, Lightbulb } from 'lucide-react'
+import { ArrowLeft, Check, X, ArrowRight, Shuffle, RotateCcw, Lightbulb, Volume2 } from 'lucide-react'
 import useStore from '../store/useStore'
 import { FrenchKeyboard } from '../components/FrenchKeyboard'
 import grammarData from '../data/grammar.json'
@@ -381,10 +381,23 @@ function GrammarExercise() {
               )}
             </div>
             <div className="space-y-2">
-              {!isCorrect && (
+              {/* Show answer with pronunciation when correct, or just answer when incorrect */}
+              {isCorrect && currentExercise.pronunciation ? (
+                <div className="flex items-center gap-3 bg-white/50 p-3 rounded-lg">
+                  <div className="flex items-center gap-2">
+                    <Volume2 size={18} className="text-bamboo" />
+                    <span className="font-medium text-ink">{currentExercise.answer}</span>
+                  </div>
+                  <span className="text-ink-light">/</span>
+                  <span className="font-mono text-bamboo-dark">[{currentExercise.pronunciation}]</span>
+                </div>
+              ) : !isCorrect && (
                 <p className="text-ink">
                   <span className="text-ink-light">Answer: </span>
                   <span className="font-medium">{currentExercise.answer}</span>
+                  {currentExercise.pronunciation && (
+                    <span className="ml-2 font-mono text-ink-light">[{currentExercise.pronunciation}]</span>
+                  )}
                 </p>
               )}
               <p className="text-ink-light text-sm">

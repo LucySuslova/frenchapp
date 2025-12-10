@@ -16,6 +16,7 @@ import Dashboard from './pages/Dashboard'
 import NCLCTable from './pages/NCLCTable'
 import ReviewMode from './pages/ReviewMode'
 import Settings from './pages/Settings'
+import ConjugationCheatsheet from './pages/ConjugationCheatsheet'
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="nclc-table" element={<NCLCTable />} />
           <Route path="review" element={<ReviewMode />} />
+          <Route path="conjugation" element={<ConjugationCheatsheet />} />
           <Route path="settings" element={<Settings />} />
         </Route>
       </Routes>

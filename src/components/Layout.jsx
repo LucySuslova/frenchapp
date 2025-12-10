@@ -12,7 +12,8 @@ import {
   Menu,
   X,
   RefreshCw,
-  Settings as SettingsIcon
+  Settings as SettingsIcon,
+  Sparkles
 } from 'lucide-react'
 
 const navItems = [
@@ -24,6 +25,7 @@ const navItems = [
   { to: '/listening', icon: Headphones, label: 'Listening' },
   { to: '/writing', icon: PenTool, label: 'Writing' },
   { to: '/dashboard', icon: BarChart3, label: 'Dashboard' },
+  { to: '/conjugation', icon: Sparkles, label: 'Conjugation' },
   { to: '/nclc-table', icon: Table, label: 'NCLC Reference' },
   { to: '/settings', icon: SettingsIcon, label: 'Settings' },
 ]

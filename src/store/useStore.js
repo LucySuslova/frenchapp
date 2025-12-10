@@ -174,6 +174,32 @@ const useStore = create(
         })
       },
 
+      // Saved Expressions (for idioms and conversational expressions)
+      savedExpressions: [],
+      saveExpression: (expression) => {
+        const current = get().savedExpressions
+        // Don't add duplicates
+        if (!current.find(e => e.id === expression.id)) {
+          set({
+            savedExpressions: [
+              ...current,
+              { ...expression, savedAt: new Date().toISOString() }
+            ]
+          })
+        }
+      },
+      removeExpression: (expressionId) => {
+        set({
+          savedExpressions: get().savedExpressions.filter(e => e.id !== expressionId)
+        })
+      },
+      isExpressionSaved: (expressionId) => {
+        return get().savedExpressions.some(e => e.id === expressionId)
+      },
+      clearSavedExpressions: () => {
+        set({ savedExpressions: [] })
+      },
+
       // Failed Exercises for Review Mode (spaced repetition)
       failedExercises: [],
       recordFailedExercise: (exerciseId, topicId, exerciseData) => {
@@ -246,6 +272,7 @@ const useStore = create(
         listeningProgress: { completed: [], scores: {} },
         lastActivity: { grammarTopic: null, vocabularySet: null, readingPassage: null, listeningExercise: null, writingTask: null },
         failedExercises: [],
+        savedExpressions: [],
         settings: { explainInFrench: false }
       })
     }),

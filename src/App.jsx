@@ -5,6 +5,7 @@ import GrammarIndex from './pages/GrammarIndex'
 import GrammarExercise from './pages/GrammarExercise'
 import VocabularyIndex from './pages/VocabularyIndex'
 import VocabularySet from './pages/VocabularySet'
+import SavedExpressions from './pages/SavedExpressions'
 import ReadingIndex from './pages/ReadingIndex'
 import ReadingPassage from './pages/ReadingPassage'
 import WritingIndex from './pages/WritingIndex'
@@ -26,6 +27,7 @@ function App() {
           <Route path="grammar/:topicId" element={<GrammarExercise />} />
           <Route path="vocabulary" element={<VocabularyIndex />} />
           <Route path="vocabulary/:setId" element={<VocabularySet />} />
+          <Route path="saved-expressions" element={<SavedExpressions />} />
           <Route path="reading" element={<ReadingIndex />} />
           <Route path="reading/:passageId" element={<ReadingPassage />} />
           <Route path="writing" element={<WritingIndex />} />

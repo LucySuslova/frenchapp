@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { ArrowLeft, Check, X, ArrowRight, Lightbulb } from 'lucide-react'
+import { ArrowLeft, Check, X, ArrowRight, Lightbulb, Bookmark, BookmarkCheck, MessageCircle, Sparkles } from 'lucide-react'
 import useStore from '../store/useStore'
 import { FrenchKeyboard } from '../components/FrenchKeyboard'
 import vocabularyData from '../data/vocabulary.json'
 
 function VocabularySet() {
   const { setId } = useParams()
-  const { updateVocabularyAttempt, setLastActivity, vocabularyProgress } = useStore()
+  const { updateVocabularyAttempt, setLastActivity, vocabularyProgress, saveExpression, removeExpression, savedExpressions } = useStore()
 
   const vocabSet = vocabularyData[setId]
   const items = vocabSet?.items || []
@@ -111,6 +111,31 @@ function VocabularySet() {
     return vocabularyProgress.mastered.includes(`${setId}_${itemId}`)
   }
 
+  const isItemSaved = (itemId) => {
+    return savedExpressions?.some(e => e.id === `${setId}_${itemId}`)
+  }
+
+  const handleSaveExpression = () => {
+    const expressionData = {
+      id: `${setId}_${currentItem.id}`,
+      setId,
+      french: currentItem.french,
+      english: currentItem.english,
+      example: currentItem.example,
+      type: currentItem.type,
+      literal: currentItem.literal
+    }
+
+    if (isItemSaved(currentItem.id)) {
+      removeExpression(`${setId}_${currentItem.id}`)
+    } else {
+      saveExpression(expressionData)
+    }
+  }
+
+  // Check if current item is an idiom or expression
+  const isIdiomOrExpression = currentItem?.type === 'idiom' || currentItem?.type === 'expression'
+
   return (
     <div className="space-y-6 pb-16">
       {/* Header */}
@@ -136,12 +161,51 @@ function VocabularySet() {
 
       {/* Exercise Card */}
       <div className="bg-white rounded-xl border border-border p-6 space-y-6">
-        {isMastered(currentItem.id) && (
-          <div className="flex items-center gap-2 text-bamboo text-sm">
-            <Check size={16} />
-            <span>Mastered</span>
+        {/* Status badges row */}
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <div className="flex items-center gap-2">
+            {isMastered(currentItem.id) && (
+              <div className="flex items-center gap-1 text-bamboo text-sm">
+                <Check size={16} />
+                <span>Mastered</span>
+              </div>
+            )}
+            {currentItem.type === 'expression' && (
+              <span className="flex items-center gap-1 text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">
+                <MessageCircle size={14} />
+                Conversational
+              </span>
+            )}
+            {currentItem.type === 'idiom' && (
+              <span className="flex items-center gap-1 text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full">
+                <Sparkles size={14} />
+                Idiom
+              </span>
+            )}
           </div>
-        )}
+          {isIdiomOrExpression && (
+            <button
+              onClick={handleSaveExpression}
+              className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                isItemSaved(currentItem.id)
+                  ? 'bg-gold/20 text-gold'
+                  : 'bg-sand hover:bg-sand/80 text-ink-light'
+              }`}
+            >
+              {isItemSaved(currentItem.id) ? (
+                <>
+                  <BookmarkCheck size={16} />
+                  Saved
+                </>
+              ) : (
+                <>
+                  <Bookmark size={16} />
+                  Save
+                </>
+              )}
+            </button>
+          )}
+        </div>
 
         {mode === 'translate' ? (
           <div className="space-y-2">
@@ -213,6 +277,12 @@ function VocabularySet() {
               <span className="text-ink-light">Answer: </span>
               <span className="font-medium">{currentItem.french}</span>
             </p>
+            {currentItem.literal && (
+              <p className="text-ink-light text-sm mt-1">
+                <span className="font-medium text-ink">Literal: </span>
+                {currentItem.literal}
+              </p>
+            )}
             {currentItem.example && (
               <p className="text-ink-light text-sm mt-1 italic">{currentItem.example}</p>
             )}

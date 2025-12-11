@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom'
 import { ArrowLeft, Check, X, ArrowRight, Shuffle, RotateCcw, Lightbulb, Volume2 } from 'lucide-react'
 import useStore from '../store/useStore'
 import { FrenchKeyboard } from '../components/FrenchKeyboard'
+import { TranslationReveal } from '../components/TranslationReveal'
 import grammarData from '../data/grammar.json'
 
 // Fisher-Yates shuffle
@@ -400,12 +401,14 @@ function GrammarExercise() {
                   )}
                 </p>
               )}
-              <p className="text-ink-light text-sm">
-                {/* Always show French explanation when incorrect, otherwise follow user settings */}
-                {!isCorrect || settings.explainInFrench
+              <TranslationReveal
+                text={!isCorrect || settings.explainInFrench
                   ? (currentExercise.explanationFr || currentExercise.explanation)
                   : currentExercise.explanation}
-              </p>
+                label="Explanation:"
+                variant="block"
+                className="text-ink-light text-sm"
+              />
             </div>
           </div>
         )}

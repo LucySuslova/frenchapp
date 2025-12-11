@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, Check, X, ArrowRight, Lightbulb, Bookmark, BookmarkCheck, MessageCircle, Sparkles, RotateCcw, Trophy } from 'lucide-react'
 import useStore from '../store/useStore'
 import { FrenchKeyboard } from '../components/FrenchKeyboard'
+import { TranslationReveal } from '../components/TranslationReveal'
 import vocabularyData from '../data/vocabulary.json'
 
 function VocabularySet() {
@@ -302,15 +303,17 @@ function VocabularySet() {
               <span className="text-ink-light">Answer: </span>
               <span className="font-medium">{currentItem.french}</span>
             </p>
-            <p className="text-ink-light text-sm mt-1">
-              <span className="font-medium text-ink">Meaning: </span>
-              {currentItem.english}
-            </p>
+            <TranslationReveal
+              text={currentItem.english}
+              label="Meaning:"
+              className="text-ink-light text-sm mt-1"
+            />
             {currentItem.literal && (
-              <p className="text-ink-light text-sm mt-1">
-                <span className="font-medium text-ink">Literal: </span>
-                {currentItem.literal}
-              </p>
+              <TranslationReveal
+                text={currentItem.literal}
+                label="Literal:"
+                className="text-ink-light text-sm mt-1"
+              />
             )}
             {currentItem.example && (
               <p className="text-ink-light text-sm mt-2 italic border-l-2 border-sand pl-3">{currentItem.example}</p>

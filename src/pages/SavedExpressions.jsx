@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Trash2, MessageCircle, Sparkles, BookmarkX } from 'lucide-react'
 import useStore from '../store/useStore'
+import { TranslationReveal } from '../components/TranslationReveal'
 
 function SavedExpressions() {
   const { savedExpressions, removeExpression, clearSavedExpressions } = useStore()
@@ -84,12 +85,17 @@ function SavedExpressions() {
                       </span>
                     </div>
                     <p className="text-lg font-medium text-ink">{item.french}</p>
-                    <p className="text-ink-light">{item.english}</p>
+                    <TranslationReveal
+                      text={item.english}
+                      label="Meaning:"
+                      className="text-ink-light mt-1"
+                    />
                     {item.literal && (
-                      <p className="text-sm text-ink-light mt-1">
-                        <span className="font-medium text-ink">Literal: </span>
-                        {item.literal}
-                      </p>
+                      <TranslationReveal
+                        text={item.literal}
+                        label="Literal:"
+                        className="text-sm text-ink-light mt-1"
+                      />
                     )}
                     {item.example && (
                       <p className="text-sm text-ink-light mt-2 italic border-l-2 border-sand pl-3">
@@ -132,7 +138,11 @@ function SavedExpressions() {
                       </span>
                     </div>
                     <p className="text-lg font-medium text-ink">{item.french}</p>
-                    <p className="text-ink-light">{item.english}</p>
+                    <TranslationReveal
+                      text={item.english}
+                      label="Meaning:"
+                      className="text-ink-light mt-1"
+                    />
                     {item.example && (
                       <p className="text-sm text-ink-light mt-2 italic border-l-2 border-sand pl-3">
                         {item.example}

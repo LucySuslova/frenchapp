@@ -1,146 +1,351 @@
 {
   "passages": [
     {
-      "id": "read_001",
-      "title": "L'expatriation: une aventure enrichissante?",
-      "topic": "Life abroad / Expatriation",
-      "wordCount": 280,
-      "content": "De plus en plus de personnes choisissent de s'expatrier pour des raisons professionnelles ou personnelles. Cette décision, bien que souvent perçue comme une aventure excitante, comporte des défis considérables.\n\nD'un côté, vivre à l'étranger offre des opportunités uniques. On découvre une nouvelle culture, on apprend une langue, et on développe une ouverture d'esprit précieuse. Les expatriés parlent souvent d'une croissance personnelle significative et d'une meilleure compréhension du monde.\n\nCependant, l'expatriation n'est pas sans difficultés. Le choc culturel peut être déstabilisant. Les repères habituels disparaissent: la famille est loin, les amis sont absents, et même les gestes quotidiens deviennent compliqués. Beaucoup d'expatriés souffrent de solitude, particulièrement durant les premiers mois.\n\nDe plus, les questions administratives peuvent être un véritable casse-tête. Obtenir un visa, trouver un logement, ouvrir un compte bancaire: toutes ces démarches demandent du temps et de la patience.\n\nNéanmoins, ceux qui persistent affirment que l'expérience en vaut la peine. Ils reviennent transformés, avec une vision plus large du monde et des compétences interculturelles très recherchées sur le marché du travail.\n\nEn conclusion, l'expatriation est une expérience complexe qui demande préparation et adaptation. Elle n'est pas faite pour tout le monde, mais pour ceux qui osent, elle peut être profondément enrichissante.",
+      "id": "read_c1_001",
+      "title": "L'intelligence artificielle: menace existentielle ou outil de progrès?",
+      "topic": "Technology / Artificial Intelligence",
+      "level": "C1-C2",
+      "wordCount": 520,
+      "content": "L'avènement de l'intelligence artificielle générative suscite des réactions diamétralement opposées au sein de la communauté scientifique et du grand public. D'aucuns y voient l'aube d'une ère de prospérité sans précédent, tandis que d'autres redoutent un bouleversement sociétal aux conséquences incalculables.\n\nLes thuriféraires de cette technologie mettent en exergue ses applications prometteuses dans des domaines aussi variés que la médecine, l'éducation et la recherche fondamentale. Les algorithmes d'apprentissage profond permettent désormais de diagnostiquer certains cancers avec une précision supérieure à celle des praticiens les plus chevronnés. Dans le secteur éducatif, les systèmes adaptatifs offrent un enseignement personnalisé, palliant ainsi les carences d'un système scolaire souvent uniformisateur.\n\nNéanmoins, les détracteurs soulèvent des préoccupations légitimes qui méritent une attention particulière. La question de l'emploi cristallise les inquiétudes: selon certaines estimations, près de 40% des postes actuels pourraient être automatisés d'ici deux décennies. Si l'histoire économique nous enseigne que les révolutions technologiques ont toujours engendré davantage d'emplois qu'elles n'en ont supprimés, la rapidité et l'ampleur de la transformation actuelle semblent sans commune mesure avec les précédentes.\n\nPar ailleurs, la concentration du pouvoir technologique entre les mains d'une poignée d'entreprises multinationales pose un défi démocratique majeur. Ces entités, qui échappent largement au contrôle des États-nations, disposent d'une influence considérable sur l'opinion publique et les processus décisionnels. L'opacité des algorithmes qui régissent nos fils d'actualité et nos recommandations soulève des interrogations quant à la manipulation potentielle de nos comportements et de nos choix.\n\nLa question de la responsabilité juridique constitue un autre écueil. Lorsqu'un véhicule autonome provoque un accident mortel, qui doit être tenu pour responsable? Le constructeur, le concepteur de l'algorithme, le propriétaire du véhicule? Notre cadre juridique, forgé à une époque où l'agent moral était nécessairement humain, se trouve manifestement inadapté à ces nouvelles réalités.\n\nFace à ces enjeux, certains appellent à un moratoire sur le développement des systèmes d'IA les plus avancés, arguant que nous devons nous assurer de pouvoir contrôler ces technologies avant de les déployer à grande échelle. D'autres rétorquent qu'un tel moratoire serait non seulement inefficace — les acteurs non signataires poursuivraient leurs recherches — mais également préjudiciable, privant l'humanité des bienfaits potentiels de ces avancées.\n\nIl apparaît donc impératif d'élaborer un cadre réglementaire international qui concilie innovation et précaution. Ce cadre devrait garantir la transparence des algorithmes, assurer une répartition équitable des bénéfices économiques générés par l'automatisation, et préserver les libertés individuelles face à la surveillance de masse que ces technologies rendent techniquement possible.\n\nEn définitive, l'intelligence artificielle n'est ni intrinsèquement bénéfique ni foncièrement maléfique. C'est un outil dont l'impact dépendra des choix collectifs que nous ferons quant à son déploiement et à sa régulation. La véritable question n'est pas de savoir si nous devons adopter ces technologies, mais comment nous pouvons les orienter vers le bien commun.",
       "questions": [
         {
-          "question": "Selon le texte, pourquoi les gens s'expatrient-ils?",
-          "options": ["Uniquement pour le travail", "Pour des raisons professionnelles ou personnelles", "Seulement pour apprendre une langue", "Pour fuir leur pays"],
+          "question": "Que signifie l'expression « les thuriféraires de cette technologie » dans le contexte du texte?",
+          "options": ["Les critiques de l'IA", "Les partisans enthousiastes de l'IA", "Les chercheurs neutres", "Les régulateurs gouvernementaux"],
           "answer": 1
         },
         {
-          "question": "Quel est l'un des avantages de l'expatriation mentionné?",
-          "options": ["Un salaire plus élevé", "Une ouverture d'esprit", "Plus de temps libre", "Un meilleur climat"],
-          "answer": 1
+          "question": "Selon le texte, pourquoi la révolution de l'IA serait-elle différente des révolutions technologiques précédentes?",
+          "options": ["Elle ne créera aucun emploi nouveau", "Elle est moins importante que les précédentes", "Sa rapidité et son ampleur sont sans précédent", "Elle ne concerne que le secteur technologique"],
+          "answer": 2
         },
         {
-          "question": "Qu'est-ce qui cause de la solitude chez les expatriés?",
-          "options": ["Le travail difficile", "L'éloignement de la famille et des amis", "Le coût de la vie", "La météo"],
-          "answer": 1
+          "question": "Quel problème démocratique l'auteur identifie-t-il?",
+          "options": ["Les gouvernements contrôlent trop l'IA", "Les citoyens refusent d'utiliser l'IA", "Le pouvoir technologique est concentré dans quelques entreprises qui échappent au contrôle des États", "Les algorithmes sont trop transparents"],
+          "answer": 2
         },
         {
-          "question": "Quelle est la position de l'auteur sur l'expatriation?",
-          "options": ["Totalement positive", "Totalement négative", "Nuancée - elle présente des avantages et des défis", "Indifférente"],
+          "question": "Quelle est la position de l'auteur concernant un moratoire sur l'IA?",
+          "options": ["Il y est totalement favorable", "Il y est totalement opposé", "Il reconnaît les arguments des deux camps sans trancher définitivement", "Il considère que c'est la seule solution viable"],
+          "answer": 2
+        },
+        {
+          "question": "Quelle est la thèse principale défendue dans la conclusion?",
+          "options": ["L'IA doit être interdite", "L'IA est intrinsèquement bénéfique", "L'impact de l'IA dépendra des choix collectifs concernant sa régulation", "Il est impossible de réguler l'IA"],
           "answer": 2
         }
       ]
     },
     {
-      "id": "read_002",
-      "title": "Les réseaux sociaux: amis ou ennemis?",
-      "topic": "Technology / Social Media",
-      "wordCount": 300,
-      "content": "Les réseaux sociaux ont transformé notre façon de communiquer. Facebook, Instagram, Twitter, TikTok font désormais partie de notre quotidien. Mais cette omniprésence est-elle bénéfique?\n\nLes partisans des réseaux sociaux soulignent leurs nombreux avantages. Ils permettent de rester en contact avec des proches éloignés, de partager des moments importants, et de s'informer rapidement. Pour les entreprises, c'est un outil marketing incontournable.\n\nPourtant, les critiques sont nombreuses. Les réseaux sociaux favorisent la désinformation. Les fausses nouvelles se propagent à une vitesse alarmante, et beaucoup de gens n'ont pas le réflexe de vérifier leurs sources. De plus, l'utilisation excessive des réseaux peut nuire à la santé mentale. Les comparaisons constantes avec les vies apparemment parfaites des autres génèrent anxiété et dépression, particulièrement chez les jeunes.\n\nUn autre problème est la dépendance. Vérifier son téléphone des centaines de fois par jour est devenu normal pour beaucoup. Cette habitude affecte la concentration et la productivité.\n\nPar ailleurs, la vie privée est menacée. Nos données personnelles sont collectées et vendues à des annonceurs. Nous sommes constamment surveillés, souvent sans en être conscients.\n\nEn fin de compte, les réseaux sociaux ne sont ni bons ni mauvais en soi. C'est notre usage qui détermine leur impact. Une utilisation modérée et consciente peut apporter des bénéfices. Mais il est essentiel d'éduquer les utilisateurs, surtout les plus jeunes, aux risques et aux bonnes pratiques.",
+      "id": "read_c1_002",
+      "title": "La transition écologique: entre urgence climatique et réalités économiques",
+      "topic": "Environment / Climate Policy",
+      "level": "C1-C2",
+      "wordCount": 540,
+      "content": "Les rapports du GIEC se succèdent, chacun plus alarmant que le précédent, dressant le tableau d'une planète au bord de l'irréversibilité climatique. Pourtant, malgré l'accumulation des preuves scientifiques et la multiplication des phénomènes météorologiques extrêmes, la transition vers une économie décarbonée demeure désespérément lente. Comment expliquer ce décalage entre l'urgence proclamée et l'action réelle?\n\nLes obstacles à la transition écologique sont multidimensionnels et profondément enracinés dans nos structures économiques et sociales. Premièrement, notre modèle de développement repose depuis deux siècles sur l'exploitation intensive des énergies fossiles. Cette dépendance s'est traduite par la constitution d'infrastructures colossales — raffineries, centrales thermiques, réseaux de distribution — dont l'amortissement s'étale sur plusieurs décennies. Abandonner prématurément ces actifs représenterait des pertes financières considérables pour les investisseurs et les États.\n\nDeuxièmement, la transition énergétique implique une redistribution des richesses et du pouvoir qui se heurte à des résistances farouches. Les industries fossiles, conscientes de la menace existentielle que représente pour elles la décarbonation, déploient des stratégies sophistiquées de lobbying et de désinformation. Des documents internes révèlent que certaines compagnies pétrolières connaissaient dès les années 1970 les effets de leurs activités sur le climat, mais ont délibérément choisi de semer le doute scientifique pour préserver leurs intérêts.\n\nTroisièmement, la question de l'équité sociale se pose avec acuité. Les mesures environnementales, qu'il s'agisse de la taxe carbone ou de l'interdiction des véhicules polluants, affectent de manière disproportionnée les ménages modestes. Le mouvement des Gilets jaunes en France a illustré de manière éclatante ce phénomène: une fiscalité verte perçue comme injuste peut susciter un rejet massif, compromettant l'ensemble du projet écologique.\n\nFace à ces obstacles, certains économistes préconisent une approche gradualiste, misant sur l'innovation technologique et les mécanismes de marché pour opérer une transition en douceur. Ils arguent que le verdissement progressif de l'économie permettra d'éviter les chocs sociaux tout en atteignant les objectifs climatiques à long terme.\n\nCette vision se heurte toutefois à une objection de taille: le temps nous est compté. Les scientifiques estiment que nous disposons d'une fenêtre d'action de quelques années seulement pour éviter un emballement climatique irréversible. Dans cette perspective, le gradualisme apparaît comme une forme de procrastination déguisée en prudence.\n\nLes partisans d'une transition radicale plaident pour une intervention massive de l'État, à l'image du Green New Deal américain ou du Pacte vert européen. Ces programmes ambitieux visent à transformer en profondeur nos modes de production et de consommation en l'espace d'une décennie. Leurs détracteurs objectent que de telles politiques sont économiquement irréalistes et politiquement intenables dans des démocraties où les échéances électorales imposent une vision à court terme.\n\nEn dernière analyse, la transition écologique ne pourra réussir qu'à la condition de résoudre simultanément l'équation climatique et l'équation sociale. Cela suppose d'inventer un nouveau modèle de développement qui réconcilie prospérité partagée et soutenabilité environnementale — un défi intellectuel et politique sans doute plus ardu que tous ceux auxquels l'humanité a été confrontée jusqu'ici.",
       "questions": [
         {
-          "question": "Quel avantage des réseaux sociaux est mentionné?",
-          "options": ["Ils rendent les gens plus intelligents", "Ils permettent de rester en contact avec des proches", "Ils remplacent les médecins", "Ils sont gratuits"],
+          "question": "Selon l'auteur, pourquoi est-il difficile d'abandonner les énergies fossiles?",
+          "options": ["Les énergies renouvelables n'existent pas encore", "Les infrastructures existantes représentent des investissements colossaux qui doivent être amortis", "Les citoyens préfèrent les énergies fossiles", "Les gouvernements interdisent les énergies renouvelables"],
           "answer": 1
         },
         {
-          "question": "Quel problème de santé est associé aux réseaux sociaux?",
-          "options": ["Des problèmes de vue", "L'anxiété et la dépression", "Des maux de tête", "La fatigue physique"],
+          "question": "Que révèlent les « documents internes » mentionnés dans le texte?",
+          "options": ["Les compagnies pétrolières ne connaissaient pas les effets du changement climatique", "Certaines compagnies pétrolières savaient dès les années 1970 l'impact de leurs activités mais ont choisi de semer le doute", "Les scientifiques ont falsifié leurs recherches", "Les gouvernements ont caché les informations au public"],
           "answer": 1
         },
         {
-          "question": "Que dit l'auteur sur la vie privée?",
-          "options": ["Elle est bien protégée", "Les données sont collectées et vendues", "Les utilisateurs contrôlent tout", "Ce n'est pas un problème"],
+          "question": "Pourquoi l'auteur mentionne-t-il le mouvement des Gilets jaunes?",
+          "options": ["Pour montrer que les Français sont contre l'écologie", "Pour illustrer que des mesures environnementales perçues comme injustes peuvent provoquer un rejet social massif", "Pour démontrer l'efficacité de la taxe carbone", "Pour critiquer le gouvernement français"],
           "answer": 1
         },
         {
-          "question": "Quelle est la conclusion de l'auteur?",
-          "options": ["Il faut interdire les réseaux sociaux", "Les réseaux sont parfaits comme ils sont", "C'est notre usage qui détermine leur impact", "Les jeunes ne devraient pas les utiliser"],
+          "question": "Quelle est l'objection principale contre l'approche gradualiste?",
+          "options": ["Elle est trop coûteuse", "Elle est impopulaire", "Le temps disponible pour agir est trop limité pour une transition lente", "Elle favorise les pays riches"],
+          "answer": 2
+        },
+        {
+          "question": "Quelle condition l'auteur pose-t-il pour la réussite de la transition écologique?",
+          "options": ["Abandonner la démocratie", "Résoudre simultanément les défis climatiques et sociaux", "Attendre de meilleures technologies", "Laisser faire le marché"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "read_c1_003",
+      "title": "La fracture numérique: un nouveau facteur d'exclusion sociale",
+      "topic": "Society / Digital Divide",
+      "level": "C1-C2",
+      "wordCount": 510,
+      "content": "À l'heure où la dématérialisation des services publics s'accélère et où le télétravail se généralise, l'accès aux outils numériques et la maîtrise de leur usage constituent désormais des compétences aussi fondamentales que la lecture et l'écriture. Or, une fraction significative de la population demeure exclue de cette révolution technologique, créant ce que les sociologues nomment la « fracture numérique ».\n\nCette fracture revêt plusieurs dimensions qu'il convient de distinguer. La première, la plus évidente, est d'ordre matériel: elle concerne l'accès physique aux équipements informatiques et à une connexion internet de qualité. Si les statistiques montrent une progression constante du taux d'équipement, des disparités persistantes subsistent entre zones urbaines et rurales, entre catégories socioprofessionnelles, et entre générations.\n\nLa seconde dimension, plus insidieuse, est d'ordre cognitif. Disposer d'un ordinateur ne suffit pas; encore faut-il savoir s'en servir efficacement. L'illectronisme — terme forgé par analogie avec l'illettrisme — touche environ 17% de la population française adulte. Ces personnes éprouvent des difficultés à accomplir des tâches élémentaires telles que la rédaction d'un courriel, la navigation sur un site internet ou le remplissage d'un formulaire en ligne.\n\nLes conséquences de cette exclusion numérique sont multiples et souvent dramatiques. Sur le plan administratif, la fermeture des guichets physiques au profit des téléservices place les personnes concernées dans l'impossibilité pratique d'exercer leurs droits. Combien de prestations sociales ne sont pas réclamées, combien de démarches restent inachevées faute de compétences numériques? Les travailleurs sociaux témoignent quotidiennement de ces situations ubuesques où des citoyens se trouvent démunis face à des interfaces conçues sans considération pour leurs difficultés.\n\nSur le plan professionnel, l'illectronisme constitue un handicap croissant sur le marché de l'emploi. La quasi-totalité des offres d'emploi transite désormais par des plateformes numériques, et les processus de recrutement font un usage intensif des outils digitaux. Les personnes éloignées du numérique se trouvent ainsi doublement pénalisées: exclues de l'information sur les opportunités professionnelles et incapables de valoriser leur candidature.\n\nFace à ce constat, les pouvoirs publics ont déployé diverses initiatives: espaces numériques accompagnés, formations aux compétences de base, simplification des démarches en ligne. Ces efforts, pour louables qu'ils soient, demeurent insuffisants au regard de l'ampleur du phénomène. Ils reposent souvent sur une logique d'adaptation des individus aux exigences du numérique, sans interroger la pertinence de la dématérialisation systématique.\n\nNe conviendrait-il pas plutôt de préserver des alternatives non numériques pour l'accès aux services essentiels? La modernisation administrative ne saurait se faire au détriment des plus vulnérables. Le numérique doit rester un moyen au service des citoyens, non une fin en soi qui justifierait l'exclusion de ceux qui n'en maîtrisent pas les codes.\n\nEn définitive, la fracture numérique nous renvoie à une interrogation plus fondamentale sur le type de société que nous souhaitons construire: une société où la technologie libère et émancipe, ou une société où elle devient un nouvel instrument de relégation sociale.",
+      "questions": [
+        {
+          "question": "Qu'est-ce que l'« illectronisme » selon le texte?",
+          "options": ["L'addiction aux écrans", "L'incapacité à accomplir des tâches numériques élémentaires", "Le refus volontaire d'utiliser les technologies", "La peur des ordinateurs"],
+          "answer": 1
+        },
+        {
+          "question": "Selon le texte, quelles sont les deux dimensions de la fracture numérique?",
+          "options": ["Économique et politique", "Matérielle (accès aux équipements) et cognitive (compétences d'utilisation)", "Urbaine et rurale", "Générationnelle et professionnelle"],
+          "answer": 1
+        },
+        {
+          "question": "Que critique implicitement l'auteur concernant les politiques publiques actuelles?",
+          "options": ["Elles sont trop coûteuses", "Elles visent à adapter les individus au numérique plutôt qu'à questionner la dématérialisation systématique", "Elles sont inexistantes", "Elles favorisent les entreprises privées"],
+          "answer": 1
+        },
+        {
+          "question": "Que suggère l'auteur comme solution alternative?",
+          "options": ["Supprimer tous les services numériques", "Former davantage les citoyens", "Préserver des alternatives non numériques pour les services essentiels", "Attendre que la technologie s'améliore"],
+          "answer": 2
+        },
+        {
+          "question": "Quelle question fondamentale l'auteur pose-t-il en conclusion?",
+          "options": ["Comment financer la transition numérique?", "Quel type de société voulons-nous: une où la technologie libère ou une où elle exclut?", "Faut-il interdire le numérique?", "Comment former les personnes âgées?"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "read_c1_004",
+      "title": "L'agriculture biologique face au défi alimentaire mondial",
+      "topic": "Agriculture / Food Security",
+      "level": "C1-C2",
+      "wordCount": 530,
+      "content": "Alors que la population mondiale devrait atteindre près de dix milliards d'individus d'ici 2050, la question de la capacité de l'agriculture biologique à nourrir l'humanité fait l'objet de vifs débats. Les partisans du « tout bio » s'opposent aux défenseurs de l'agriculture intensive dans une controverse où les arguments scientifiques se mêlent souvent aux considérations idéologiques.\n\nLes promoteurs de l'agriculture biologique avancent des arguments environnementaux difficilement contestables. L'agriculture conventionnelle, avec son recours massif aux pesticides et aux engrais de synthèse, contribue à la pollution des sols et des nappes phréatiques, à l'effondrement de la biodiversité — notamment des populations de pollinisateurs essentiels — et à l'émission de gaz à effet de serre. Le modèle biologique, en proscrivant ces intrants chimiques, offre une alternative plus respectueuse des écosystèmes.\n\nDe surcroît, les études épidémiologiques suggèrent des bénéfices pour la santé humaine. L'exposition chronique aux résidus de pesticides est associée à un risque accru de certains cancers, de troubles neurologiques et de perturbations endocriniennes. Les consommateurs de produits biologiques réduiraient significativement leur exposition à ces substances potentiellement nocives.\n\nToutefois, les détracteurs du bio soulèvent une objection majeure: les rendements. À surface égale, l'agriculture biologique produit en moyenne 20 à 25% de moins que l'agriculture conventionnelle. Dans un contexte de croissance démographique et de raréfaction des terres arables, ce déficit de productivité pose un problème arithmétique apparemment insoluble. Généraliser le bio impliquerait soit d'étendre considérablement les surfaces cultivées — au détriment des forêts et des espaces naturels —, soit d'accepter une diminution de la production alimentaire mondiale.\n\nCette opposition binaire mérite cependant d'être nuancée. D'une part, les rendements du bio varient considérablement selon les cultures et les contextes pédo-climatiques. Pour certaines productions, l'écart avec le conventionnel est minime, voire inexistant. D'autre part, le calcul des rendements occulte souvent les « externalités négatives » de l'agriculture intensive: coûts de dépollution, dépenses de santé, perte de services écosystémiques. Une comptabilité intégrant ces facteurs pourrait inverser le rapport coût-bénéfice.\n\nPar ailleurs, le débat se focalise excessivement sur la production, négligeant la question cruciale du gaspillage et de la distribution. Selon la FAO, un tiers de la production alimentaire mondiale est perdu ou gaspillé entre le champ et l'assiette. Réduire ce gaspillage permettrait de compenser largement le différentiel de rendement du bio. De même, une redistribution plus équitable des ressources alimentaires — actuellement, certaines régions du monde souffrent de malnutrition tandis que d'autres croulent sous l'obésité — constitue un levier au moins aussi important que l'augmentation de la production.\n\nEn somme, la question « le bio peut-il nourrir le monde? » est mal posée. L'enjeu n'est pas de choisir entre deux modèles agricoles antagonistes, mais d'opérer une transformation systémique intégrant les pratiques agroécologiques, la lutte contre le gaspillage, et une refonte des modes de distribution et de consommation. C'est à cette condition seulement que nous pourrons concilier sécurité alimentaire et durabilité environnementale.",
+      "questions": [
+        {
+          "question": "Quel argument environnemental majeur est avancé en faveur de l'agriculture biologique?",
+          "options": ["Elle est moins chère", "Elle produit plus", "Elle évite la pollution des sols et préserve la biodiversité", "Elle nécessite moins de travail"],
+          "answer": 2
+        },
+        {
+          "question": "Quelle est l'objection principale des détracteurs du bio?",
+          "options": ["Les produits bio ont mauvais goût", "Les rendements sont inférieurs de 20 à 25%", "L'agriculture biologique pollue davantage", "Les agriculteurs bio sont moins compétents"],
+          "answer": 1
+        },
+        {
+          "question": "Que sont les « externalités négatives » mentionnées dans le texte?",
+          "options": ["Les profits des entreprises agricoles", "Les coûts cachés de l'agriculture intensive (dépollution, santé, perte de biodiversité)", "Les subventions agricoles", "Les exportations alimentaires"],
+          "answer": 1
+        },
+        {
+          "question": "Selon l'auteur, pourquoi le débat sur les rendements est-il insuffisant?",
+          "options": ["Parce que les rendements ne sont pas mesurables", "Parce qu'il néglige le gaspillage alimentaire et les problèmes de distribution", "Parce que tous les agriculteurs mentent sur leurs rendements", "Parce que le bio produit en réalité plus que le conventionnel"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle est la thèse finale de l'auteur?",
+          "options": ["Le bio doit remplacer totalement l'agriculture conventionnelle", "L'agriculture conventionnelle est supérieure", "Il faut une transformation systémique incluant agroécologie, lutte contre le gaspillage et refonte de la distribution", "Il est impossible de nourrir la planète"],
           "answer": 2
         }
       ]
     },
     {
-      "id": "read_003",
-      "title": "Le télétravail: révolution ou illusion?",
-      "topic": "Work / Remote Work",
-      "wordCount": 290,
-      "content": "La pandémie a accéléré l'adoption du télétravail. Ce qui était exceptionnel est devenu la norme pour des millions de travailleurs. Mais cette nouvelle façon de travailler est-elle vraiment avantageuse?\n\nLes arguments en faveur du télétravail sont nombreux. Plus besoin de perdre du temps dans les transports, une meilleure conciliation entre vie professionnelle et personnelle, et souvent une productivité accrue. Les employés apprécient la flexibilité et le confort de travailler de chez eux.\n\nPour les entreprises aussi, il y a des avantages: réduction des coûts immobiliers, accès à un bassin de talents plus large, et employés souvent plus satisfaits.\n\nCependant, le télétravail présente des inconvénients non négligeables. L'isolement social est le plus souvent cité. Les interactions spontanées avec les collègues manquent, et le sentiment d'appartenance à une équipe diminue. Pour les nouveaux employés, l'intégration est particulièrement difficile.\n\nLa frontière entre travail et vie privée devient floue. Beaucoup se retrouvent à travailler plus d'heures qu'au bureau, avec des difficultés à déconnecter. Le burn-out menace ceux qui ne savent pas établir des limites.\n\nEnfin, tout le monde n'a pas les conditions idéales pour télétravailler. Un logement trop petit, des enfants à la maison, ou une mauvaise connexion internet peuvent rendre l'expérience pénible.\n\nL'avenir semble être un modèle hybride, combinant jours au bureau et jours à distance. Cette formule permettrait de profiter des avantages des deux mondes tout en minimisant les inconvénients.",
+      "id": "read_c1_005",
+      "title": "La désinformation à l'ère numérique: anatomie d'un phénomène",
+      "topic": "Media / Misinformation",
+      "level": "C1-C2",
+      "wordCount": 550,
+      "content": "La prolifération des fausses informations sur les réseaux sociaux constitue l'un des défis majeurs de nos démocraties contemporaines. Ce phénomène, souvent désigné par l'anglicisme « fake news », n'est certes pas nouveau — la propagande et la manipulation de l'opinion ont toujours existé —, mais l'environnement numérique lui confère une ampleur et une vélocité inédites.\n\nPlusieurs facteurs concourent à expliquer cette épidémie informationnelle. En premier lieu, l'économie de l'attention qui régit les plateformes numériques favorise structurellement les contenus sensationnalistes et polarisants. Les algorithmes de recommandation, optimisés pour maximiser le temps d'engagement des utilisateurs, privilégient les publications suscitant des réactions émotionnelles fortes — indignation, peur, colère — au détriment d'une information nuancée et factuelle. Une étude du MIT a démontré que les fausses nouvelles se propagent six fois plus rapidement que les informations vérifiées sur Twitter.\n\nEn second lieu, la désintermédiation de l'information a bouleversé l'écosystème médiatique traditionnel. Autrefois, les journalistes professionnels jouaient un rôle de filtre, vérifiant les faits avant leur publication. Désormais, quiconque disposant d'une connexion internet peut diffuser des contenus à une audience potentiellement mondiale, sans aucun contrôle éditorial préalable. Cette démocratisation de la parole, en soi positive, s'est accompagnée d'une démocratisation de la désinformation.\n\nTroisièmement, les biais cognitifs inhérents à la psychologie humaine nous rendent particulièrement vulnérables à la manipulation. Le biais de confirmation nous pousse à privilégier les informations confortant nos croyances préexistantes. L'effet de simple exposition nous conduit à accorder davantage de crédit aux affirmations que nous avons entendues à plusieurs reprises, indépendamment de leur véracité. Ces mécanismes sont systématiquement exploités par les producteurs de désinformation.\n\nLes conséquences de ce phénomène dépassent le simple désagrément intellectuel. La désinformation sanitaire a coûté des vies durant la pandémie de Covid-19, en dissuadant certains de se faire vacciner ou en promouvant des traitements inefficaces voire dangereux. La désinformation politique menace l'intégrité des processus électoraux et alimente la défiance envers les institutions démocratiques. La désinformation climatique retarde l'action collective face à l'urgence environnementale.\n\nFace à cette menace, diverses stratégies sont envisagées. La régulation des plateformes, à l'instar du Digital Services Act européen, vise à responsabiliser les intermédiaires numériques dans la modération des contenus. L'éducation aux médias, intégrée dans les programmes scolaires, ambitionne de former des citoyens dotés d'un esprit critique capable de distinguer information et manipulation. Le fact-checking, pratiqué par des rédactions spécialisées, s'efforce de vérifier les affirmations virales et de rétablir les faits.\n\nCes approches, pour nécessaires qu'elles soient, se heurtent à des limites intrinsèques. La régulation risque de dériver vers la censure. L'éducation aux médias produit des effets à long terme, impuissants face à l'urgence. Le fact-checking atteint rarement les personnes déjà convaincues par les fausses informations. Surtout, ces réponses traitent les symptômes sans s'attaquer aux causes profondes: un modèle économique qui monétise l'attention, une crise de confiance envers les élites, et une fragmentation du débat public en bulles informationnelles imperméables les unes aux autres.",
       "questions": [
         {
-          "question": "Qu'est-ce qui a accéléré l'adoption du télétravail?",
-          "options": ["Une nouvelle loi", "La pandémie", "Les nouvelles technologies", "Les demandes des employés"],
+          "question": "Selon l'étude du MIT citée dans le texte, quelle est la caractéristique de propagation des fausses nouvelles?",
+          "options": ["Elles se propagent moins vite que les vraies informations", "Elles se propagent six fois plus rapidement que les informations vérifiées", "Elles se propagent à la même vitesse", "Elles ne se propagent pas sur Twitter"],
           "answer": 1
         },
         {
-          "question": "Quel avantage du télétravail pour les entreprises est mentionné?",
-          "options": ["Des employés plus obéissants", "La réduction des coûts immobiliers", "Plus de contrôle sur les employés", "Des réunions plus courtes"],
+          "question": "Qu'est-ce que la « désintermédiation de l'information » selon le texte?",
+          "options": ["L'augmentation du nombre de journalistes", "La disparition du rôle de filtre des journalistes professionnels, permettant à quiconque de diffuser des contenus", "L'amélioration de la qualité de l'information", "La censure gouvernementale"],
           "answer": 1
         },
         {
-          "question": "Quel est le principal inconvénient cité?",
-          "options": ["Le coût de l'internet", "L'isolement social", "Le manque de vacances", "Les problèmes techniques"],
+          "question": "Qu'est-ce que le « biais de confirmation » mentionné dans le texte?",
+          "options": ["La tendance à rejeter toute nouvelle information", "La tendance à privilégier les informations qui confortent nos croyances préexistantes", "La confiance excessive envers les médias traditionnels", "Le refus de lire les actualités"],
           "answer": 1
         },
         {
-          "question": "Quelle solution l'auteur suggère-t-il pour l'avenir?",
-          "options": ["Retour total au bureau", "Télétravail complet", "Un modèle hybride", "Réduction du temps de travail"],
-          "answer": 2
-        }
-      ]
-    },
-    {
-      "id": "read_004",
-      "title": "L'éducation gratuite: un droit ou un privilège?",
-      "topic": "Education / Society",
-      "wordCount": 310,
-      "content": "L'accès à l'éducation supérieure fait débat dans de nombreux pays. Certains défendent la gratuité totale, tandis que d'autres estiment que les étudiants doivent contribuer financièrement à leurs études.\n\nLes partisans de la gratuité avancent des arguments solides. L'éducation est un droit fondamental qui ne devrait pas dépendre des moyens financiers de la famille. Dans une société démocratique, tout le monde devrait avoir les mêmes chances de réussir. De plus, une population éduquée bénéficie à toute la société: innovation, productivité économique, et citoyenneté active.\n\nL'exemple de pays comme la Finlande ou l'Allemagne montre que la gratuité est possible. Ces pays offrent une éducation de qualité sans frais de scolarité et figurent parmi les plus performants dans les classements internationaux.\n\nCependant, les opposants soulèvent des points importants. La gratuité a un coût, supporté par tous les contribuables, y compris ceux qui n'iront jamais à l'université. Est-il juste de demander à un ouvrier de financer les études d'un futur médecin qui gagnera beaucoup plus que lui?\n\nDe plus, ce qui est gratuit est parfois moins valorisé. Les étudiants seraient peut-être plus sérieux s'ils devaient payer pour leurs cours. Le système de prêts étudiants, bien que controversé, pousse les jeunes à réfléchir à leur investissement.\n\nUne solution intermédiaire pourrait être d'offrir la gratuité aux plus défavorisés tout en demandant une contribution aux plus aisés. Des systèmes de bourses généreuses pourraient également réduire les inégalités.\n\nEn définitive, ce débat reflète une question plus large: quel modèle de société voulons-nous? La réponse dépend de nos valeurs collectives.",
-      "questions": [
-        {
-          "question": "Quel argument est avancé en faveur de la gratuité?",
-          "options": ["Les étudiants sont plus motivés", "L'éducation est un droit fondamental", "C'est moins cher pour l'État", "Les professeurs sont mieux payés"],
+          "question": "Quelle limite du fact-checking l'auteur souligne-t-il?",
+          "options": ["Il est trop coûteux", "Il atteint rarement les personnes déjà convaincues par les fausses informations", "Il produit lui-même de fausses informations", "Il est interdit dans certains pays"],
           "answer": 1
         },
         {
-          "question": "Quels pays sont cités comme exemples de gratuité réussie?",
-          "options": ["États-Unis et Canada", "Finlande et Allemagne", "France et Belgique", "Japon et Corée"],
-          "answer": 1
-        },
-        {
-          "question": "Quel argument contre la gratuité est mentionné?",
-          "options": ["Les professeurs refusent", "Ce qui est gratuit est moins valorisé", "Les bâtiments sont moins beaux", "Il y a trop d'étudiants"],
-          "answer": 1
-        },
-        {
-          "question": "Quelle solution intermédiaire est proposée?",
-          "options": ["Rendre tout payant", "Gratuité pour les plus défavorisés", "Fermer certaines universités", "Réduire le nombre d'étudiants"],
+          "question": "Selon l'auteur, quelle est la cause profonde non traitée par les solutions actuelles?",
+          "options": ["Le manque de journalistes", "Un modèle économique qui monétise l'attention et une crise de confiance envers les élites", "L'insuffisance des budgets", "La paresse des citoyens"],
           "answer": 1
         }
       ]
     },
     {
-      "id": "read_005",
-      "title": "Faut-il interdire la voiture en ville?",
-      "topic": "Environment / Urban Life",
-      "wordCount": 295,
-      "content": "De nombreuses villes européennes restreignent de plus en plus l'accès aux voitures dans leurs centres. Cette tendance divise l'opinion publique entre écologistes convaincus et automobilistes frustrés.\n\nLes partisans de ces mesures invoquent des arguments sanitaires et environnementaux. La pollution de l'air tue des milliers de personnes chaque année. Le bruit constant affecte la qualité de vie des citadins. Et le réchauffement climatique exige des actions concrètes, dont la réduction de la circulation automobile.\n\nCes restrictions ont des effets positifs visibles. Les rues piétonnes deviennent des espaces agréables où les gens se promènent, discutent, et profitent des terrasses. Les enfants peuvent jouer en sécurité. Le vélo se développe, favorisant la santé publique.\n\nMais les opposants soulèvent des objections légitimes. Tout le monde n'a pas accès aux transports en commun. Les personnes âgées ou handicapées dépendent souvent de leur voiture. Les commerçants craignent de perdre leur clientèle si les parkings disparaissent.\n\nDe plus, interdire sans proposer d'alternatives n'est pas une solution. Les transports en commun doivent être développés, abordables et efficaces. Les pistes cyclables sécurisées sont nécessaires. Sans ces investissements, les interdictions sont vécues comme des punitions.\n\nLa clé réside dans une approche progressive et inclusive. Certaines villes ont réussi cette transition en impliquant les habitants dans les décisions, en offrant des alternatives crédibles, et en accompagnant les commerces locaux.\n\nEn somme, l'objectif de villes plus vertes et plus agréables à vivre est partagé par beaucoup. C'est la méthode qui fait débat, pas la direction.",
+      "id": "read_c1_006",
+      "title": "L'économie collaborative: révolution ou précarisation déguisée?",
+      "topic": "Economy / Sharing Economy",
+      "level": "C1-C2",
+      "wordCount": 520,
+      "content": "L'émergence des plateformes numériques d'intermédiation — Uber, Airbnb, Deliveroo et leurs homologues — a profondément reconfiguré de nombreux secteurs économiques. Présentée tantôt comme une révolution émancipatrice, tantôt comme une régression sociale, cette « économie collaborative » suscite des analyses contradictoires qu'il convient d'examiner avec discernement.\n\nLes apologistes de ce modèle mettent en avant ses vertus libératrices. Pour les consommateurs, ces plateformes offrent des services plus accessibles, plus flexibles et souvent moins onéreux que les acteurs traditionnels. Pour les prestataires, elles permettent de valoriser des actifs sous-utilisés — un appartement vacant, une voiture immobilisée — et d'accéder à une activité rémunératrice avec une grande souplesse horaire. L'entrepreneur de soi-même, affranchi du salariat et de ses contraintes, incarnerait la figure du travailleur moderne, autonome et épanoui.\n\nCette rhétorique enchanteresse masque cependant une réalité plus âpre. Le statut d'« indépendant » de ces travailleurs de plateformes relève largement de la fiction juridique. Dans les faits, les chauffeurs et livreurs sont soumis à un contrôle algorithmique permanent qui détermine leur rémunération, leur évaluation et leur accès aux missions. Ils supportent seuls les risques de l'activité — accidents, maladie, fluctuation de la demande — sans bénéficier des protections attachées au salariat. Cette « flexibilité » vantée se traduit concrètement par une précarité subie.\n\nPar ailleurs, ces plateformes prospèrent en exploitant les failles des régulations sectorielles. Les chauffeurs VTC n'ont pas à se conformer aux exigences des taxis en matière de licences et de tarifs réglementés. Les locations Airbnb échappent souvent aux normes hôtelières en matière de sécurité et de fiscalité. Cette concurrence asymétrique, loin de constituer une « disruption » vertueuse, relève davantage du contournement réglementaire.\n\nLa question fiscale mérite également attention. Les multinationales du numérique optimisent agressivement leur imposition en localisant leurs bénéfices dans des juridictions à faible fiscalité. Ainsi, elles captent la valeur créée dans un territoire donné sans contribuer proportionnellement au financement des services publics dont elles bénéficient — infrastructures routières pour Uber, équipements urbains pour Airbnb.\n\nFace à ces dérives, plusieurs réponses émergent. Certaines juridictions ont requalifié les travailleurs de plateformes en salariés, les faisant bénéficier des protections afférentes. Des régulations sectorielles limitent désormais le nombre de nuits louables sur Airbnb ou imposent des obligations aux plateformes de livraison. L'Union européenne travaille à un cadre harmonisé garantissant des droits minimaux aux travailleurs des plateformes.\n\nCes évolutions réglementaires, bien qu'indispensables, ne suffiront pas à résoudre les tensions structurelles de ce modèle économique. La véritable question est celle du partage de la valeur: comment s'assurer que les gains de productivité permis par la technologie bénéficient équitablement aux travailleurs, aux consommateurs et à la collectivité, plutôt que d'être accaparés par les actionnaires de quelques plateformes monopolistiques?",
       "questions": [
         {
-          "question": "Quel argument sanitaire est avancé pour restreindre les voitures?",
-          "options": ["Les accidents de voiture", "La pollution de l'air", "Le stress des conducteurs", "Les embouteillages"],
+          "question": "Que désigne l'expression « entrepreneur de soi-même » dans le texte?",
+          "options": ["Un chef d'entreprise traditionnel", "Un travailleur de plateforme présenté comme autonome et affranchi du salariat", "Un investisseur en bourse", "Un fonctionnaire"],
           "answer": 1
         },
         {
-          "question": "Quel effet positif des rues piétonnes est mentionné?",
-          "options": ["Plus de commerces", "Les gens se promènent et profitent des terrasses", "Moins de criminalité", "Plus d'emplois"],
+          "question": "Pourquoi l'auteur qualifie-t-il le statut d'« indépendant » de « fiction juridique »?",
+          "options": ["Parce que ces travailleurs gagnent beaucoup d'argent", "Parce qu'ils sont en réalité contrôlés par les algorithmes et subissent les risques sans les protections du salariat", "Parce qu'ils travaillent pour l'État", "Parce qu'ils sont tous des bénévoles"],
           "answer": 1
         },
         {
-          "question": "Qui pourrait être désavantagé par ces restrictions?",
-          "options": ["Les jeunes", "Les personnes âgées ou handicapées", "Les cyclistes", "Les étudiants"],
+          "question": "Quel avantage concurrentiel déloyal des plateformes l'auteur dénonce-t-il?",
+          "options": ["Leur meilleure qualité de service", "Leur contournement des régulations sectorielles auxquelles sont soumis leurs concurrents traditionnels", "Leur innovation technologique supérieure", "Leur ancienneté sur le marché"],
           "answer": 1
         },
         {
-          "question": "Quelle approche l'auteur recommande-t-il?",
-          "options": ["Interdiction totale immédiate", "Ne rien changer", "Une approche progressive et inclusive", "Laisser les voitures mais augmenter les taxes"],
+          "question": "Quel problème fiscal l'auteur soulève-t-il concernant ces plateformes?",
+          "options": ["Elles paient trop d'impôts", "Elles localisent leurs bénéfices dans des pays à faible fiscalité tout en utilisant les infrastructures locales", "Elles emploient trop de personnes", "Elles investissent trop dans la recherche"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle question fondamentale l'auteur pose-t-il en conclusion?",
+          "options": ["Comment interdire ces plateformes?", "Comment les gains de productivité peuvent-ils bénéficier équitablement à tous plutôt qu'aux seuls actionnaires?", "Comment augmenter les prix des services?", "Comment réduire le nombre d'utilisateurs?"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "read_c1_007",
+      "title": "Vieillissement démographique et solidarité intergénérationnelle",
+      "topic": "Society / Demographics",
+      "level": "C1-C2",
+      "wordCount": 540,
+      "content": "Les sociétés occidentales connaissent une transformation démographique sans précédent. L'allongement de l'espérance de vie, conjugué à une fécondité durablement basse, conduit à un vieillissement structurel de la population qui met à l'épreuve les mécanismes de solidarité intergénérationnelle. Ce phénomène, souvent présenté sous un jour exclusivement problématique, mérite une analyse plus nuancée.\n\nLes défis sont indéniables. Le ratio de dépendance démographique — le rapport entre la population inactive (jeunes et seniors) et la population en âge de travailler — se dégrade inexorablement. En France, on comptait quatre actifs pour un retraité en 1960; ce rapport est aujourd'hui de 1,7 et pourrait tomber sous la barre de 1,5 d'ici 2050. Cette évolution exerce une pression considérable sur les systèmes de retraite par répartition, fondés sur le principe que les cotisations des actifs financent les pensions des retraités.\n\nLe système de santé subit une tension analogue. Les pathologies chroniques liées à l'âge — maladies cardiovasculaires, cancers, démences — requièrent des prises en charge longues et coûteuses. Les besoins en personnels soignants explosent alors même que ces métiers peinent à recruter, victimes de rémunérations insuffisantes et de conditions de travail dégradées. La question de la dépendance — ces situations où les personnes âgées ne peuvent plus accomplir seules les actes de la vie quotidienne — constitue une bombe à retardement sociale et financière.\n\nPourtant, réduire le vieillissement à une charge serait méconnaître les apports considérables des seniors à la société. Les grands-parents jouent un rôle crucial dans la garde des enfants, permettant à leurs propres enfants de concilier vie professionnelle et familiale. Le bénévolat associatif repose largement sur l'engagement des retraités, disposant du temps que les actifs n'ont plus. La transmission des savoirs et des patrimoines culturels s'effectue significativement par le canal intergénérationnel.\n\nDe surcroît, la « silver économie » représente un gisement d'activité et d'emplois considérable. Les services à la personne, les technologies d'assistance, l'adaptation des logements, le tourisme senior: autant de secteurs en expansion qui créent des emplois non délocalisables. Certains économistes estiment que le vieillissement pourrait, à condition d'être anticipé et accompagné, constituer un facteur de croissance plutôt qu'un frein.\n\nLa question centrale est celle du renouvellement du contrat social entre générations. Le système actuel, conçu dans un contexte démographique radicalement différent, doit être repensé. Plusieurs pistes sont explorées: élévation de l'âge de départ à la retraite, diversification des sources de financement des retraites, développement de l'épargne individuelle, réforme de la fiscalité successorale pour favoriser les transmissions précoces.\n\nCes réformes techniques ne sauraient toutefois occulter l'enjeu éthique fondamental: quelle place accordons-nous à nos aînés dans la société? La tendance à l'isolement des personnes âgées, leur relégation dans des institutions spécialisées, le jeunisme ambiant qui dévalorise l'expérience au profit de la nouveauté constituent des symptômes d'une crise du lien intergénérationnel qu'aucune réforme paramétrique ne suffira à résoudre. C'est notre conception même de la solidarité et de la dignité humaine qui est en jeu.",
+      "questions": [
+        {
+          "question": "Que signifie le « ratio de dépendance démographique » mentionné dans le texte?",
+          "options": ["Le pourcentage de personnes malades", "Le rapport entre la population inactive (jeunes et seniors) et la population en âge de travailler", "Le taux de natalité", "Le nombre de médecins par habitant"],
+          "answer": 1
+        },
+        {
+          "question": "Pourquoi l'auteur parle-t-il de « bombe à retardement » concernant la dépendance?",
+          "options": ["Parce que les personnes âgées sont dangereuses", "Parce que la prise en charge des personnes dépendantes pose un défi social et financier croissant non résolu", "Parce que le système de santé va exploser", "Parce que les familles refusent de s'occuper de leurs aînés"],
+          "answer": 1
+        },
+        {
+          "question": "Quel apport positif des seniors l'auteur met-il en avant?",
+          "options": ["Ils consomment beaucoup", "Ils gardent les enfants, s'engagent dans le bénévolat et transmettent savoirs et patrimoine culturel", "Ils votent toujours pour le même parti", "Ils créent des entreprises technologiques"],
+          "answer": 1
+        },
+        {
+          "question": "Qu'est-ce que la « silver économie » selon le texte?",
+          "options": ["L'économie des métaux précieux", "Les secteurs économiques liés aux besoins des seniors (services à la personne, technologies d'assistance, etc.)", "L'économie souterraine", "Les investissements bancaires des retraités"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle question éthique fondamentale l'auteur soulève-t-il en conclusion?",
+          "options": ["Comment réduire les dépenses de santé?", "Quelle place accordons-nous à nos aînés dans la société et quelle conception de la solidarité défendons-nous?", "Comment augmenter la natalité?", "Comment encourager l'immigration?"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "read_c1_008",
+      "title": "Les inégalités territoriales: la France à deux vitesses",
+      "topic": "Society / Regional Inequality",
+      "level": "C1-C2",
+      "wordCount": 530,
+      "content": "La géographie française contemporaine se caractérise par un contraste saisissant entre des métropoles dynamiques, intégrées à l'économie mondialisée, et des territoires périphériques en voie de désertification. Cette fracture territoriale, longtemps sous-estimée par les élites politiques et médiatiques concentrées dans les grandes agglomérations, constitue l'un des ferments majeurs du malaise démocratique actuel.\n\nLes métropoles concentrent les emplois qualifiés, les établissements d'enseignement supérieur, les infrastructures culturelles et les services de santé spécialisés. Elles attirent les jeunes diplômés, les investissements et les sièges sociaux des entreprises. Cette dynamique cumulative renforce leur attractivité tandis que les territoires environnants s'appauvrissent. Paris et son agglomération, qui représentent 2% du territoire national, génèrent près d'un tiers du PIB français.\n\nÀ l'inverse, les zones rurales et les villes moyennes subissent un déclin multidimensionnel. La désindustrialisation a détruit des bassins d'emploi entiers sans qu'aucune activité de substitution ne vienne compenser ces pertes. Les services publics se raréfient: fermeture des hôpitaux de proximité, suppression des lignes de train, disparition des perceptions et des bureaux de poste. Les commerces de centre-ville périclitent, asphyxiés par la concurrence des zones commerciales périphériques et du commerce en ligne.\n\nCette relégation territoriale engendre un sentiment d'abandon qui alimente la défiance envers les institutions. Les habitants de ces zones ont l'impression d'être les oubliés de la mondialisation, de ne bénéficier ni de ses opportunités ni de l'attention des décideurs. Ce ressenti trouve une traduction électorale dans la montée des votes protestataires et l'abstention massive aux scrutins locaux.\n\nLes politiques d'aménagement du territoire, censées corriger ces déséquilibres, ont largement échoué. La décentralisation, qui visait à rapprocher le pouvoir des citoyens, a principalement profité aux grandes agglomérations disposant des compétences et des ressources pour exercer leurs nouvelles prérogatives. Les « pôles de compétitivité » et autres dispositifs d'excellence ont concentré les moyens sur les territoires déjà favorisés, accentuant les disparités qu'ils prétendaient réduire.\n\nCertains analystes proposent d'accepter cette concentration territoriale comme une fatalité, arguant que l'efficacité économique impose des économies d'agglomération. Dans cette perspective, la solution résiderait dans l'accompagnement de la mobilité: aider les habitants des zones en déclin à rejoindre les métropoles où se concentrent les opportunités.\n\nCette vision se heurte toutefois à plusieurs objections. D'abord, elle néglige l'attachement des populations à leur territoire, un enracinement qui ne se réduit pas à un calcul économique. Ensuite, elle sous-estime les limites de la métropolisation: congestion, coût du logement, pollution, stress. Enfin, elle pose un problème démocratique: est-il acceptable qu'une partie du territoire national soit vouée à la désertification?\n\nRepenser l'aménagement du territoire suppose de questionner les indicateurs qui guident les politiques publiques. La seule maximisation du PIB conduit à concentrer les investissements là où ils sont le plus immédiatement rentables. Une approche intégrant le bien-être des populations, la cohésion sociale et la soutenabilité environnementale pourrait conduire à des choix différents, valorisant les atouts spécifiques de chaque territoire.",
+      "questions": [
+        {
+          "question": "Quel phénomène caractérise les métropoles selon le texte?",
+          "options": ["Un déclin économique", "Une dynamique cumulative qui renforce leur attractivité au détriment des autres territoires", "Une désertification", "Un vieillissement de la population"],
+          "answer": 1
+        },
+        {
+          "question": "Quelles conséquences du déclin des zones rurales l'auteur mentionne-t-il?",
+          "options": ["Une augmentation de la population", "La fermeture des services publics, la disparition des commerces et un sentiment d'abandon", "Un développement du tourisme", "Une amélioration de la qualité de vie"],
+          "answer": 1
+        },
+        {
+          "question": "Pourquoi l'auteur estime-t-il que les politiques d'aménagement du territoire ont échoué?",
+          "options": ["Parce qu'elles n'ont jamais existé", "Parce qu'elles ont principalement profité aux territoires déjà favorisés, accentuant les disparités", "Parce qu'elles ont coûté trop cher", "Parce que les habitants les ont refusées"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle objection l'auteur formule-t-il contre la solution de la mobilité vers les métropoles?",
+          "options": ["Les métropoles n'ont plus de place", "Elle néglige l'attachement des populations à leur territoire et les limites de la métropolisation", "Elle est trop coûteuse pour l'État", "Les habitants des métropoles s'y opposent"],
+          "answer": 1
+        },
+        {
+          "question": "Que propose l'auteur pour repenser l'aménagement du territoire?",
+          "options": ["Abandonner les zones rurales", "Intégrer des indicateurs de bien-être, cohésion sociale et soutenabilité plutôt que le seul PIB", "Construire plus de métropoles", "Interdire les déplacements"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "read_c1_009",
+      "title": "La crise de l'autorité dans les sociétés démocratiques",
+      "topic": "Politics / Democracy",
+      "level": "C1-C2",
+      "wordCount": 550,
+      "content": "Les démocraties occidentales traversent une crise de légitimité dont les manifestations sont multiples: défiance envers les institutions, abstention électorale, montée des populismes, contestation de l'expertise scientifique. Ce phénomène, souvent analysé comme un symptôme de déclin, peut également être interprété comme l'expression d'une exigence démocratique accrue.\n\nHistoriquement, l'autorité dans les sociétés traditionnelles reposait sur des fondements transcendants: la religion, la tradition, le lignage. La modernité démocratique a substitué à ces sources de légitimité le principe de la souveraineté populaire et de la compétence rationnelle. L'autorité ne se fonde plus sur ce que l'on est, mais sur ce que l'on sait ou sur le mandat que l'on a reçu des citoyens.\n\nOr, ces deux piliers de l'autorité moderne sont aujourd'hui ébranlés. La légitimité électorale souffre de la perception d'une classe politique professionnalisée, coupée des réalités vécues par les citoyens ordinaires. Les scandales de corruption, les promesses non tenues, l'impuissance face aux défis majeurs — chômage, insécurité, changement climatique — alimentent un cynisme généralisé. Le sentiment prévaut que les élus servent leurs intérêts propres ou ceux de lobbies puissants plutôt que le bien commun.\n\nLa légitimité de l'expertise n'est pas mieux lotie. La pandémie de Covid-19 a révélé de manière éclatante les tensions entre savoir scientifique et décision politique. Les désaccords entre experts, normaux dans le processus de recherche, ont été interprétés comme la preuve d'une incompétence ou d'une manipulation. Les réseaux sociaux ont amplifié les voix dissidentes, créant l'impression d'un débat scientifique bien plus polarisé qu'il ne l'est réellement.\n\nCette crise de l'autorité comporte des dangers évidents. Elle ouvre un espace aux démagogues qui promettent des solutions simples à des problèmes complexes. Elle fragilise la capacité d'action collective face à des défis qui requièrent précisément coordination et confiance mutuelle. Elle menace la cohésion sociale en fragmentant l'espace public en communautés épistémiques imperméables les unes aux autres.\n\nToutefois, réduire ce phénomène à une pathologie démocratique serait méconnaître sa dimension émancipatrice. La remise en question des autorités établies procède également d'une conscience critique aiguisée, d'un refus de la soumission aveugle, d'une aspiration à la participation effective aux décisions qui nous concernent. Les mouvements sociaux contemporains — écologistes, féministes, antiracistes — témoignent d'une vitalité démocratique qui ne se satisfait plus des formes traditionnelles de représentation.\n\nLe défi consiste donc à reconstruire des formes d'autorité légitimes dans un contexte de défiance. Cela suppose, de la part des institutions, une transparence accrue, une réelle reddition de comptes, et une ouverture aux formes participatives de délibération. De la part des citoyens, cela implique de cultiver le discernement critique — distinguer le scepticisme salutaire du complotisme stérile — et d'assumer les responsabilités qu'implique l'exercice de la souveraineté.\n\nEn dernière instance, l'autorité en démocratie ne peut être que fragile et toujours remise en jeu. C'est là sa faiblesse, mais aussi sa grandeur: elle ne s'impose pas, elle se mérite continuellement.",
+      "questions": [
+        {
+          "question": "Selon l'auteur, sur quoi reposait l'autorité dans les sociétés traditionnelles?",
+          "options": ["Sur la compétence technique", "Sur des fondements transcendants: religion, tradition, lignage", "Sur les élections", "Sur la richesse économique"],
+          "answer": 1
+        },
+        {
+          "question": "Quels sont les deux piliers de l'autorité moderne mentionnés dans le texte?",
+          "options": ["La force militaire et la richesse", "La souveraineté populaire (légitimité électorale) et la compétence rationnelle (expertise)", "La religion et la tradition", "Les médias et les réseaux sociaux"],
+          "answer": 1
+        },
+        {
+          "question": "Pourquoi la pandémie de Covid-19 a-t-elle fragilisé la légitimité de l'expertise?",
+          "options": ["Parce que les scientifiques avaient tous tort", "Parce que les désaccords normaux entre experts ont été interprétés comme preuve d'incompétence ou de manipulation", "Parce que les gouvernements ont ignoré les scientifiques", "Parce qu'il n'y avait pas assez de recherches"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle dimension positive de la crise de l'autorité l'auteur reconnaît-il?",
+          "options": ["Elle permet aux démagogues de prendre le pouvoir", "Elle exprime une conscience critique et une aspiration à la participation effective aux décisions", "Elle détruit toutes les institutions", "Elle simplifie la prise de décision"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle est la thèse finale de l'auteur sur l'autorité en démocratie?",
+          "options": ["Elle doit être absolue et incontestable", "Elle est fragile et doit se mériter continuellement, ce qui est à la fois sa faiblesse et sa grandeur", "Elle n'existe plus et ne peut pas être reconstruite", "Elle doit revenir aux formes traditionnelles"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "read_c1_010",
+      "title": "Mondialisation culturelle et identités locales",
+      "topic": "Culture / Globalization",
+      "level": "C1-C2",
+      "wordCount": 520,
+      "content": "L'intensification des échanges culturels à l'échelle planétaire suscite des réactions contrastées. Pour les uns, la mondialisation culturelle représente une menace d'uniformisation, un rouleau compresseur qui lamine les particularismes au profit d'une culture de masse standardisée, d'essence principalement américaine. Pour les autres, elle constitue une opportunité d'enrichissement mutuel, de métissage créatif et d'émancipation des individus par rapport aux assignations identitaires héritées.\n\nLes tenants de la thèse de l'uniformisation pointent des indices troublants. Les mêmes films hollywoodiens, les mêmes séries télévisées, les mêmes morceaux de musique pop dominent les marchés culturels mondiaux. Les enseignes de restauration rapide et les chaînes de vêtements standardisés colonisent les centres-villes de toutes les métropoles. L'anglais s'impose comme lingua franca, reléguant les autres langues à un statut vernaculaire.\n\nCette homogénéisation culturelle s'accompagne d'une hégémonie économique. Les industries culturelles américaines, dotées de moyens colossaux et bénéficiant de leur vaste marché intérieur, écrasent les productions locales incapables de rivaliser. Le soft power culturel prolonge et conforte la domination géopolitique. Les imaginaires sont colonisés aussi sûrement que l'étaient autrefois les territoires.\n\nPourtant, cette lecture apocalyptique mérite d'être nuancée. Les flux culturels ne sont pas à sens unique. Le cinéma sud-coréen, la musique latino-américaine, les mangas japonais, la cuisine asiatique ont conquis des audiences mondiales, témoignant d'une circulation multipolaire des biens culturels. Les productions locales, loin de disparaître, se renouvellent au contact des influences extérieures, donnant naissance à des formes hybrides originales.\n\nDe surcroît, la réception des produits culturels mondialisés n'est pas passive. Les publics réinterprètent, détournent, s'approprient ces contenus en fonction de leurs contextes locaux. Le même film sera compris différemment à Tokyo, à Lagos et à Buenos Aires. La mondialisation culturelle produit davantage de la diversité que de l'uniformité, pour peu que l'on dépasse une vision superficielle de l'identité culturelle.\n\nNéanmoins, les inquiétudes relatives à la disparition des langues et des cultures minoritaires ne sont pas infondées. L'UNESCO estime que la moitié des six mille langues actuellement parlées dans le monde auront disparu d'ici la fin du siècle. Cette érosion linguistique représente une perte irréparable pour le patrimoine de l'humanité et pour les communautés concernées, dont l'identité est intrinsèquement liée à leur langue.\n\nFace à ces enjeux, diverses stratégies sont déployées. Les politiques de protection du patrimoine culturel, les quotas de diffusion de productions nationales, le soutien aux industries créatives locales visent à préserver un espace pour les expressions culturelles menacées. Parallèlement, les mouvements de revitalisation linguistique s'efforcent de transmettre aux jeunes générations des langues en péril.\n\nEn définitive, la mondialisation culturelle n'est ni une bénédiction ni une malédiction univoque. Son impact dépend des politiques mises en œuvre et de la capacité des communautés à négocier leur insertion dans les flux mondiaux tout en préservant ce qui fait leur singularité.",
+      "questions": [
+        {
+          "question": "Quels indices de l'uniformisation culturelle l'auteur mentionne-t-il?",
+          "options": ["La diversification des productions locales", "La domination mondiale des mêmes films, séries, musiques, et enseignes commerciales", "L'augmentation du nombre de langues parlées", "Le déclin du cinéma américain"],
+          "answer": 1
+        },
+        {
+          "question": "Que signifie l'expression « soft power culturel » dans le contexte du texte?",
+          "options": ["La force militaire américaine", "L'influence géopolitique exercée à travers la domination culturelle plutôt que par la contrainte", "Les logiciels informatiques", "La diplomatie traditionnelle"],
+          "answer": 1
+        },
+        {
+          "question": "Quel argument l'auteur avance-t-il pour nuancer la thèse de l'uniformisation?",
+          "options": ["Les productions américaines sont de mauvaise qualité", "Les flux culturels sont multipolaires et les publics réinterprètent activement les contenus selon leurs contextes locaux", "La mondialisation culturelle n'existe pas", "Toutes les cultures sont identiques depuis toujours"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle estimation de l'UNESCO l'auteur cite-t-il?",
+          "options": ["Toutes les langues seront préservées", "La moitié des six mille langues actuelles auront disparu d'ici la fin du siècle", "Le nombre de langues va doubler", "L'anglais deviendra la seule langue parlée"],
+          "answer": 1
+        },
+        {
+          "question": "Quelle est la conclusion de l'auteur sur la mondialisation culturelle?",
+          "options": ["Elle est entièrement positive", "Elle est entièrement négative", "Son impact dépend des politiques mises en œuvre et de la capacité des communautés à préserver leur singularité", "Elle n'a aucun impact réel"],
           "answer": 2
         }
       ]

@@ -22,7 +22,15 @@ function ReadingIndex() {
     <div className="space-y-6">
       <div>
         <h1 className="font-display text-2xl font-bold text-ink">Reading Comprehension</h1>
-        <p className="text-ink-light mt-1">Practice with opinion passages on TCF topics</p>
+        <p className="text-ink-light mt-1">Advanced C1-C2 level texts based on TCF exam patterns</p>
+      </div>
+
+      <div className="bg-bamboo/10 border border-bamboo/30 rounded-xl p-4">
+        <p className="text-sm text-ink">
+          <span className="font-semibold">TCF Canada Preparation:</span>{' '}
+          These passages feature complex argumentative texts with sophisticated vocabulary,
+          designed to prepare you for NCLC 9-10+ (C1-C2) reading comprehension.
+        </p>
       </div>
 
       <div className="bg-sand rounded-xl p-4">
@@ -51,7 +59,14 @@ function ReadingIndex() {
                     <FileText size={24} className="text-ink-light mt-0.5" />
                   )}
                   <div>
-                    <h3 className="font-display font-semibold text-ink">{passage.title}</h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-display font-semibold text-ink">{passage.title}</h3>
+                      {passage.level && (
+                        <span className="px-2 py-0.5 bg-rust/10 text-rust text-xs font-medium rounded-full">
+                          {passage.level}
+                        </span>
+                      )}
+                    </div>
                     <p className="text-sm text-ink-light mt-1">{passage.topic}</p>
                     <div className="flex items-center gap-3 mt-2 text-xs text-ink-light">
                       <span>{passage.wordCount} words</span>

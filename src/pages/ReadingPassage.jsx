@@ -62,7 +62,14 @@ function ReadingPassage() {
           <ArrowLeft size={20} className="text-ink" />
         </Link>
         <div className="flex-1">
-          <h1 className="font-display text-xl font-bold text-ink">{passage.title}</h1>
+          <div className="flex items-center gap-2">
+            <h1 className="font-display text-xl font-bold text-ink">{passage.title}</h1>
+            {passage.level && (
+              <span className="px-2 py-0.5 bg-rust/10 text-rust text-xs font-medium rounded-full">
+                {passage.level}
+              </span>
+            )}
+          </div>
           <p className="text-sm text-ink-light">{passage.topic}</p>
         </div>
       </div>

@@ -1,22 +1,6 @@
 import { Link } from 'react-router-dom'
-import { TrendingUp, AlertTriangle, Target, BookOpen, Languages, FileText, Headphones, PenTool } from 'lucide-react'
 import useStore from '../store/useStore'
 import grammarData from '../data/grammar.json'
-
-// NCLC 7 thresholds (minimum scores to achieve NCLC 7)
-const NCLC7_THRESHOLDS = {
-  listening: 458,  // 458-502 is NCLC 7
-  reading: 453,    // 453-498 is NCLC 7
-  writing: 10,     // 10-11 is NCLC 7
-  speaking: 10     // 10-11 is NCLC 7
-}
-
-// Check if a score meets NCLC 7 threshold
-const meetsNCLC7 = (type, score) => {
-  if (!score) return null
-  const numScore = parseInt(score)
-  return numScore >= NCLC7_THRESHOLDS[type]
-}
 
 function Dashboard() {
   const {
@@ -55,254 +39,234 @@ function Dashboard() {
     .sort((a, b) => a.accuracy - b.accuracy)
     .slice(0, 5)
 
-  // NCLC estimation based on accuracy
-  const estimateNCLC = (accuracy) => {
-    if (accuracy >= 90) return '10-11'
-    if (accuracy >= 80) return '8-9'
-    if (accuracy >= 70) return '7-8'
-    if (accuracy >= 60) return '6-7'
-    return '5-6'
-  }
+  // Skills data
+  const skills = [
+    { name: 'Listening', clb: listeningProgress.completed.length > 0 ? 5 : 0, progress: Math.min(100, listeningProgress.completed.length * 10) },
+    { name: 'Reading', clb: readingProgress.completed.length > 0 ? 6 : 0, progress: Math.min(100, readingProgress.completed.length * 10) },
+    { name: 'Writing', clb: writingProgress.length > 0 ? 6 : 0, progress: Math.min(100, writingProgress.length * 20) },
+    { name: 'Grammar', clb: grammarAccuracy >= 70 ? 6 : grammarAccuracy >= 50 ? 5 : 0, progress: grammarAccuracy },
+  ]
 
   // Writing average
   const writingAvg = writingProgress.length > 0
     ? (writingProgress.reduce((sum, w) => sum + w.nclcScore, 0) / writingProgress.length).toFixed(1)
     : null
 
+  // Stats
+  const stats = [
+    { label: 'Streak', value: Math.min(7, grammarTopics.length).toString(), sub: 'days' },
+    { label: 'Exercises', value: grammarStats.completed.toString(), sub: 'completed' },
+    { label: 'Accuracy', value: `${grammarAccuracy}%`, sub: 'overall' },
+    { label: 'Hours', value: Math.floor(grammarStats.completed / 10).toString(), sub: 'studied' },
+  ]
+
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="font-display text-2xl font-bold text-ink">Dashboard</h1>
-        <p className="text-ink-light mt-1">Track your progress toward NCLC 7+</p>
+    <div>
+      {/* Header */}
+      <div className="mb-16 pb-10 border-b border-pearl">
+        <p className="hero-label">Your Progress</p>
+        <h1 className="hero-title" style={{ fontSize: '2.5rem' }}>
+          Steady growth.
+        </h1>
+        <p className="hero-subtitle">
+          Small, consistent steps lead to mastery. You're building something beautiful.
+        </p>
       </div>
 
-      {/* TCF Scores */}
-      {scores.lastUpdated && (
-        <div className="bg-white rounded-xl border border-border p-6">
-          <h2 className="font-display font-semibold text-ink mb-4 flex items-center gap-2">
-            <Target size={20} className="text-bamboo" />
-            Your TCF Scores
-          </h2>
-          <div className="grid grid-cols-2 gap-4">
-            <div className={`text-center p-3 rounded-lg ${
-              meetsNCLC7('listening', scores.listening) === true
-                ? 'bg-green-100 border border-green-300'
-                : meetsNCLC7('listening', scores.listening) === false
-                  ? 'bg-red-100 border border-red-300'
-                  : 'bg-sand'
-            }`}>
-              <p className={`text-2xl font-bold ${
-                meetsNCLC7('listening', scores.listening) === true
-                  ? 'text-green-700'
-                  : meetsNCLC7('listening', scores.listening) === false
-                    ? 'text-red-700'
-                    : 'text-ink'
-              }`}>{scores.listening}</p>
-              <p className="text-sm text-ink-light">Listening</p>
-              <p className={`text-xs ${
-                meetsNCLC7('listening', scores.listening) === true
-                  ? 'text-green-600'
-                  : 'text-bamboo'
-              }`}>Target: 458+</p>
-            </div>
-            <div className={`text-center p-3 rounded-lg ${
-              meetsNCLC7('reading', scores.reading) === true
-                ? 'bg-green-100 border border-green-300'
-                : meetsNCLC7('reading', scores.reading) === false
-                  ? 'bg-red-100 border border-red-300'
-                  : 'bg-sand'
-            }`}>
-              <p className={`text-2xl font-bold ${
-                meetsNCLC7('reading', scores.reading) === true
-                  ? 'text-green-700'
-                  : meetsNCLC7('reading', scores.reading) === false
-                    ? 'text-red-700'
-                    : 'text-ink'
-              }`}>{scores.reading}</p>
-              <p className="text-sm text-ink-light">Reading</p>
-              <p className={`text-xs ${
-                meetsNCLC7('reading', scores.reading) === true
-                  ? 'text-green-600'
-                  : 'text-bamboo'
-              }`}>Target: 453+</p>
-            </div>
-            <div className={`text-center p-3 rounded-lg ${
-              meetsNCLC7('writing', scores.writing) === true
-                ? 'bg-green-100 border border-green-300'
-                : meetsNCLC7('writing', scores.writing) === false
-                  ? 'bg-red-100 border border-red-300'
-                  : 'bg-sand'
-            }`}>
-              <p className={`text-2xl font-bold ${
-                meetsNCLC7('writing', scores.writing) === true
-                  ? 'text-green-700'
-                  : meetsNCLC7('writing', scores.writing) === false
-                    ? 'text-red-700'
-                    : 'text-ink'
-              }`}>{scores.writing}</p>
-              <p className="text-sm text-ink-light">Writing</p>
-              <p className={`text-xs ${
-                meetsNCLC7('writing', scores.writing) === true
-                  ? 'text-green-600'
-                  : 'text-bamboo'
-              }`}>Target: 10+</p>
-            </div>
-            <div className={`text-center p-3 rounded-lg ${
-              meetsNCLC7('speaking', scores.speaking) === true
-                ? 'bg-green-100 border border-green-300'
-                : meetsNCLC7('speaking', scores.speaking) === false
-                  ? 'bg-red-100 border border-red-300'
-                  : 'bg-sand'
-            }`}>
-              <p className={`text-2xl font-bold ${
-                meetsNCLC7('speaking', scores.speaking) === true
-                  ? 'text-green-700'
-                  : meetsNCLC7('speaking', scores.speaking) === false
-                    ? 'text-red-700'
-                    : 'text-ink'
-              }`}>{scores.speaking}</p>
-              <p className="text-sm text-ink-light">Speaking</p>
-              <p className={`text-xs ${
-                meetsNCLC7('speaking', scores.speaking) === true
-                  ? 'text-green-600'
-                  : 'text-bamboo'
-              }`}>Target: 10+</p>
-            </div>
+      {/* Stats */}
+      <div className="card-grid mb-16" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+        {stats.map((stat, i) => (
+          <div key={stat.label} className="progress-card">
+            <p className="progress-card-label">{stat.label}</p>
+            <p className="progress-card-value">{stat.value}</p>
+            <p className="progress-card-sub">{stat.sub}</p>
           </div>
-          <p className="text-xs text-ink-light mt-3 text-center">
-            Last updated: {new Date(scores.lastUpdated).toLocaleDateString()}
-          </p>
-        </div>
-      )}
-
-      {/* Overview Stats */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <Link to="/grammar" className="bg-white rounded-xl border border-border p-4 hover:shadow-md transition-shadow">
-          <BookOpen size={24} className="text-bamboo mb-2" />
-          <p className="text-2xl font-bold text-ink">{grammarStats.completed}</p>
-          <p className="text-sm text-ink-light">Grammar exercises</p>
-        </Link>
-        <Link to="/vocabulary" className="bg-white rounded-xl border border-border p-4 hover:shadow-md transition-shadow">
-          <Languages size={24} className="text-gold mb-2" />
-          <p className="text-2xl font-bold text-ink">{vocabularyProgress.mastered.length}</p>
-          <p className="text-sm text-ink-light">Words mastered</p>
-        </Link>
-        <Link to="/reading" className="bg-white rounded-xl border border-border p-4 hover:shadow-md transition-shadow">
-          <FileText size={24} className="text-rust mb-2" />
-          <p className="text-2xl font-bold text-ink">{readingProgress.completed.length}</p>
-          <p className="text-sm text-ink-light">Passages read</p>
-        </Link>
-        <Link to="/listening" className="bg-white rounded-xl border border-border p-4 hover:shadow-md transition-shadow">
-          <Headphones size={24} className="text-ink mb-2" />
-          <p className="text-2xl font-bold text-ink">{listeningProgress.completed.length}</p>
-          <p className="text-sm text-ink-light">Listening done</p>
-        </Link>
+        ))}
       </div>
 
-      {/* Grammar Performance */}
-      {grammarStats.total > 0 && (
-        <div className="bg-white rounded-xl border border-border p-6">
-          <h2 className="font-display font-semibold text-ink mb-4 flex items-center gap-2">
-            <TrendingUp size={20} className="text-bamboo" />
-            Grammar Performance
-          </h2>
-          <div className="flex items-center gap-4 mb-4">
-            <div className="flex-1">
-              <div className="flex justify-between text-sm mb-1">
-                <span className="text-ink-light">Overall Accuracy</span>
-                <span className={grammarAccuracy >= 70 ? 'text-bamboo' : 'text-rust'}>
-                  {grammarAccuracy}%
-                </span>
-              </div>
-              <div className="h-3 bg-sand rounded-full overflow-hidden">
-                <div
-                  className={`h-full transition-all ${grammarAccuracy >= 70 ? 'bg-bamboo' : 'bg-rust'}`}
-                  style={{ width: `${grammarAccuracy}%` }}
-                />
-              </div>
-            </div>
-            <div className="text-center">
-              <p className="text-lg font-bold text-bamboo">NCLC {estimateNCLC(grammarAccuracy)}</p>
-              <p className="text-xs text-ink-light">Estimated</p>
-            </div>
-          </div>
-          <p className="text-sm text-ink-light">
-            {grammarTopics.length} topics started out of 47 total
-          </p>
-        </div>
-      )}
+      {/* Skills & Weak Areas */}
+      <div className="card-grid mb-16" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+        {/* Skills */}
+        <div className="bg-white p-10">
+          <p className="section-title mb-8">Skills Progress</p>
 
-      {/* Weak Areas */}
-      {weakTopics.length > 0 && (
-        <div className="bg-white rounded-xl border border-border p-6">
-          <h2 className="font-display font-semibold text-ink mb-4 flex items-center gap-2">
-            <AlertTriangle size={20} className="text-rust" />
-            Areas Needing Practice
-          </h2>
-          <ul className="space-y-2">
-            {weakTopics.map(({ topicId, accuracy, name }) => (
-              <li key={topicId}>
-                <Link
-                  to={`/grammar/${topicId}`}
-                  className="flex items-center justify-between p-2 rounded-lg hover:bg-sand transition-colors"
-                >
-                  <span className="text-ink">{name}</span>
-                  <span className="text-rust font-medium">{accuracy}%</span>
-                </Link>
-              </li>
+          <div className="space-y-6">
+            {skills.map((skill) => (
+              <div key={skill.name} className="skill-progress">
+                <div className="skill-header">
+                  <span className="skill-name">{skill.name}</span>
+                  <span className="skill-clb">CLB {skill.clb || '—'}</span>
+                </div>
+                <div className="progress-track" style={{ height: '2px' }}>
+                  <div
+                    className="progress-fill"
+                    style={{ width: `${skill.progress}%` }}
+                  />
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
+
+        {/* Weak Areas */}
+        <div className="bg-white p-10">
+          <p className="section-title mb-8">Areas to Improve</p>
+
+          {weakTopics.length > 0 ? (
+            <div>
+              {weakTopics.map((area) => (
+                <Link
+                  key={area.topicId}
+                  to={`/grammar/${area.topicId}`}
+                  className="weak-area-item hover:bg-cream transition-colors"
+                >
+                  <span className="weak-area-topic">{area.name}</span>
+                  <span className="weak-area-accuracy">{area.accuracy}%</span>
+                </Link>
+              ))}
+              <p className="text-caption text-grey mt-6">
+                Focus here for the biggest improvement ♡
+              </p>
+            </div>
+          ) : (
+            <p className="text-sm text-grey">
+              Complete more exercises to identify areas for improvement.
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Grammar Levels */}
+      <section className="mb-16">
+        <div className="section-header">
+          <span className="section-title">Grammar Journey</span>
+          <span className="section-count">7 levels</span>
+        </div>
+
+        <div className="card-grid" style={{ gridTemplateColumns: 'repeat(7, 1fr)' }}>
+          {[1, 2, 3, 4, 5, 6, 7].map((level) => {
+            // Calculate level progress based on topics completed
+            const levelTopics = Object.entries(grammarData)
+              .filter(([_, topic]) => topic.level === level)
+              .map(([id]) => id)
+
+            const completedInLevel = levelTopics.filter(id => grammarProgress[id]?.completed > 0).length
+            const levelProgress = levelTopics.length > 0
+              ? Math.round((completedInLevel / levelTopics.length) * 100)
+              : 0
+
+            const isComplete = levelProgress === 100
+            const inProgress = levelProgress > 0 && levelProgress < 100
+            const locked = level > 3 && levelProgress === 0
+
+            return (
+              <div
+                key={level}
+                className={`level-card ${locked ? 'locked' : ''}`}
+              >
+                <p className="level-value">
+                  {isComplete ? '✓' : locked ? '—' : level}
+                </p>
+                <p className="level-label">Level {level}</p>
+                <p className="level-progress">
+                  {isComplete ? '100%' : inProgress ? `${levelProgress}%` : locked ? 'Locked' : '0%'}
+                </p>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* TCF Scores (if available) */}
+      {scores.lastUpdated && (
+        <section className="mb-16">
+          <div className="section-header">
+            <span className="section-title">TCF Scores</span>
+            <span className="section-count">
+              Last updated: {new Date(scores.lastUpdated).toLocaleDateString()}
+            </span>
+          </div>
+
+          <div className="card-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+            <div className="progress-card">
+              <p className="progress-card-label">Listening</p>
+              <p className="progress-card-value">{scores.listening || '—'}</p>
+              <p className="progress-card-sub">Target: 458+</p>
+            </div>
+            <div className="progress-card">
+              <p className="progress-card-label">Reading</p>
+              <p className="progress-card-value">{scores.reading || '—'}</p>
+              <p className="progress-card-sub">Target: 453+</p>
+            </div>
+            <div className="progress-card">
+              <p className="progress-card-label">Writing</p>
+              <p className="progress-card-value">{scores.writing || '—'}</p>
+              <p className="progress-card-sub">Target: 10+</p>
+            </div>
+            <div className="progress-card">
+              <p className="progress-card-label">Speaking</p>
+              <p className="progress-card-value">{scores.speaking || '—'}</p>
+              <p className="progress-card-sub">Target: 10+</p>
+            </div>
+          </div>
+        </section>
       )}
 
       {/* Writing Progress */}
       {writingProgress.length > 0 && (
-        <div className="bg-white rounded-xl border border-border p-6">
-          <h2 className="font-display font-semibold text-ink mb-4 flex items-center gap-2">
-            <PenTool size={20} className="text-bamboo" />
-            Writing Progress
-          </h2>
-          <div className="flex items-center gap-4 mb-4">
-            <div className="text-center">
-              <p className="text-2xl font-bold text-bamboo">NCLC {writingAvg}</p>
-              <p className="text-sm text-ink-light">Average Score</p>
+        <section className="mb-16">
+          <div className="section-header">
+            <span className="section-title">Writing Progress</span>
+            <span className="section-count">{writingProgress.length} attempts</span>
+          </div>
+
+          <div className="card-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+            <div className="progress-card">
+              <p className="progress-card-label">Average Score</p>
+              <p className="progress-card-value">NCLC {writingAvg}</p>
+              <p className="progress-card-sub">Target: 10-11</p>
             </div>
-            <div className="text-center">
-              <p className="text-2xl font-bold text-ink">{writingProgress.length}</p>
-              <p className="text-sm text-ink-light">Attempts</p>
+            <div className="progress-card">
+              <p className="progress-card-label">Attempts</p>
+              <p className="progress-card-value">{writingProgress.length}</p>
+              <p className="progress-card-sub">Keep practicing</p>
             </div>
           </div>
-          <p className="text-sm text-ink-light">
-            Target: NCLC 10-11 for writing tasks
-          </p>
-        </div>
+        </section>
       )}
 
       {/* Empty State */}
       {grammarStats.total === 0 && !scores.lastUpdated && (
-        <div className="bg-sand rounded-xl p-8 text-center">
-          <h2 className="font-display font-semibold text-ink mb-2">Get Started</h2>
-          <p className="text-ink-light mb-4">
-            Complete exercises to see your progress here
+        <section className="py-16 text-center">
+          <h2 className="font-serif text-2xl text-black mb-4">Get Started</h2>
+          <p className="text-stone mb-8 max-w-md mx-auto">
+            Complete exercises to see your progress here. Every journey begins with a single step.
           </p>
-          <Link
-            to="/grammar"
-            className="inline-block bg-bamboo text-white px-6 py-2 rounded-lg font-medium hover:bg-bamboo-dark transition-colors"
-          >
+          <Link to="/grammar" className="btn-primary inline-flex">
             Start with Grammar
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </Link>
-        </div>
+        </section>
       )}
 
       {/* NCLC Reference Link */}
       <Link
         to="/nclc-table"
-        className="block bg-sand rounded-xl p-4 text-center hover:bg-sand/80 transition-colors"
+        className="block bg-cream py-6 text-center hover:bg-pearl transition-colors border border-pearl"
       >
-        <p className="text-ink">
+        <p className="text-charcoal">
           View NCLC Conversion Table →
         </p>
       </Link>
+
+      {/* Footer */}
+      <footer className="footer mt-16">
+        <p>Made with</p>
+        <span className="footer-heart">♥</span>
+        <p>for your journey</p>
+      </footer>
     </div>
   )
 }

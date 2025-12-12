@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { ChevronRight, CheckCircle2, Circle } from 'lucide-react'
 import useStore from '../store/useStore'
 import grammarData from '../data/grammar.json'
 
@@ -31,20 +32,13 @@ function GrammarIndex() {
   }
 
   return (
-    <div>
-      {/* Header */}
-      <div className="mb-12 pb-8 border-b border-pearl">
-        <p className="hero-label">Study</p>
-        <h1 className="hero-title" style={{ fontSize: '2.5rem' }}>
-          Grammar Drills
-        </h1>
-        <p className="hero-subtitle">
-          Master French grammar through progressive exercises. Each level builds on the previous one.
-        </p>
+    <div className="space-y-6">
+      <div>
+        <h1 className="font-display text-2xl font-bold text-ink">Grammar Drills</h1>
+        <p className="text-ink-light mt-1">Master French grammar through progressive exercises</p>
       </div>
 
-      {/* Levels */}
-      <div className="space-y-10">
+      <div className="space-y-6">
         {levels.map((level) => {
           const levelProgress = level.topics.reduce((acc, topicId) => {
             const p = getTopicProgress(topicId)
@@ -55,82 +49,53 @@ function GrammarIndex() {
           }, { completed: 0, started: 0 })
 
           return (
-            <section key={level.id}>
-              <div className="section-header">
-                <span className="section-title">
-                  Level {level.id} — {level.name}
-                </span>
-                <span className="section-count">
-                  {levelProgress.started}/{level.topics.length} started
-                </span>
+            <div key={level.id} className="bg-white rounded-xl border border-border overflow-hidden">
+              <div className="bg-sand px-4 py-3 border-b border-border">
+                <div className="flex items-center justify-between">
+                  <h2 className="font-display font-semibold text-ink">
+                    Level {level.id}: {level.name}
+                  </h2>
+                  <span className="text-sm text-ink-light">
+                    {levelProgress.started}/{level.topics.length} started
+                  </span>
+                </div>
               </div>
-
-              <div className="card-grid" style={{ gridTemplateColumns: 'repeat(1, 1fr)' }}>
-                {level.topics.map((topicId, index) => {
+              <ul className="divide-y divide-border">
+                {level.topics.map((topicId) => {
                   const { completed, accuracy } = getTopicProgress(topicId)
                   const hasProgress = completed > 0
 
                   return (
-                    <Link
-                      key={topicId}
-                      to={`/grammar/${topicId}`}
-                      className="card flex items-center justify-between"
-                    >
-                      <div className="flex items-center gap-4">
-                        <span className="card-number" style={{ marginBottom: 0 }}>
-                          {String(index + 1).padStart(2, '0')}
-                        </span>
-                        <div>
-                          <h3 className="card-title" style={{ marginBottom: 0 }}>
-                            {getTopicName(topicId)}
-                          </h3>
-                          {hasProgress && (
-                            <p className="text-xs text-grey mt-1">
-                              {completed} exercises completed
-                            </p>
+                    <li key={topicId}>
+                      <Link
+                        to={`/grammar/${topicId}`}
+                        className="flex items-center justify-between px-4 py-3 hover:bg-sand-light transition-colors"
+                      >
+                        <div className="flex items-center gap-3">
+                          {hasProgress ? (
+                            <CheckCircle2 size={20} className="text-bamboo" />
+                          ) : (
+                            <Circle size={20} className="text-ink-light" />
                           )}
+                          <span className="text-ink">{getTopicName(topicId)}</span>
                         </div>
-                      </div>
-                      <div className="flex items-center gap-4">
-                        {hasProgress ? (
-                          <span
-                            className="text-sm"
-                            style={{ color: accuracy >= 70 ? 'var(--color-blush-dark)' : 'var(--color-grey)' }}
-                          >
-                            {accuracy}%
-                          </span>
-                        ) : (
-                          <span className="text-xs text-silver uppercase tracking-wider">
-                            Start
-                          </span>
-                        )}
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          className="text-silver"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </Link>
+                        <div className="flex items-center gap-3">
+                          {hasProgress && (
+                            <span className={`text-sm ${accuracy >= 70 ? 'text-bamboo' : 'text-rust'}`}>
+                              {accuracy}%
+                            </span>
+                          )}
+                          <ChevronRight size={20} className="text-ink-light" />
+                        </div>
+                      </Link>
+                    </li>
                   )
                 })}
-              </div>
-            </section>
+              </ul>
+            </div>
           )
         })}
       </div>
-
-      {/* Footer */}
-      <footer className="footer mt-16">
-        <p>Made with</p>
-        <span className="footer-heart">♥</span>
-        <p>for your journey</p>
-      </footer>
     </div>
   )
 }

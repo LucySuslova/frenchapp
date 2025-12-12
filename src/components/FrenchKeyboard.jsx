@@ -1,22 +1,20 @@
 import { useRef, useEffect, useState } from 'react'
+import { ArrowBigUp } from 'lucide-react'
 
-const FRENCH_CHARS_LOWER = ['é', 'è', 'ê', 'ë', 'à', 'â', 'ù', 'û', 'ô', 'î', 'ï', 'ç', 'œ', 'æ']
-const FRENCH_CHARS_UPPER = ['É', 'È', 'Ê', 'Ë', 'À', 'Â', 'Ù', 'Û', 'Ô', 'Î', 'Ï', 'Ç', 'Œ', 'Æ']
+const FRENCH_CHARS_LOWER = ['é', 'è', 'ê', 'ë', 'à', 'â', 'ù', 'û', 'ô', 'î', 'ï', 'ç', 'œ', 'æ', '«', '»']
+const FRENCH_CHARS_UPPER = ['É', 'È', 'Ê', 'Ë', 'À', 'Â', 'Ù', 'Û', 'Ô', 'Î', 'Ï', 'Ç', 'Œ', 'Æ', '«', '»']
 
-function FrenchKeyboard({ inputRef, onInsert, visible: controlledVisible }) {
-  const [internalVisible, setInternalVisible] = useState(false)
+function FrenchKeyboard({ inputRef, onInsert }) {
+  const [visible, setVisible] = useState(false)
   const [isUpperCase, setIsUpperCase] = useState(false)
 
-  const visible = controlledVisible !== undefined ? controlledVisible : internalVisible
-
   useEffect(() => {
-    if (controlledVisible !== undefined) return
-
-    const handleFocus = () => setInternalVisible(true)
+    const handleFocus = () => setVisible(true)
     const handleBlur = (e) => {
+      // Delay hiding to allow button clicks
       setTimeout(() => {
         if (!document.activeElement?.closest('.french-keyboard')) {
-          setInternalVisible(false)
+          setVisible(false)
         }
       }, 100)
     }
@@ -30,7 +28,7 @@ function FrenchKeyboard({ inputRef, onInsert, visible: controlledVisible }) {
         input.removeEventListener('blur', handleBlur)
       }
     }
-  }, [inputRef, controlledVisible])
+  }, [inputRef])
 
   const insertChar = (char) => {
     if (onInsert) {
@@ -43,6 +41,7 @@ function FrenchKeyboard({ inputRef, onInsert, visible: controlledVisible }) {
       input.value = value.substring(0, start) + char + value.substring(end)
       input.selectionStart = input.selectionEnd = start + 1
       input.focus()
+      // Trigger change event
       const event = new Event('input', { bubbles: true })
       input.dispatchEvent(event)
     }
@@ -57,37 +56,39 @@ function FrenchKeyboard({ inputRef, onInsert, visible: controlledVisible }) {
   if (!visible) return null
 
   return (
-    <div className="french-keyboard">
-      {chars.map((char, index) => (
+    <div className="french-keyboard fixed right-4 top-1/2 -translate-y-1/2 bg-white border border-border p-3 z-50 shadow-lg rounded-xl">
+      <div className="grid grid-cols-4 gap-1.5 w-44">
+        {chars.map((char, index) => (
+          <button
+            key={`${char}-${index}`}
+            type="button"
+            onMouseDown={(e) => e.preventDefault()}
+            onClick={() => insertChar(char)}
+            className="w-10 h-10 bg-sand hover:bg-bamboo hover:text-white rounded-lg font-medium text-ink transition-colors text-lg"
+          >
+            {char}
+          </button>
+        ))}
         <button
-          key={`${char}-${index}`}
           type="button"
           onMouseDown={(e) => e.preventDefault()}
-          onClick={() => insertChar(char)}
-          className="keyboard-key"
+          onClick={toggleCase}
+          className={`col-span-4 h-10 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 ${
+            isUpperCase
+              ? 'bg-bamboo text-white'
+              : 'bg-sand hover:bg-bamboo hover:text-white text-ink'
+          }`}
+          title={isUpperCase ? 'Switch to lowercase' : 'Switch to uppercase'}
         >
-          {char}
+          <ArrowBigUp size={20} className={isUpperCase ? 'fill-current' : ''} />
+          <span className="text-sm">{isUpperCase ? 'ABC' : 'abc'}</span>
         </button>
-      ))}
-      <button
-        type="button"
-        onMouseDown={(e) => e.preventDefault()}
-        onClick={toggleCase}
-        className="keyboard-key"
-        style={{
-          width: '3.5rem',
-          background: isUpperCase ? 'var(--color-blush-soft)' : 'var(--color-white)',
-          borderColor: isUpperCase ? 'var(--color-blush)' : 'var(--color-pearl)'
-        }}
-        title={isUpperCase ? 'Switch to lowercase' : 'Switch to uppercase'}
-      >
-        {isUpperCase ? 'ABC' : 'abc'}
-      </button>
+      </div>
     </div>
   )
 }
 
-// Wrapper hook for managing keyboard with any input
+// Wrapper component for managing keyboard with any input
 function useFrenchKeyboard() {
   const inputRef = useRef(null)
   const [value, setValue] = useState('')
@@ -99,6 +100,7 @@ function useFrenchKeyboard() {
       const end = input.selectionEnd
       const newValue = value.substring(0, start) + char + value.substring(end)
       setValue(newValue)
+      // Restore cursor position after React re-render
       setTimeout(() => {
         input.selectionStart = input.selectionEnd = start + 1
         input.focus()

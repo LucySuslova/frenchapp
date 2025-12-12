@@ -1,33 +1,19 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
-import {
-  Home,
-  BookOpen,
-  Languages,
-  FileText,
-  Headphones,
-  PenTool,
-  BarChart3,
-  Table,
-  Menu,
-  X,
-  RefreshCw,
-  Settings as SettingsIcon,
-  Sparkles
-} from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const navItems = [
-  { to: '/', icon: Home, label: 'Home' },
-  { to: '/review', icon: RefreshCw, label: 'Review Mode' },
-  { to: '/grammar', icon: BookOpen, label: 'Grammar' },
-  { to: '/vocabulary', icon: Languages, label: 'Vocabulary' },
-  { to: '/reading', icon: FileText, label: 'Reading' },
-  { to: '/listening', icon: Headphones, label: 'Listening' },
-  { to: '/writing', icon: PenTool, label: 'Writing' },
-  { to: '/dashboard', icon: BarChart3, label: 'Dashboard' },
-  { to: '/conjugation', icon: Sparkles, label: 'Conjugation' },
-  { to: '/nclc-table', icon: Table, label: 'NCLC Reference' },
-  { to: '/settings', icon: SettingsIcon, label: 'Settings' },
+  { to: '/', label: 'Home', number: '01' },
+  { to: '/grammar', label: 'Grammar', number: '02' },
+  { to: '/vocabulary', label: 'Vocabulary', number: '03' },
+  { to: '/reading', label: 'Reading', number: '04' },
+  { to: '/writing', label: 'Writing', number: '05' },
+  { to: '/listening', label: 'Listening', number: '06' },
+  { to: '/dashboard', label: 'Progress', number: '07' },
+  { to: '/review', label: 'Review', number: '08' },
+  { to: '/conjugation', label: 'Conjugation', number: '09' },
+  { to: '/saved-expressions', label: 'Saved', number: '10' },
+  { to: '/settings', label: 'Settings', number: '11' },
 ]
 
 function Layout() {
@@ -36,85 +22,92 @@ function Layout() {
   return (
     <div className="flex min-h-screen">
       {/* Desktop Sidebar */}
-      <aside className="hidden md:flex flex-col w-64 bg-white border-r border-border p-4">
-        <div className="mb-8">
-          <h1 className="font-display text-xl font-bold text-ink">TCF Canada</h1>
-          <p className="text-sm text-ink-light">French Learning App</p>
+      <aside className="sidebar hidden md:flex">
+        {/* Logo */}
+        <div className="flex items-center gap-3 mb-14">
+          <div className="w-2 h-2 rounded-full bg-blush" />
+          <div>
+            <h1 className="font-serif text-2xl text-black">Français</h1>
+            <span className="text-micro text-grey uppercase">TCF Canada</span>
+          </div>
         </div>
-        <nav className="flex-1">
-          <ul className="space-y-1">
-            {navItems.map(({ to, icon: Icon, label }) => (
-              <li key={to}>
-                <NavLink
-                  to={to}
-                  className={({ isActive }) =>
-                    `flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
-                      isActive
-                        ? 'bg-bamboo text-white'
-                        : 'text-ink hover:bg-sand'
-                    }`
-                  }
-                >
-                  <Icon size={20} />
-                  <span>{label}</span>
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+
+        {/* Navigation */}
+        <nav className="flex flex-col">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              className={({ isActive }) =>
+                `nav-item ${isActive ? 'active' : ''}`
+              }
+            >
+              <span>{item.label}</span>
+              <span className="nav-number">{item.number}</span>
+            </NavLink>
+          ))}
         </nav>
-        <div className="pt-4 border-t border-border">
-          <p className="text-xs text-ink-light">Target: NCLC 7+</p>
+
+        {/* Sidebar bottom */}
+        <div className="mt-auto">
+          <div className="sidebar-preview">
+            <img
+              src="https://i.pinimg.com/736x/1f/4d/f0/1f4df0a7d6aa24cae26ed94e8addb7a7.jpg"
+              alt="Song Kang"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <p className="font-serif text-base italic text-stone leading-relaxed mb-3">
+            "Every journey begins with a single word."
+          </p>
+          <p className="text-xs text-grey tracking-wide">— Song Kang</p>
         </div>
       </aside>
 
       {/* Mobile Header */}
-      <div className="md:hidden fixed top-0 left-0 right-0 bg-white border-b border-border z-50">
-        <div className="flex items-center justify-between px-4 h-14">
-          <h1 className="font-display font-bold text-ink">TCF Canada</h1>
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-ink hover:bg-sand rounded-lg"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+      <div className="mobile-header">
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 rounded-full bg-blush" />
+          <h1 className="font-serif text-xl text-black">Français</h1>
         </div>
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="mobile-menu-btn"
+        >
+          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 z-40 bg-black/50" onClick={() => setMobileMenuOpen(false)}>
-          <div className="absolute top-14 left-0 right-0 bg-white border-b border-border" onClick={e => e.stopPropagation()}>
-            <nav className="p-4">
-              <ul className="space-y-1">
-                {navItems.map(({ to, icon: Icon, label }) => (
-                  <li key={to}>
-                    <NavLink
-                      to={to}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className={({ isActive }) =>
-                        `flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
-                          isActive
-                            ? 'bg-bamboo text-white'
-                            : 'text-ink hover:bg-sand'
-                        }`
-                      }
-                    >
-                      <Icon size={20} />
-                      <span>{label}</span>
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
+        <>
+          <div
+            className="mobile-menu-overlay"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+          <div className="mobile-menu">
+            <nav className="flex flex-col">
+              {navItems.map((item) => (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) =>
+                    `nav-item ${isActive ? 'active' : ''}`
+                  }
+                >
+                  <span>{item.label}</span>
+                  <span className="nav-number">{item.number}</span>
+                </NavLink>
+              ))}
             </nav>
           </div>
-        </div>
+        </>
       )}
 
       {/* Main Content */}
-      <main className="flex-1 md:p-8 p-4 pt-18 md:pt-8 overflow-auto">
-        <div className="max-w-4xl mx-auto">
-          <Outlet />
-        </div>
+      <main className="main-content">
+        <Outlet />
       </main>
     </div>
   )

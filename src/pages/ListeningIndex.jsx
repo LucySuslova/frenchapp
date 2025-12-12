@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom'
+import { ChevronRight, CheckCircle2, Headphones, ExternalLink } from 'lucide-react'
 import useStore from '../store/useStore'
 import listeningData from '../data/listening.json'
+
+const difficultyColors = {
+  B1: 'bg-bamboo',
+  B2: 'bg-gold',
+  C1: 'bg-rust'
+}
 
 function ListeningIndex() {
   const { listeningProgress } = useStore()
@@ -26,131 +33,102 @@ function ListeningIndex() {
   }, {})
 
   return (
-    <div>
-      {/* Header */}
-      <div className="mb-12 pb-8 border-b border-pearl">
-        <p className="hero-label">Study</p>
-        <h1 className="hero-title" style={{ fontSize: '2.5rem' }}>
-          Listening Practice
-        </h1>
-        <p className="hero-subtitle">
-          Curated exercises with comprehension questions. Train your ear for natural French speech.
-        </p>
+    <div className="space-y-6">
+      <div>
+        <h1 className="font-display text-2xl font-bold text-ink">Listening Practice</h1>
+        <p className="text-ink-light mt-1">Curated exercises with comprehension questions</p>
       </div>
 
-      {/* Progress Stats */}
-      <div className="card-grid mb-10" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
-        <div className="progress-card">
-          <p className="progress-card-label">Completed</p>
-          <p className="progress-card-value">{listeningProgress.completed.length}</p>
-          <p className="progress-card-sub">exercises</p>
-        </div>
-        <div className="progress-card">
-          <p className="progress-card-label">Total Available</p>
-          <p className="progress-card-value">{exercises.length}</p>
-          <p className="progress-card-sub">exercises</p>
-        </div>
-      </div>
-
-      {/* How it works */}
-      <div className="bg-cream py-6 px-8 border border-pearl mb-10">
-        <p className="text-micro text-grey uppercase mb-3">How it works</p>
-        <ol className="text-sm text-stone space-y-1">
-          <li>1. Click an exercise to see details and the external link</li>
-          <li>2. Listen to the audio/video on the external site</li>
-          <li>3. Return here to answer comprehension questions</li>
-          <li>4. Track your scores and progress ♡</li>
+      <div className="bg-sand rounded-xl p-4">
+        <h3 className="font-semibold text-ink mb-2">How it works:</h3>
+        <ol className="text-sm text-ink-light space-y-1 list-decimal list-inside">
+          <li>Click an exercise to see details and the external link</li>
+          <li>Listen to the audio/video on the external site</li>
+          <li>Return here to answer comprehension questions</li>
+          <li>Track your scores and progress</li>
         </ol>
       </div>
 
-      {/* Exercises by Level */}
+      <div className="bg-white rounded-xl border border-border p-4">
+        <div className="flex justify-around text-center">
+          <div>
+            <p className="text-2xl font-bold text-bamboo">{listeningProgress.completed.length}</p>
+            <p className="text-sm text-ink-light">Completed</p>
+          </div>
+          <div>
+            <p className="text-2xl font-bold text-bamboo">{exercises.length}</p>
+            <p className="text-sm text-ink-light">Total</p>
+          </div>
+        </div>
+      </div>
+
       {['B1', 'B2', 'C1'].map((level) => {
         const levelExercises = grouped[level] || []
         if (levelExercises.length === 0) return null
 
-        const completedCount = levelExercises.filter(e => isCompleted(e.id)).length
-
         return (
-          <section key={level} className="mb-10">
-            <div className="section-header">
-              <span className="section-title">Level {level}</span>
-              <span className="section-count">
-                {completedCount}/{levelExercises.length} completed
+          <div key={level} className="space-y-3">
+            <div className="flex items-center gap-2">
+              <span className={`px-2 py-0.5 rounded text-white text-sm ${difficultyColors[level]}`}>
+                {level}
+              </span>
+              <span className="text-ink-light text-sm">
+                {levelExercises.filter(e => isCompleted(e.id)).length}/{levelExercises.length} completed
               </span>
             </div>
 
-            <div className="card-grid" style={{ gridTemplateColumns: 'repeat(1, 1fr)' }}>
-              {levelExercises.map((exercise, index) => {
-                const completed = isCompleted(exercise.id)
-                const score = getExerciseScore(exercise.id)
-                const scoreObj = listeningProgress.scores[exercise.id]
-                const isGoodScore = scoreObj && scoreObj.score >= scoreObj.total * 0.7
+            {levelExercises.map((exercise) => {
+              const completed = isCompleted(exercise.id)
+              const score = getExerciseScore(exercise.id)
 
-                return (
-                  <Link
-                    key={exercise.id}
-                    to={`/listening/${exercise.id}`}
-                    className="card"
-                  >
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-start gap-4">
-                        <span className="card-number" style={{ marginBottom: 0 }}>
-                          {String(index + 1).padStart(2, '0')}
-                        </span>
-                        <div>
-                          <h3 className="card-title" style={{ marginBottom: 0 }}>
-                            {exercise.title}
-                          </h3>
-                          <p className="text-xs text-grey mt-1">{exercise.source}</p>
-                          <div className="flex items-center gap-4 mt-3 text-xs text-silver">
-                            <span>{exercise.duration}</span>
-                            <span>{exercise.questions?.length || 0} questions</span>
-                            {completed && <span>✓ completed</span>}
-                          </div>
+              return (
+                <Link
+                  key={exercise.id}
+                  to={`/listening/${exercise.id}`}
+                  className="block bg-white rounded-xl border border-border p-4 hover:shadow-md transition-shadow"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex items-start gap-3">
+                      {completed ? (
+                        <CheckCircle2 size={24} className="text-bamboo mt-0.5" />
+                      ) : (
+                        <Headphones size={24} className="text-ink-light mt-0.5" />
+                      )}
+                      <div>
+                        <h3 className="font-display font-semibold text-ink">{exercise.title}</h3>
+                        <p className="text-sm text-ink-light mt-1">{exercise.source}</p>
+                        <div className="flex items-center gap-3 mt-2 text-xs text-ink-light">
+                          <span>{exercise.duration}</span>
+                          <span>{exercise.questions?.length || 0} questions</span>
                         </div>
                       </div>
-                      <div className="flex items-center gap-4">
-                        {score && (
-                          <span
-                            className="text-sm"
-                            style={{ color: isGoodScore ? 'var(--color-blush-dark)' : 'var(--color-grey)' }}
-                          >
-                            {score}
-                          </span>
-                        )}
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          className="text-silver"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </div>
                     </div>
-                  </Link>
-                )
-              })}
-            </div>
-          </section>
+                    <div className="flex items-center gap-3">
+                      {score && (
+                        <span className={`text-sm font-medium ${
+                          listeningProgress.scores[exercise.id]?.score >= listeningProgress.scores[exercise.id]?.total * 0.7
+                            ? 'text-bamboo'
+                            : 'text-rust'
+                        }`}>
+                          {score}
+                        </span>
+                      )}
+                      <ChevronRight size={20} className="text-ink-light" />
+                    </div>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
         )
       })}
 
       {exercises.length === 0 && (
-        <div className="bg-white p-12 text-center border border-pearl">
-          <p className="text-grey">Listening exercises coming soon</p>
+        <div className="text-center py-12 bg-white rounded-xl border border-border">
+          <Headphones size={48} className="mx-auto text-ink-light mb-4" />
+          <p className="text-ink-light">Listening exercises coming soon</p>
         </div>
       )}
-
-      {/* Footer */}
-      <footer className="footer mt-16">
-        <p>Made with</p>
-        <span className="footer-heart">♥</span>
-        <p>for your journey</p>
-      </footer>
     </div>
   )
 }

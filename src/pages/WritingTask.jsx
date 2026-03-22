@@ -143,6 +143,13 @@ Please provide:
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Start writing here..."
+          autoCorrect="off"
+          autoCapitalize="off"
+          autoComplete="off"
+          spellCheck={false}
+          data-gramm="false"
+          data-gramm_editor="false"
+          data-enable-grammarly="false"
           className="w-full h-48 px-4 py-3 rounded-lg border border-border bg-white focus:border-bamboo focus:ring-1 focus:ring-bamboo outline-none transition-colors resize-none"
         />
 

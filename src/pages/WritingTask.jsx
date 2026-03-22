@@ -150,7 +150,7 @@ Please provide:
           data-gramm="false"
           data-gramm_editor="false"
           data-enable-grammarly="false"
-          className="w-full h-48 px-4 py-3 rounded-lg border border-border bg-white focus:border-bamboo focus:ring-1 focus:ring-bamboo outline-none transition-colors resize-none"
+          className="w-full min-h-48 px-4 py-3 rounded-lg border border-border bg-white focus:border-bamboo focus:ring-1 focus:ring-bamboo outline-none transition-colors resize-y"
         />
 
         <FrenchKeyboard inputRef={textareaRef} />
